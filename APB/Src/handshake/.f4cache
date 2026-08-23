@@ -1,0 +1,158 @@
+{
+    "/home/cl4/f4pga-examples/xc7/dflop/d_ff.v": {
+        "synth": 3632603327
+    },
+    "/home/cl4/f4pga-examples/xc7/dflop/build/arty_35": {
+        "synth": 0,
+        "place": 0
+    },
+    "/home/cl4/f4pga-examples/xc7/dflop/arty.xdc": {
+        "synth": 493578603
+    },
+    "/home/cl4/f4pga-examples/xc7/dflop/build/arty_35/d_ff.eblif": {
+        "fasm": 157344514,
+        "pack": 157344514,
+        "place": 157344514,
+        "ioplace": 157344514,
+        "place_constraints": 157344514,
+        "route": 157344514
+    },
+    "/home/cl4/f4pga-examples/xc7/dflop/build/arty_35/xc7a100t_test_sdc.sdc": {
+        "pack": 1,
+        "place": 1,
+        "route": 1,
+        "fasm": 1
+    },
+    "/home/cl4/f4pga-examples/xc7/dflop/build/arty_35/d_ff.net": {
+        "fasm": 1288826804,
+        "ioplace": 1288826804,
+        "place_constraints": 1288826804
+    },
+    "/home/cl4/f4pga-examples/xc7/dflop/build/arty_35/d_ff.ioplace": {
+        "place_constraints": 3564325326,
+        "place": 3564325326
+    },
+    "/home/cl4/f4pga-examples/xc7/dflop/build/arty_35/d_ff.preplace": {
+        "place": 3564325326
+    },
+    "/home/cl4/f4pga-examples/xc7/dflop/build/arty_35/d_ff.place": {
+        "fasm": 2987025689,
+        "route": 2987025689
+    },
+    "/home/cl4/f4pga-examples/xc7/dflop/build/arty_35/d_ff.route": {
+        "fasm": 1276882534
+    },
+    "/home/cl4/f4pga-examples/xc7/dflop/build/arty_35/d_ff_fasm_extra.fasm": {
+        "fasm": 1
+    },
+    "/home/cl4/f4pga-examples/xc7/dflop/build/arty_35/d_ff.fasm": {
+        "bitstream": 258795048
+    },
+    "/home/cl4/f4pga-examples/xc7/dflop/build/arty_35/d_ff.bit": {
+        "__target": 1219359992
+    },
+    "/home/cl4/f4pga-examples/xc7/trafficArty/TraficLightCon.v": {
+        "synth": 4248704076
+    },
+    "/home/cl4/f4pga-examples/xc7/trafficArty/build/arty_100": {
+        "synth": 0,
+        "place": 0
+    },
+    "/home/cl4/f4pga-examples/xc7/trafficArty/arty.xdc": {
+        "synth": 522377397
+    },
+    "/home/cl4/f4pga-examples/xc7/trafficArty/build/arty_100/TraficLightCon.eblif": {
+        "fasm": 1137251971,
+        "pack": 1137251971,
+        "place": 1137251971,
+        "place_constraints": 1137251971,
+        "ioplace": 1137251971,
+        "route": 1137251971
+    },
+    "/home/cl4/f4pga-examples/xc7/trafficArty/build/arty_100/xc7a100t_test_sdc.sdc": {
+        "pack": 1,
+        "place": 1,
+        "route": 1,
+        "fasm": 1
+    },
+    "/home/cl4/f4pga-examples/xc7/trafficArty/build/arty_100/TraficLightCon.net": {
+        "fasm": 1519297157,
+        "place_constraints": 1519297157,
+        "ioplace": 1519297157
+    },
+    "/home/cl4/f4pga-examples/xc7/trafficArty/build/arty_100/TraficLightCon.ioplace": {
+        "place_constraints": 1797957869,
+        "place": 1797957869
+    },
+    "/home/cl4/f4pga-examples/xc7/trafficArty/build/arty_100/TraficLightCon.preplace": {
+        "place": 1797957869
+    },
+    "/home/cl4/f4pga-examples/xc7/trafficArty/build/arty_100/TraficLightCon.place": {
+        "fasm": 556635441,
+        "route": 556635441
+    },
+    "/home/cl4/f4pga-examples/xc7/trafficArty/build/arty_100/TraficLightCon.route": {
+        "fasm": 3153136728
+    },
+    "/home/cl4/f4pga-examples/xc7/trafficArty/build/arty_100/TraficLightCon_fasm_extra.fasm": {
+        "fasm": 1
+    },
+    "/home/cl4/f4pga-examples/xc7/trafficArty/build/arty_100/TraficLightCon.fasm": {
+        "bitstream": 3614129181
+    },
+    "/home/cl4/f4pga-examples/xc7/trafficArty/build/arty_100/TraficLightCon.bit": {
+        "__target": 2997425987
+    },
+    "/home/cl4/f4pga-examples/xc7/fifo/Sfifo.v": {
+        "synth": 3750961604
+    },
+    "/home/cl4/f4pga-examples/xc7/fifo/build/arty_100": {
+        "synth": 0,
+        "place": 0
+    },
+    "/home/cl4/f4pga-examples/xc7/fifo/arty.xdc": {
+        "synth": 776501570
+    },
+    "/home/cl4/f4pga-examples/xc7/fifo/build/arty_100/Sfifo.eblif": {
+        "fasm": 3794384347,
+        "pack": 3794384347,
+        "place": 3794384347,
+        "ioplace": 3794384347,
+        "place_constraints": 3794384347,
+        "route": 3794384347
+    },
+    "/home/cl4/f4pga-examples/xc7/fifo/build/arty_100/xc7a100t_test_sdc.sdc": {
+        "pack": 1,
+        "place": 1,
+        "route": 1,
+        "fasm": 1
+    },
+    "/home/cl4/f4pga-examples/xc7/fifo/build/arty_100/Sfifo.net": {
+        "fasm": 3396174097,
+        "place_constraints": 3396174097,
+        "ioplace": 3396174097
+    },
+    "/home/cl4/f4pga-examples/xc7/fifo/build/arty_100/Sfifo.ioplace": {
+        "place_constraints": 3866505272,
+        "place": 3866505272
+    },
+    "/home/cl4/f4pga-examples/xc7/fifo/build/arty_100/Sfifo.preplace": {
+        "place": 3866505272
+    },
+    "/home/cl4/f4pga-examples/xc7/fifo/build/arty_100/Sfifo.place": {
+        "fasm": 4045402285,
+        "route": 4045402285
+    },
+    "/home/cl4/f4pga-examples/xc7/fifo/build/arty_100/Sfifo.route": {
+        "fasm": 580815998
+    },
+    "/home/cl4/f4pga-examples/xc7/fifo/build/arty_100/Sfifo_fasm_extra.fasm": {
+        "fasm": 1
+    },
+    "/home/cl4/f4pga-examples/xc7/fifo/build/arty_100/Sfifo.fasm": {
+        "bitstream": 40298923
+    },
+    "/home/cl4/f4pga-examples/xc7/fifo/build/arty_100/Sfifo.bit": {
+        "__target": 1326234291
+    }
+}

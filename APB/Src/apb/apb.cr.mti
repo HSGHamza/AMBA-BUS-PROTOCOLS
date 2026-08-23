@@ -1,0 +1,22 @@
+/home/cl4/apb/slave.v {1 {vlog -work work -vopt -stats=none /home/cl4/apb/slave.v
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module slave
+
+Top level modules:
+	slave
+
+} {} {}} /home/cl4/apb/top.v {1 {vlog -work work -vopt -stats=none /home/cl4/apb/top.v
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} /home/cl4/apb/master.v {1 {vlog -work work -vopt -stats=none /home/cl4/apb/master.v
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module master
+
+Top level modules:
+	master
+
+} {} {}}

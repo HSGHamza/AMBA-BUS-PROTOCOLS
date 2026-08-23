@@ -1,0 +1,4095 @@
+<?xml version="1.0"?>
+<block name="top.net" instance="FPGA_packed_netlist[0]" architecture_id="SHA256:ec8c429f6a91ec5a4b83f756c7628a9f3bef78ac9839fb12c200a096a3ef27ee" atom_netlist_id="SHA256:0c855b9fad15602683bd7e2f12ba8634b07773f2a0c872a75a04a255b16f84fc">
+	<inputs>clk rst rw start</inputs>
+	<outputs>out:dataFpga[0] out:dataFpga[1] out:dataFpga[2] out:dataFpga[3] out:ready out:valid</outputs>
+	<clocks>S1.clk</clocks>
+	<block name="S1.mem.0.0.ram_d0" instance="BLK-TL-SLICEM[0]" mode="default">
+		<inputs>
+			<port name="A1">valid_wire</port>
+			<port name="A2">$false</port>
+			<port name="A3">$false</port>
+			<port name="A4">$false</port>
+			<port name="A5">$false</port>
+			<port name="A6">open</port>
+			<port name="AI">open</port>
+			<port name="AX">$false</port>
+			<port name="B1">valid_wire</port>
+			<port name="B2">$false</port>
+			<port name="B3">$false</port>
+			<port name="B4">$false</port>
+			<port name="B5">$false</port>
+			<port name="B6">open</port>
+			<port name="BI">open</port>
+			<port name="BX">$false</port>
+			<port name="C1">valid_wire</port>
+			<port name="C2">$false</port>
+			<port name="C3">$false</port>
+			<port name="C4">$false</port>
+			<port name="C5">$false</port>
+			<port name="C6">open</port>
+			<port name="CE">$abc$2377$auto$opt_dff.cc:219:make_patterns_logic$1737</port>
+			<port name="CI">open</port>
+			<port name="CIN">open</port>
+			<port name="CX">valid_wire</port>
+			<port name="D1">valid_wire</port>
+			<port name="D2">$false</port>
+			<port name="D3">$false</port>
+			<port name="D4">$false</port>
+			<port name="D5">$false</port>
+			<port name="D6">open</port>
+			<port name="DI">$false</port>
+			<port name="DX">valid_wire</port>
+			<port name="SR">open</port>
+			<port name="WE">$abc$2377$flatten\S1.$0$memwr$\mem$/home/cl4/f4pga-examples/xc7/handshake/slave.v:67$1359_EN[7:0]$1365[7]</port>
+		</inputs>
+		<outputs>
+			<port name="A">open</port>
+			<port name="AMUX">open</port>
+			<port name="AQ">open</port>
+			<port name="B">open</port>
+			<port name="BMUX">open</port>
+			<port name="BQ">open</port>
+			<port name="C">open</port>
+			<port name="CMUX">SLICEM[0].CMUX[0]-&gt;SLICEM.CMUX_to_BLK-TL-SLICEM.CMUX</port>
+			<port name="COUT">open</port>
+			<port name="CQ">SLICEM[0].CQ[0]-&gt;SLICEM.CQ_to_BLK-TL-SLICEM.CQ</port>
+			<port name="D">open</port>
+			<port name="DMUX">SLICEM[0].DMUX[0]-&gt;SLICEM.DMUX_to_BLK-TL-SLICEM.DMUX</port>
+			<port name="DQ">SLICEM[0].DQ[0]-&gt;SLICEM.DQ_to_BLK-TL-SLICEM.DQ</port>
+		</outputs>
+		<clocks>
+			<port name="CLK">S1.clk</port>
+		</clocks>
+		<block name="S1.mem.0.0.ram_d0" instance="SLICEM[0]" mode="default">
+			<inputs>
+				<port name="A1">BLK-TL-SLICEM.A1[0]-&gt;BLK-TL-SLICEM.A1_to_SLICEM.A1</port>
+				<port name="A2">BLK-TL-SLICEM.A2[0]-&gt;BLK-TL-SLICEM.A2_to_SLICEM.A2</port>
+				<port name="A3">BLK-TL-SLICEM.A3[0]-&gt;BLK-TL-SLICEM.A3_to_SLICEM.A3</port>
+				<port name="A4">BLK-TL-SLICEM.A4[0]-&gt;BLK-TL-SLICEM.A4_to_SLICEM.A4</port>
+				<port name="A5">BLK-TL-SLICEM.A5[0]-&gt;BLK-TL-SLICEM.A5_to_SLICEM.A5</port>
+				<port name="A6">open</port>
+				<port name="AI">open</port>
+				<port name="AX">BLK-TL-SLICEM.AX[0]-&gt;BLK-TL-SLICEM.AX_to_SLICEM.AX</port>
+				<port name="B1">BLK-TL-SLICEM.B1[0]-&gt;BLK-TL-SLICEM.B1_to_SLICEM.B1</port>
+				<port name="B2">BLK-TL-SLICEM.B2[0]-&gt;BLK-TL-SLICEM.B2_to_SLICEM.B2</port>
+				<port name="B3">BLK-TL-SLICEM.B3[0]-&gt;BLK-TL-SLICEM.B3_to_SLICEM.B3</port>
+				<port name="B4">BLK-TL-SLICEM.B4[0]-&gt;BLK-TL-SLICEM.B4_to_SLICEM.B4</port>
+				<port name="B5">BLK-TL-SLICEM.B5[0]-&gt;BLK-TL-SLICEM.B5_to_SLICEM.B5</port>
+				<port name="B6">open</port>
+				<port name="BI">open</port>
+				<port name="BX">BLK-TL-SLICEM.BX[0]-&gt;BLK-TL-SLICEM.BX_to_SLICEM.BX</port>
+				<port name="C1">BLK-TL-SLICEM.C1[0]-&gt;BLK-TL-SLICEM.C1_to_SLICEM.C1</port>
+				<port name="C2">BLK-TL-SLICEM.C2[0]-&gt;BLK-TL-SLICEM.C2_to_SLICEM.C2</port>
+				<port name="C3">BLK-TL-SLICEM.C3[0]-&gt;BLK-TL-SLICEM.C3_to_SLICEM.C3</port>
+				<port name="C4">BLK-TL-SLICEM.C4[0]-&gt;BLK-TL-SLICEM.C4_to_SLICEM.C4</port>
+				<port name="C5">BLK-TL-SLICEM.C5[0]-&gt;BLK-TL-SLICEM.C5_to_SLICEM.C5</port>
+				<port name="C6">open</port>
+				<port name="CE">BLK-TL-SLICEM.CE[0]-&gt;BLK-TL-SLICEM.CE_to_SLICEM.CE</port>
+				<port name="CI">open</port>
+				<port name="CIN">open</port>
+				<port name="CX">BLK-TL-SLICEM.CX[0]-&gt;BLK-TL-SLICEM.CX_to_SLICEM.CX</port>
+				<port name="D1">BLK-TL-SLICEM.D1[0]-&gt;BLK-TL-SLICEM.D1_to_SLICEM.D1</port>
+				<port name="D2">BLK-TL-SLICEM.D2[0]-&gt;BLK-TL-SLICEM.D2_to_SLICEM.D2</port>
+				<port name="D3">BLK-TL-SLICEM.D3[0]-&gt;BLK-TL-SLICEM.D3_to_SLICEM.D3</port>
+				<port name="D4">BLK-TL-SLICEM.D4[0]-&gt;BLK-TL-SLICEM.D4_to_SLICEM.D4</port>
+				<port name="D5">BLK-TL-SLICEM.D5[0]-&gt;BLK-TL-SLICEM.D5_to_SLICEM.D5</port>
+				<port name="D6">open</port>
+				<port name="DI">BLK-TL-SLICEM.DI[0]-&gt;BLK-TL-SLICEM.DI_to_SLICEM.DI</port>
+				<port name="DX">BLK-TL-SLICEM.DX[0]-&gt;BLK-TL-SLICEM.DX_to_SLICEM.DX</port>
+				<port name="SR">open</port>
+				<port name="WE">BLK-TL-SLICEM.WE[0]-&gt;BLK-TL-SLICEM.WE_to_SLICEM.WE</port>
+			</inputs>
+			<outputs>
+				<port name="A">open</port>
+				<port name="AMUX">open</port>
+				<port name="AQ">open</port>
+				<port name="B">open</port>
+				<port name="BMUX">open</port>
+				<port name="BQ">open</port>
+				<port name="C">open</port>
+				<port name="CMUX">COMMON_SLICE[0].CMUX[0]-&gt;SLICEM_CMUX</port>
+				<port name="COUT">open</port>
+				<port name="CQ">COMMON_SLICE[0].CQ[0]-&gt;CQ</port>
+				<port name="D">open</port>
+				<port name="DMUX">COMMON_SLICE[0].DMUX[0]-&gt;SLICEM_DMUX</port>
+				<port name="DQ">COMMON_SLICE[0].DQ[0]-&gt;DQ</port>
+			</outputs>
+			<clocks>
+				<port name="CLK">BLK-TL-SLICEM.CLK[0]-&gt;BLK-TL-SLICEM.CLK_to_SLICEM.CLK</port>
+			</clocks>
+			<block name="$techmap4658$auto$ff.cc:266:slice$2216.cesr_mux.genblk2.sr" instance="COMMON_SLICE[0]" mode="default">
+				<inputs>
+					<port name="AMC31">open</port>
+					<port name="AO5">open</port>
+					<port name="AO6">open</port>
+					<port name="AX">open</port>
+					<port name="BO5">open</port>
+					<port name="BO6">open</port>
+					<port name="BX">open</port>
+					<port name="CE">SLICEM.CE[0]-&gt;CE</port>
+					<port name="CIN">open</port>
+					<port name="CO5">SLICEM_MODES[0].CO5[0]-&gt;CO5</port>
+					<port name="CO6">SLICEM_MODES[0].CO6[0]-&gt;CO6</port>
+					<port name="CX">open</port>
+					<port name="DO5">SLICEM_MODES[0].DO5[0]-&gt;DO5</port>
+					<port name="DO6">SLICEM_MODES[0].DO6[0]-&gt;DO6</port>
+					<port name="DX">open</port>
+					<port name="F7AMUX_O">open</port>
+					<port name="F7BMUX_O">open</port>
+					<port name="F8MUX_O">open</port>
+					<port name="SR">open</port>
+				</inputs>
+				<outputs>
+					<port name="A">open</port>
+					<port name="AMUX">open</port>
+					<port name="AQ">open</port>
+					<port name="B">open</port>
+					<port name="BMUX">open</port>
+					<port name="BQ">open</port>
+					<port name="C">open</port>
+					<port name="CMUX">SLICE_FF[0].Q5[2]-&gt;COUTMUX</port>
+					<port name="COUT">open</port>
+					<port name="CQ">SLICE_FF[0].Q[2]-&gt;CFF</port>
+					<port name="D">open</port>
+					<port name="DMUX">SLICE_FF[0].Q5[3]-&gt;DOUTMUX</port>
+					<port name="DQ">SLICE_FF[0].Q[3]-&gt;DFF</port>
+				</outputs>
+				<clocks>
+					<port name="CLK">SLICEM.CLK[0]-&gt;CK</port>
+				</clocks>
+				<block name="open" instance="CARRY4_VPR[0]" />
+				<block name="open" instance="CARRY_COUT_PLUG[0]" />
+				<block name="open" instance="CEUSEDMUX[0]" mode="CEUSEDMUX" pb_type_num_modes="2">
+					<inputs>
+						<port name="CE">COMMON_SLICE.CE[0]-&gt;CE</port>
+					</inputs>
+					<outputs>
+						<port name="CE_OUT">open open CEUSEDMUX[0].CE[0]-&gt;CE CEUSEDMUX[0].CE[0]-&gt;CE open open CEUSEDMUX[0].CE[0]-&gt;CE CEUSEDMUX[0].CE[0]-&gt;CE</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="$auto$ff.cc:266:slice$2216" instance="SLICE_FF[0]" mode="FDSE_or_FDRE">
+					<inputs>
+						<port name="CE">open open CEUSEDMUX[0].CE_OUT[2]-&gt;CE_OUT CEUSEDMUX[0].CE_OUT[3]-&gt;CE_OUT open open CEUSEDMUX[0].CE_OUT[6]-&gt;CE_OUT CEUSEDMUX[0].CE_OUT[7]-&gt;CE_OUT</port>
+						<port name="D">open open COMMON_SLICE.CO6[0]-&gt;CFFMUX COMMON_SLICE.DO6[0]-&gt;DFFMUX</port>
+						<port name="D5">open open COMMON_SLICE.CO5[0]-&gt;C5FFMUX COMMON_SLICE.DO5[0]-&gt;D5FFMUX</port>
+						<port name="SR">open open SRUSEDMUX[0].SR_OUT[2]-&gt;SR_OUT SRUSEDMUX[0].SR_OUT[3]-&gt;SR_OUT open open SRUSEDMUX[0].SR_OUT[6]-&gt;SR_OUT SRUSEDMUX[0].SR_OUT[7]-&gt;SR_OUT</port>
+					</inputs>
+					<outputs>
+						<port name="Q">open open REG_FDSE_or_FDRE[2].Q[0]-&gt;Q REG_FDSE_or_FDRE[3].Q[0]-&gt;Q</port>
+						<port name="Q5">open open FF_FDSE_or_FDRE[2].Q[0]-&gt;Q5 FF_FDSE_or_FDRE[3].Q[0]-&gt;Q5</port>
+					</outputs>
+					<clocks>
+						<port name="CK">COMMON_SLICE.CLK[0]-&gt;CK</port>
+					</clocks>
+					<block name="open" instance="FF_FDSE_or_FDRE[0]" />
+					<block name="open" instance="FF_FDSE_or_FDRE[1]" />
+					<block name="$auto$ff.cc:266:slice$2217" instance="FF_FDSE_or_FDRE[2]" mode="FDRE">
+						<inputs>
+							<port name="CE">SLICE_FF.CE[6]-&gt;CE_FF</port>
+							<port name="D">SLICE_FF.D5[2]-&gt;D5</port>
+							<port name="SR">SLICE_FF.SR[6]-&gt;SR_FF</port>
+						</inputs>
+						<outputs>
+							<port name="Q">FDRE[0].Q[0]-&gt;Q</port>
+						</outputs>
+						<clocks>
+							<port name="C">SLICE_FF.CK[0]-&gt;C_FF</port>
+						</clocks>
+						<block name="$auto$ff.cc:266:slice$2217" instance="FDRE[0]">
+							<attributes>
+								<attribute name="src">"/home/cl4/opt/f4pga/xc7/conda/envs/xc7/bin/../share/yosys/xilinx/ff_map.v:68.41-68.95|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:66.3-66.67"</attribute>
+								<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+							</attributes>
+							<parameters>
+								<parameter name="ZINI">0</parameter>
+								<parameter name="IS_C_INVERTED">0</parameter>
+							</parameters>
+							<inputs>
+								<port name="CE">FF_FDSE_or_FDRE.CE[0]-&gt;CE</port>
+								<port name="D">FF_FDSE_or_FDRE.D[0]-&gt;D</port>
+								<port name="R">FF_FDSE_or_FDRE.SR[0]-&gt;R</port>
+							</inputs>
+							<outputs>
+								<port name="Q">dataout[2]</port>
+							</outputs>
+							<clocks>
+								<port name="C">FF_FDSE_or_FDRE.C[0]-&gt;C</port>
+							</clocks>
+						</block>
+					</block>
+					<block name="$auto$ff.cc:266:slice$2215" instance="FF_FDSE_or_FDRE[3]" mode="FDRE">
+						<inputs>
+							<port name="CE">SLICE_FF.CE[7]-&gt;CE_FF</port>
+							<port name="D">SLICE_FF.D5[3]-&gt;D5</port>
+							<port name="SR">SLICE_FF.SR[7]-&gt;SR_FF</port>
+						</inputs>
+						<outputs>
+							<port name="Q">FDRE[0].Q[0]-&gt;Q</port>
+						</outputs>
+						<clocks>
+							<port name="C">SLICE_FF.CK[0]-&gt;C_FF</port>
+						</clocks>
+						<block name="$auto$ff.cc:266:slice$2215" instance="FDRE[0]">
+							<attributes>
+								<attribute name="src">"/home/cl4/opt/f4pga/xc7/conda/envs/xc7/bin/../share/yosys/xilinx/ff_map.v:68.41-68.95|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:66.3-66.67"</attribute>
+								<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+							</attributes>
+							<parameters>
+								<parameter name="ZINI">0</parameter>
+								<parameter name="IS_C_INVERTED">0</parameter>
+							</parameters>
+							<inputs>
+								<port name="CE">FF_FDSE_or_FDRE.CE[0]-&gt;CE</port>
+								<port name="D">FF_FDSE_or_FDRE.D[0]-&gt;D</port>
+								<port name="R">FF_FDSE_or_FDRE.SR[0]-&gt;R</port>
+							</inputs>
+							<outputs>
+								<port name="Q">dataout[0]</port>
+							</outputs>
+							<clocks>
+								<port name="C">FF_FDSE_or_FDRE.C[0]-&gt;C</port>
+							</clocks>
+						</block>
+					</block>
+					<block name="open" instance="REG_FDSE_or_FDRE[0]" />
+					<block name="open" instance="REG_FDSE_or_FDRE[1]" />
+					<block name="$auto$ff.cc:266:slice$2218" instance="REG_FDSE_or_FDRE[2]" mode="FDRE">
+						<inputs>
+							<port name="CE">SLICE_FF.CE[2]-&gt;CE_REG</port>
+							<port name="D">SLICE_FF.D[2]-&gt;D</port>
+							<port name="SR">SLICE_FF.SR[2]-&gt;SR_REG</port>
+						</inputs>
+						<outputs>
+							<port name="Q">FDRE[0].Q[0]-&gt;Q</port>
+						</outputs>
+						<clocks>
+							<port name="C">SLICE_FF.CK[0]-&gt;C_REG</port>
+						</clocks>
+						<block name="$auto$ff.cc:266:slice$2218" instance="FDRE[0]">
+							<attributes>
+								<attribute name="src">"/home/cl4/opt/f4pga/xc7/conda/envs/xc7/bin/../share/yosys/xilinx/ff_map.v:68.41-68.95|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:66.3-66.67"</attribute>
+								<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+							</attributes>
+							<parameters>
+								<parameter name="ZINI">0</parameter>
+								<parameter name="IS_C_INVERTED">0</parameter>
+							</parameters>
+							<inputs>
+								<port name="CE">REG_FDSE_or_FDRE.CE[0]-&gt;CE</port>
+								<port name="D">REG_FDSE_or_FDRE.D[0]-&gt;D</port>
+								<port name="R">REG_FDSE_or_FDRE.SR[0]-&gt;R</port>
+							</inputs>
+							<outputs>
+								<port name="Q">dataout[3]</port>
+							</outputs>
+							<clocks>
+								<port name="C">REG_FDSE_or_FDRE.C[0]-&gt;C</port>
+							</clocks>
+						</block>
+					</block>
+					<block name="$auto$ff.cc:266:slice$2216" instance="REG_FDSE_or_FDRE[3]" mode="FDRE">
+						<inputs>
+							<port name="CE">SLICE_FF.CE[3]-&gt;CE_REG</port>
+							<port name="D">SLICE_FF.D[3]-&gt;D</port>
+							<port name="SR">SLICE_FF.SR[3]-&gt;SR_REG</port>
+						</inputs>
+						<outputs>
+							<port name="Q">FDRE[0].Q[0]-&gt;Q</port>
+						</outputs>
+						<clocks>
+							<port name="C">SLICE_FF.CK[0]-&gt;C_REG</port>
+						</clocks>
+						<block name="$auto$ff.cc:266:slice$2216" instance="FDRE[0]">
+							<attributes>
+								<attribute name="src">"/home/cl4/opt/f4pga/xc7/conda/envs/xc7/bin/../share/yosys/xilinx/ff_map.v:68.41-68.95|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:66.3-66.67"</attribute>
+								<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+							</attributes>
+							<parameters>
+								<parameter name="ZINI">0</parameter>
+								<parameter name="IS_C_INVERTED">0</parameter>
+							</parameters>
+							<inputs>
+								<port name="CE">REG_FDSE_or_FDRE.CE[0]-&gt;CE</port>
+								<port name="D">REG_FDSE_or_FDRE.D[0]-&gt;D</port>
+								<port name="R">REG_FDSE_or_FDRE.SR[0]-&gt;R</port>
+							</inputs>
+							<outputs>
+								<port name="Q">dataout[1]</port>
+							</outputs>
+							<clocks>
+								<port name="C">REG_FDSE_or_FDRE.C[0]-&gt;C</port>
+							</clocks>
+						</block>
+					</block>
+				</block>
+				<block name="$techmap4658$auto$ff.cc:266:slice$2216.cesr_mux.genblk2.sr" instance="SRUSEDMUX[0]" mode="SR_GND">
+					<inputs>
+						<port name="SR">open</port>
+					</inputs>
+					<outputs>
+						<port name="SR_OUT">open open SR_GND[2].GND[0]-&gt;SR2 SR_GND[3].GND[0]-&gt;SR3 open open SR_GND[6].GND[0]-&gt;SR6 SR_GND[7].GND[0]-&gt;SR7</port>
+					</outputs>
+					<clocks />
+					<block name="open" instance="SR_GND[0]" />
+					<block name="open" instance="SR_GND[1]" />
+					<block name="$techmap4655$auto$ff.cc:266:slice$2218.cesr_mux.genblk2.sr" instance="SR_GND[2]">
+						<attributes>
+							<attribute name="src">"/home/cl4/opt/f4pga/xc7/conda/envs/xc7/bin/../share/yosys/xilinx/ff_map.v:68.41-68.95|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:58.10-63.2|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:25.12-27.6"</attribute>
+							<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+						</attributes>
+						<parameters />
+						<inputs />
+						<outputs>
+							<port name="GND">$techmap4655$auto$ff.cc:266:slice$2218.SR_SIG</port>
+						</outputs>
+						<clocks />
+					</block>
+					<block name="$techmap4658$auto$ff.cc:266:slice$2216.cesr_mux.genblk2.sr" instance="SR_GND[3]">
+						<attributes>
+							<attribute name="src">"/home/cl4/opt/f4pga/xc7/conda/envs/xc7/bin/../share/yosys/xilinx/ff_map.v:68.41-68.95|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:58.10-63.2|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:25.12-27.6"</attribute>
+							<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+						</attributes>
+						<parameters />
+						<inputs />
+						<outputs>
+							<port name="GND">$techmap4658$auto$ff.cc:266:slice$2216.SR_SIG</port>
+						</outputs>
+						<clocks />
+					</block>
+					<block name="open" instance="SR_GND[4]" />
+					<block name="open" instance="SR_GND[5]" />
+					<block name="$techmap4657$auto$ff.cc:266:slice$2217.cesr_mux.genblk2.sr" instance="SR_GND[6]">
+						<attributes>
+							<attribute name="src">"/home/cl4/opt/f4pga/xc7/conda/envs/xc7/bin/../share/yosys/xilinx/ff_map.v:68.41-68.95|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:58.10-63.2|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:25.12-27.6"</attribute>
+							<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+						</attributes>
+						<parameters />
+						<inputs />
+						<outputs>
+							<port name="GND">$techmap4657$auto$ff.cc:266:slice$2217.SR_SIG</port>
+						</outputs>
+						<clocks />
+					</block>
+					<block name="$techmap4664$auto$ff.cc:266:slice$2215.cesr_mux.genblk2.sr" instance="SR_GND[7]">
+						<attributes>
+							<attribute name="src">"/home/cl4/opt/f4pga/xc7/conda/envs/xc7/bin/../share/yosys/xilinx/ff_map.v:68.41-68.95|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:58.10-63.2|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:25.12-27.6"</attribute>
+							<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+						</attributes>
+						<parameters />
+						<inputs />
+						<outputs>
+							<port name="GND">$techmap4664$auto$ff.cc:266:slice$2215.SR_SIG</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="S1.mem.0.0.ram_d0" instance="SLICEM_MODES[0]" mode="DRAMs">
+				<inputs>
+					<port name="A1">SLICEM.A1[0]-&gt;A1</port>
+					<port name="A2">SLICEM.A2[0]-&gt;A2</port>
+					<port name="A3">SLICEM.A3[0]-&gt;A3</port>
+					<port name="A4">SLICEM.A4[0]-&gt;A4</port>
+					<port name="A5">SLICEM.A5[0]-&gt;A5</port>
+					<port name="A6">open</port>
+					<port name="AI">open</port>
+					<port name="AX">SLICEM.AX[0]-&gt;AX2</port>
+					<port name="B1">SLICEM.B1[0]-&gt;B1</port>
+					<port name="B2">SLICEM.B2[0]-&gt;B2</port>
+					<port name="B3">SLICEM.B3[0]-&gt;B3</port>
+					<port name="B4">SLICEM.B4[0]-&gt;B4</port>
+					<port name="B5">SLICEM.B5[0]-&gt;B5</port>
+					<port name="B6">open</port>
+					<port name="BI">open</port>
+					<port name="BX">SLICEM.BX[0]-&gt;BX2</port>
+					<port name="C1">SLICEM.C1[0]-&gt;C1</port>
+					<port name="C2">SLICEM.C2[0]-&gt;C2</port>
+					<port name="C3">SLICEM.C3[0]-&gt;C3</port>
+					<port name="C4">SLICEM.C4[0]-&gt;C4</port>
+					<port name="C5">SLICEM.C5[0]-&gt;C5</port>
+					<port name="C6">open</port>
+					<port name="CE">open</port>
+					<port name="CI">open</port>
+					<port name="CX">SLICEM.CX[0]-&gt;CX2</port>
+					<port name="D1">SLICEM.D1[0]-&gt;D1</port>
+					<port name="D2">SLICEM.D2[0]-&gt;D2</port>
+					<port name="D3">SLICEM.D3[0]-&gt;D3</port>
+					<port name="D4">SLICEM.D4[0]-&gt;D4</port>
+					<port name="D5">SLICEM.D5[0]-&gt;D5</port>
+					<port name="D6">open</port>
+					<port name="DI">SLICEM.DI[0]-&gt;DI</port>
+					<port name="DX">SLICEM.DX[0]-&gt;DX2</port>
+					<port name="WA7">open</port>
+					<port name="WA8">open</port>
+					<port name="WE">SLICEM.WE[0]-&gt;WE2</port>
+				</inputs>
+				<outputs>
+					<port name="AMC31">open</port>
+					<port name="AO5">open</port>
+					<port name="AO6">open</port>
+					<port name="BO5">open</port>
+					<port name="BO6">open</port>
+					<port name="CO5">DRAM_8_OUTPUT_STUB[0].DOC0_OUT[0]-&gt;CO5</port>
+					<port name="CO6">DRAM_8_OUTPUT_STUB[0].DOC1_OUT[0]-&gt;CO6</port>
+					<port name="DO5">DRAM_8_OUTPUT_STUB[0].DOD0_OUT[0]-&gt;DO5</port>
+					<port name="DO6">DRAM_8_OUTPUT_STUB[0].DOD1_OUT[0]-&gt;DO6</port>
+					<port name="F7AMUX_O">open</port>
+					<port name="F7BMUX_O">open</port>
+					<port name="F8MUX_O">open</port>
+				</outputs>
+				<clocks>
+					<port name="CLK">SLICEM.CLK[0]-&gt;CK2</port>
+				</clocks>
+				<block name="S1.mem.0.0.ram_d0" instance="D_DRAM[0]" mode="32_DUAL_PORT">
+					<inputs>
+						<port name="A">SLICEM_MODES.D1[0]-&gt;D1 SLICEM_MODES.D2[0]-&gt;D2 SLICEM_MODES.D3[0]-&gt;D3 SLICEM_MODES.D4[0]-&gt;D4 SLICEM_MODES.D5[0]-&gt;D5 open</port>
+						<port name="DI1">SLICEM_MODES.DI[0]-&gt;D_DI1</port>
+						<port name="DI2">SLICEM_MODES.DX[0]-&gt;D_DI2</port>
+						<port name="WA7">open</port>
+						<port name="WA8">open</port>
+						<port name="WE">WE_MUX[0].WE_OUT[0]-&gt;WE4</port>
+					</inputs>
+					<outputs>
+						<port name="O5">open</port>
+						<port name="O6">open</port>
+						<port name="SO5_32">DPRAM32_O5[0].O[0]-&gt;SO5</port>
+						<port name="SO6">open</port>
+						<port name="SO6_32">DPRAM32_O6[0].O[0]-&gt;SO6</port>
+					</outputs>
+					<clocks>
+						<port name="CLK">SLICEM_MODES.CLK[0]-&gt;DMEMCLK</port>
+					</clocks>
+					<block name="S1.mem.0.0.ram_d1" instance="DPRAM32_O6[0]">
+						<attributes>
+							<attribute name="src">"/home/cl4/opt/f4pga/xc7/conda/envs/xc7/bin/../share/yosys/xilinx/lutrams_xc5v_map.v:43.2-59.3|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:702.7-709.6"</attribute>
+							<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+						</attributes>
+						<parameters>
+							<parameter name="IS_WCLK_INVERTED">00000000000000000000000000000000</parameter>
+							<parameter name="INIT_00">00000000000000000000000000000000</parameter>
+						</parameters>
+						<inputs>
+							<port name="A">D_DRAM.A[0]-&gt;A_U D_DRAM.A[1]-&gt;A_U D_DRAM.A[2]-&gt;A_U D_DRAM.A[3]-&gt;A_U D_DRAM.A[4]-&gt;A_U</port>
+							<port name="DI">D_DRAM.DI2[0]-&gt;DI2</port>
+							<port name="WA">D_DRAM.A[0]-&gt;WA_U D_DRAM.A[1]-&gt;WA_U D_DRAM.A[2]-&gt;WA_U D_DRAM.A[3]-&gt;WA_U D_DRAM.A[4]-&gt;WA_U</port>
+							<port name="WE">D_DRAM.WE[0]-&gt;WE_U</port>
+						</inputs>
+						<outputs>
+							<port name="O">S1.mem.0.0.DOD_TO_STUB[1]</port>
+						</outputs>
+						<clocks>
+							<port name="CLK">D_DRAM.CLK[0]-&gt;CLK_U</port>
+						</clocks>
+					</block>
+					<block name="S1.mem.0.0.ram_d0" instance="DPRAM32_O5[0]">
+						<attributes>
+							<attribute name="src">"/home/cl4/opt/f4pga/xc7/conda/envs/xc7/bin/../share/yosys/xilinx/lutrams_xc5v_map.v:43.2-59.3|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:714.7-721.6"</attribute>
+							<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+						</attributes>
+						<parameters>
+							<parameter name="IS_WCLK_INVERTED">00000000000000000000000000000000</parameter>
+							<parameter name="INIT_00">00000000000000000000000000000000</parameter>
+						</parameters>
+						<inputs>
+							<port name="A">D_DRAM.A[0]-&gt;A_L D_DRAM.A[1]-&gt;A_L D_DRAM.A[2]-&gt;A_L D_DRAM.A[3]-&gt;A_L D_DRAM.A[4]-&gt;A_L</port>
+							<port name="DI">D_DRAM.DI1[0]-&gt;DI</port>
+							<port name="WA">D_DRAM.A[0]-&gt;WA_L D_DRAM.A[1]-&gt;WA_L D_DRAM.A[2]-&gt;WA_L D_DRAM.A[3]-&gt;WA_L D_DRAM.A[4]-&gt;WA_L</port>
+							<port name="WE">D_DRAM.WE[0]-&gt;WE_L</port>
+						</inputs>
+						<outputs>
+							<port name="O">S1.mem.0.0.DOD_TO_STUB[0]</port>
+						</outputs>
+						<clocks>
+							<port name="CLK">D_DRAM.CLK[0]-&gt;CLK_L</port>
+						</clocks>
+					</block>
+				</block>
+				<block name="S1.mem.0.0.ram_c0" instance="C_DRAM[0]" mode="32_DUAL_PORT">
+					<inputs>
+						<port name="A">SLICEM_MODES.C1[0]-&gt;C1 SLICEM_MODES.C2[0]-&gt;C2 SLICEM_MODES.C3[0]-&gt;C3 SLICEM_MODES.C4[0]-&gt;C4 SLICEM_MODES.C5[0]-&gt;C5 open</port>
+						<port name="DI1">SLICEM_MODES.DI[0]-&gt;CDI1MUX</port>
+						<port name="DI2">SLICEM_MODES.CX[0]-&gt;C_DI2</port>
+						<port name="WA">SLICEM_MODES.D1[0]-&gt;WC1 SLICEM_MODES.D2[0]-&gt;WC2 SLICEM_MODES.D3[0]-&gt;WC3 SLICEM_MODES.D4[0]-&gt;WC4 SLICEM_MODES.D5[0]-&gt;WC5 open open open</port>
+						<port name="WE">WE_MUX[0].WE_OUT[0]-&gt;WE3</port>
+					</inputs>
+					<outputs>
+						<port name="DO1">open</port>
+						<port name="DO5_32">DPRAM32_O5[0].O[0]-&gt;DO5</port>
+						<port name="DO6">open</port>
+						<port name="DO6_32">DPRAM32_O6[0].O[0]-&gt;DO6</port>
+						<port name="O5">open</port>
+						<port name="O6">open</port>
+					</outputs>
+					<clocks>
+						<port name="CLK">SLICEM_MODES.CLK[0]-&gt;CMEMCLK</port>
+					</clocks>
+					<block name="S1.mem.0.0.ram_c1" instance="DPRAM32_O6[0]">
+						<attributes>
+							<attribute name="src">"/home/cl4/opt/f4pga/xc7/conda/envs/xc7/bin/../share/yosys/xilinx/lutrams_xc5v_map.v:43.2-59.3|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:678.7-685.6"</attribute>
+							<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+						</attributes>
+						<parameters>
+							<parameter name="IS_WCLK_INVERTED">00000000000000000000000000000000</parameter>
+							<parameter name="INIT_00">00000000000000000000000000000000</parameter>
+						</parameters>
+						<inputs>
+							<port name="A">C_DRAM.A[0]-&gt;A_U C_DRAM.A[1]-&gt;A_U C_DRAM.A[2]-&gt;A_U C_DRAM.A[3]-&gt;A_U C_DRAM.A[4]-&gt;A_U</port>
+							<port name="DI">C_DRAM.DI2[0]-&gt;DI2</port>
+							<port name="WA">C_DRAM.WA[0]-&gt;WA_U C_DRAM.WA[1]-&gt;WA_U C_DRAM.WA[2]-&gt;WA_U C_DRAM.WA[3]-&gt;WA_U C_DRAM.WA[4]-&gt;WA_U</port>
+							<port name="WE">C_DRAM.WE[0]-&gt;WE_U</port>
+						</inputs>
+						<outputs>
+							<port name="O">S1.mem.0.0.DOC_TO_STUB[1]</port>
+						</outputs>
+						<clocks>
+							<port name="CLK">C_DRAM.CLK[0]-&gt;CLK_U</port>
+						</clocks>
+					</block>
+					<block name="S1.mem.0.0.ram_c0" instance="DPRAM32_O5[0]">
+						<attributes>
+							<attribute name="src">"/home/cl4/opt/f4pga/xc7/conda/envs/xc7/bin/../share/yosys/xilinx/lutrams_xc5v_map.v:43.2-59.3|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:690.7-697.6"</attribute>
+							<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+						</attributes>
+						<parameters>
+							<parameter name="IS_WCLK_INVERTED">00000000000000000000000000000000</parameter>
+							<parameter name="INIT_00">00000000000000000000000000000000</parameter>
+						</parameters>
+						<inputs>
+							<port name="A">C_DRAM.A[0]-&gt;A_L C_DRAM.A[1]-&gt;A_L C_DRAM.A[2]-&gt;A_L C_DRAM.A[3]-&gt;A_L C_DRAM.A[4]-&gt;A_L</port>
+							<port name="DI">C_DRAM.DI1[0]-&gt;DI</port>
+							<port name="WA">C_DRAM.WA[0]-&gt;WA_L C_DRAM.WA[1]-&gt;WA_L C_DRAM.WA[2]-&gt;WA_L C_DRAM.WA[3]-&gt;WA_L C_DRAM.WA[4]-&gt;WA_L</port>
+							<port name="WE">C_DRAM.WE[0]-&gt;WE_L</port>
+						</inputs>
+						<outputs>
+							<port name="O">S1.mem.0.0.DOC_TO_STUB[0]</port>
+						</outputs>
+						<clocks>
+							<port name="CLK">C_DRAM.CLK[0]-&gt;CLK_L</port>
+						</clocks>
+					</block>
+				</block>
+				<block name="S1.mem.0.0.ram_b0" instance="B_DRAM[0]" mode="32_DUAL_PORT">
+					<inputs>
+						<port name="A">SLICEM_MODES.B1[0]-&gt;B1 SLICEM_MODES.B2[0]-&gt;B2 SLICEM_MODES.B3[0]-&gt;B3 SLICEM_MODES.B4[0]-&gt;B4 SLICEM_MODES.B5[0]-&gt;B5 open</port>
+						<port name="DI1">BDI1MUX_ROUTING[0].DI1[0]-&gt;BDI1MUX_ROUTING.DI1</port>
+						<port name="DI2">SLICEM_MODES.BX[0]-&gt;B_DI2</port>
+						<port name="WA">SLICEM_MODES.D1[0]-&gt;WB1 SLICEM_MODES.D2[0]-&gt;WB2 SLICEM_MODES.D3[0]-&gt;WB3 SLICEM_MODES.D4[0]-&gt;WB4 SLICEM_MODES.D5[0]-&gt;WB5 open open open</port>
+						<port name="WE">WE_MUX[0].WE_OUT[0]-&gt;WE2</port>
+					</inputs>
+					<outputs>
+						<port name="DO1">open</port>
+						<port name="DO5_32">DPRAM32_O5[0].O[0]-&gt;DO5</port>
+						<port name="DO6">open</port>
+						<port name="DO6_32">DPRAM32_O6[0].O[0]-&gt;DO6</port>
+						<port name="O5">open</port>
+						<port name="O6">open</port>
+					</outputs>
+					<clocks>
+						<port name="CLK">SLICEM_MODES.CLK[0]-&gt;BMEMCLK</port>
+					</clocks>
+					<block name="S1.mem.0.0.ram_b1" instance="DPRAM32_O6[0]">
+						<attributes>
+							<attribute name="src">"/home/cl4/opt/f4pga/xc7/conda/envs/xc7/bin/../share/yosys/xilinx/lutrams_xc5v_map.v:43.2-59.3|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:654.7-661.6"</attribute>
+							<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+						</attributes>
+						<parameters>
+							<parameter name="IS_WCLK_INVERTED">00000000000000000000000000000000</parameter>
+							<parameter name="INIT_00">00000000000000000000000000000000</parameter>
+						</parameters>
+						<inputs>
+							<port name="A">B_DRAM.A[0]-&gt;A_U B_DRAM.A[1]-&gt;A_U B_DRAM.A[2]-&gt;A_U B_DRAM.A[3]-&gt;A_U B_DRAM.A[4]-&gt;A_U</port>
+							<port name="DI">B_DRAM.DI2[0]-&gt;DI2</port>
+							<port name="WA">B_DRAM.WA[0]-&gt;WA_U B_DRAM.WA[1]-&gt;WA_U B_DRAM.WA[2]-&gt;WA_U B_DRAM.WA[3]-&gt;WA_U B_DRAM.WA[4]-&gt;WA_U</port>
+							<port name="WE">B_DRAM.WE[0]-&gt;WE_U</port>
+						</inputs>
+						<outputs>
+							<port name="O">S1.mem.0.0.DOB_TO_STUB[1]</port>
+						</outputs>
+						<clocks>
+							<port name="CLK">B_DRAM.CLK[0]-&gt;CLK_U</port>
+						</clocks>
+					</block>
+					<block name="S1.mem.0.0.ram_b0" instance="DPRAM32_O5[0]">
+						<attributes>
+							<attribute name="src">"/home/cl4/opt/f4pga/xc7/conda/envs/xc7/bin/../share/yosys/xilinx/lutrams_xc5v_map.v:43.2-59.3|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:666.7-673.6"</attribute>
+							<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+						</attributes>
+						<parameters>
+							<parameter name="IS_WCLK_INVERTED">00000000000000000000000000000000</parameter>
+							<parameter name="INIT_00">00000000000000000000000000000000</parameter>
+						</parameters>
+						<inputs>
+							<port name="A">B_DRAM.A[0]-&gt;A_L B_DRAM.A[1]-&gt;A_L B_DRAM.A[2]-&gt;A_L B_DRAM.A[3]-&gt;A_L B_DRAM.A[4]-&gt;A_L</port>
+							<port name="DI">B_DRAM.DI1[0]-&gt;DI</port>
+							<port name="WA">B_DRAM.WA[0]-&gt;WA_L B_DRAM.WA[1]-&gt;WA_L B_DRAM.WA[2]-&gt;WA_L B_DRAM.WA[3]-&gt;WA_L B_DRAM.WA[4]-&gt;WA_L</port>
+							<port name="WE">B_DRAM.WE[0]-&gt;WE_L</port>
+						</inputs>
+						<outputs>
+							<port name="O">S1.mem.0.0.DOB_TO_STUB[0]</port>
+						</outputs>
+						<clocks>
+							<port name="CLK">B_DRAM.CLK[0]-&gt;CLK_L</port>
+						</clocks>
+					</block>
+				</block>
+				<block name="S1.mem.0.0.ram_a0" instance="A_DRAM[0]" mode="32_DUAL_PORT">
+					<inputs>
+						<port name="A">SLICEM_MODES.A1[0]-&gt;A1 SLICEM_MODES.A2[0]-&gt;A2 SLICEM_MODES.A3[0]-&gt;A3 SLICEM_MODES.A4[0]-&gt;A4 SLICEM_MODES.A5[0]-&gt;A5 open</port>
+						<port name="DI1">ADI1MUX_ROUTING[0].DI1[0]-&gt;ADI1MUX_ROUTING.DI1</port>
+						<port name="DI2">SLICEM_MODES.AX[0]-&gt;A_DI2</port>
+						<port name="WA">SLICEM_MODES.D1[0]-&gt;WA1 SLICEM_MODES.D2[0]-&gt;WA2 SLICEM_MODES.D3[0]-&gt;WA3 SLICEM_MODES.D4[0]-&gt;WA4 SLICEM_MODES.D5[0]-&gt;WA5 open open open</port>
+						<port name="WE">WE_MUX[0].WE_OUT[0]-&gt;WE1</port>
+					</inputs>
+					<outputs>
+						<port name="DO1">open</port>
+						<port name="DO5_32">DPRAM32_O5[0].O[0]-&gt;DO5</port>
+						<port name="DO6">open</port>
+						<port name="DO6_32">DPRAM32_O6[0].O[0]-&gt;DO6</port>
+						<port name="O5">open</port>
+						<port name="O6">open</port>
+					</outputs>
+					<clocks>
+						<port name="CLK">SLICEM_MODES.CLK[0]-&gt;AMEMCLK</port>
+					</clocks>
+					<block name="S1.mem.0.0.ram_a1" instance="DPRAM32_O6[0]">
+						<attributes>
+							<attribute name="src">"/home/cl4/opt/f4pga/xc7/conda/envs/xc7/bin/../share/yosys/xilinx/lutrams_xc5v_map.v:43.2-59.3|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:630.7-637.6"</attribute>
+							<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+						</attributes>
+						<parameters>
+							<parameter name="IS_WCLK_INVERTED">00000000000000000000000000000000</parameter>
+							<parameter name="INIT_00">00000000000000000000000000000000</parameter>
+						</parameters>
+						<inputs>
+							<port name="A">A_DRAM.A[0]-&gt;A_U A_DRAM.A[1]-&gt;A_U A_DRAM.A[2]-&gt;A_U A_DRAM.A[3]-&gt;A_U A_DRAM.A[4]-&gt;A_U</port>
+							<port name="DI">A_DRAM.DI2[0]-&gt;DI2</port>
+							<port name="WA">A_DRAM.WA[0]-&gt;WA_U A_DRAM.WA[1]-&gt;WA_U A_DRAM.WA[2]-&gt;WA_U A_DRAM.WA[3]-&gt;WA_U A_DRAM.WA[4]-&gt;WA_U</port>
+							<port name="WE">A_DRAM.WE[0]-&gt;WE_U</port>
+						</inputs>
+						<outputs>
+							<port name="O">S1.mem.0.0.DOA_TO_STUB[1]</port>
+						</outputs>
+						<clocks>
+							<port name="CLK">A_DRAM.CLK[0]-&gt;CLK_U</port>
+						</clocks>
+					</block>
+					<block name="S1.mem.0.0.ram_a0" instance="DPRAM32_O5[0]">
+						<attributes>
+							<attribute name="src">"/home/cl4/opt/f4pga/xc7/conda/envs/xc7/bin/../share/yosys/xilinx/lutrams_xc5v_map.v:43.2-59.3|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:642.7-649.6"</attribute>
+							<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+						</attributes>
+						<parameters>
+							<parameter name="IS_WCLK_INVERTED">00000000000000000000000000000000</parameter>
+							<parameter name="INIT_00">00000000000000000000000000000000</parameter>
+						</parameters>
+						<inputs>
+							<port name="A">A_DRAM.A[0]-&gt;A_L A_DRAM.A[1]-&gt;A_L A_DRAM.A[2]-&gt;A_L A_DRAM.A[3]-&gt;A_L A_DRAM.A[4]-&gt;A_L</port>
+							<port name="DI">A_DRAM.DI1[0]-&gt;DI</port>
+							<port name="WA">A_DRAM.WA[0]-&gt;WA_L A_DRAM.WA[1]-&gt;WA_L A_DRAM.WA[2]-&gt;WA_L A_DRAM.WA[3]-&gt;WA_L A_DRAM.WA[4]-&gt;WA_L</port>
+							<port name="WE">A_DRAM.WE[0]-&gt;WE_L</port>
+						</inputs>
+						<outputs>
+							<port name="O">S1.mem.0.0.DOA_TO_STUB[0]</port>
+						</outputs>
+						<clocks>
+							<port name="CLK">A_DRAM.CLK[0]-&gt;CLK_L</port>
+						</clocks>
+					</block>
+				</block>
+				<block name="open" instance="F7AMUX[0]" />
+				<block name="open" instance="F7BMUX[0]" />
+				<block name="open" instance="F8MUX[0]" />
+				<block name="S1.mem.0.0.stub" instance="DRAM_8_OUTPUT_STUB[0]">
+					<attributes>
+						<attribute name="src">"/home/cl4/opt/f4pga/xc7/conda/envs/xc7/bin/../share/yosys/xilinx/lutrams_xc5v_map.v:43.2-59.3|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:723.24-732.6"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters />
+					<inputs>
+						<port name="DOA0">A_DRAM[0].DO5_32[0]-&gt;DOA32_LO</port>
+						<port name="DOA1">A_DRAM[0].DO6_32[0]-&gt;DOA32_HI</port>
+						<port name="DOB0">B_DRAM[0].DO5_32[0]-&gt;DOB32_LO</port>
+						<port name="DOB1">B_DRAM[0].DO6_32[0]-&gt;DOB32_HI</port>
+						<port name="DOC0">C_DRAM[0].DO5_32[0]-&gt;DOC32_LO</port>
+						<port name="DOC1">C_DRAM[0].DO6_32[0]-&gt;DOC32_HI</port>
+						<port name="DOD0">D_DRAM[0].SO5_32[0]-&gt;DOD32_LO</port>
+						<port name="DOD1">D_DRAM[0].SO6_32[0]-&gt;DOD32_HI</port>
+					</inputs>
+					<outputs>
+						<port name="DOA0_OUT">open</port>
+						<port name="DOA1_OUT">open</port>
+						<port name="DOB0_OUT">open</port>
+						<port name="DOB1_OUT">open</port>
+						<port name="DOC0_OUT">$\S1.mem$rdreg[0]$d[2]</port>
+						<port name="DOC1_OUT">$\S1.mem$rdreg[0]$d[3]</port>
+						<port name="DOD0_OUT">$\S1.mem$rdreg[0]$d[0]</port>
+						<port name="DOD1_OUT">$\S1.mem$rdreg[0]$d[1]</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="open" instance="DRAM_4_OUTPUT_STUB[0]" />
+				<block name="open" instance="DRAM_4_OUTPUT_STUB[1]" />
+				<block name="open" instance="DRAM_2_OUTPUT_STUB[0]" />
+				<block name="open" instance="DRAM_2_OUTPUT_STUB[1]" />
+				<block name="open" instance="DRAM_2_OUTPUT_STUB[2]" />
+				<block name="open" instance="DRAM_2_OUTPUT_STUB[3]" />
+				<block name="open" instance="DRAM_2_OUTPUT_STUB[4]" />
+				<block name="open" instance="DRAM_2_OUTPUT_STUB[5]" />
+				<block name="open" instance="WE_MUX[0]" mode="default" pb_type_num_modes="1">
+					<inputs>
+						<port name="CE">open</port>
+						<port name="WE">SLICEM_MODES.WE[0]-&gt;WE_TO_WE_MUX</port>
+					</inputs>
+					<outputs>
+						<port name="WE_OUT">EXTRA_WE_EDGE[0].WE_OUT[0]-&gt;WE_MUX</port>
+					</outputs>
+					<clocks />
+					<block name="open" instance="EXTRA_WE_EDGE[0]" mode="default" pb_type_num_modes="1">
+						<inputs>
+							<port name="WE">WE_MUX.WE[0]-&gt;WE_IN_TO_EDGE</port>
+						</inputs>
+						<outputs>
+							<port name="WE_OUT">EXTRA_WE_EDGE[0].WE[0]-&gt;EDGE</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+				<block name="open" instance="DI64_STUB[0]" />
+				<block name="open" instance="DI64_STUB[1]" />
+				<block name="open" instance="DI64_STUB[2]" />
+				<block name="open" instance="ADI1MUX_ROUTING[0]" mode="default" pb_type_num_modes="1">
+					<inputs>
+						<port name="AI">open</port>
+						<port name="BI">BDI1MUX_ROUTING[0].DI1[0]-&gt;B_TO_A_DI1MUX_ROUTING.DI1</port>
+						<port name="STUB">open</port>
+					</inputs>
+					<outputs>
+						<port name="DI1">ADI1MUX_ROUTING[0].BI[0]-&gt;ADI1MUX</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="open" instance="BDI1MUX_ROUTING[0]" mode="default" pb_type_num_modes="1">
+					<inputs>
+						<port name="BI">open</port>
+						<port name="DI">SLICEM_MODES.DI[0]-&gt;BDI1MUX_ROUTING.DI</port>
+						<port name="STUB">open</port>
+					</inputs>
+					<outputs>
+						<port name="DI1">BDI1MUX_ROUTING[0].DI[0]-&gt;BDI1MUX</port>
+					</outputs>
+					<clocks />
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="$iopadmap$top.ready.genblk1.t_inv" instance="BLK-TL-IOPAD[1]" mode="default">
+		<inputs>
+			<port name="IDELAYE2_C">open</port>
+			<port name="IDELAYE2_CE">open</port>
+			<port name="IDELAYE2_CINVCTRL">open</port>
+			<port name="IDELAYE2_CNTVALUEIN0">open</port>
+			<port name="IDELAYE2_CNTVALUEIN1">open</port>
+			<port name="IDELAYE2_CNTVALUEIN2">open</port>
+			<port name="IDELAYE2_CNTVALUEIN3">open</port>
+			<port name="IDELAYE2_CNTVALUEIN4">open</port>
+			<port name="IDELAYE2_DATAIN">open</port>
+			<port name="IDELAYE2_IFDLY0">open</port>
+			<port name="IDELAYE2_IFDLY1">open</port>
+			<port name="IDELAYE2_IFDLY2">open</port>
+			<port name="IDELAYE2_INC">open</port>
+			<port name="IDELAYE2_LD">open</port>
+			<port name="IDELAYE2_LDPIPEEN">open</port>
+			<port name="IDELAYE2_REGRST">open</port>
+			<port name="ILOGICE3_BITSLIP">open</port>
+			<port name="ILOGICE3_CE1">open</port>
+			<port name="ILOGICE3_CE2">open</port>
+			<port name="ILOGICE3_SR">open</port>
+			<port name="IOB33_IBUFDISABLE">open</port>
+			<port name="IOB33_INTERMDISABLE">open</port>
+			<port name="IOB33_KEEPER_INT_EN">open</port>
+			<port name="IOB33_PD_INT_EN">open</port>
+			<port name="IOB33_PU_INT_EN">open</port>
+			<port name="OLOGICE3_D1">ready_wire</port>
+			<port name="OLOGICE3_D2">open</port>
+			<port name="OLOGICE3_D3">open</port>
+			<port name="OLOGICE3_D4">open</port>
+			<port name="OLOGICE3_D5">open</port>
+			<port name="OLOGICE3_D6">open</port>
+			<port name="OLOGICE3_D7">open</port>
+			<port name="OLOGICE3_D8">open</port>
+			<port name="OLOGICE3_OCE">open</port>
+			<port name="OLOGICE3_SR">open</port>
+			<port name="OLOGICE3_T1">$true</port>
+			<port name="OLOGICE3_T2">open</port>
+			<port name="OLOGICE3_T3">open</port>
+			<port name="OLOGICE3_T4">open</port>
+			<port name="OLOGICE3_TBYTEIN">open</port>
+			<port name="OLOGICE3_TCE">open</port>
+		</inputs>
+		<outputs>
+			<port name="IDELAYE2_CNTVALUEOUT0">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT1">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT2">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT3">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT4">open</port>
+			<port name="ILOGICE3_O">open</port>
+			<port name="ILOGICE3_Q1">open</port>
+			<port name="ILOGICE3_Q2">open</port>
+			<port name="ILOGICE3_Q3">open</port>
+			<port name="ILOGICE3_Q4">open</port>
+			<port name="ILOGICE3_Q5">open</port>
+			<port name="ILOGICE3_Q6">open</port>
+			<port name="ILOGICE3_Q7">open</port>
+			<port name="ILOGICE3_Q8">open</port>
+			<port name="ILOGICE3_SHIFTOUT1">open</port>
+			<port name="ILOGICE3_SHIFTOUT2">open</port>
+			<port name="IOB33_DIFFO_OUT">open</port>
+			<port name="IOB33_O_OUT">open</port>
+			<port name="IOB33_PADOUT">open</port>
+			<port name="IOB33_T_OUT">open</port>
+			<port name="OLOGICE3_IOCLKGLITCH">open</port>
+			<port name="OLOGICE3_SHIFTOUT1">open</port>
+			<port name="OLOGICE3_SHIFTOUT2">open</port>
+			<port name="OLOGICE3_TBYTEOUT">open</port>
+		</outputs>
+		<clocks>
+			<port name="ILOGICE3_CLK">open</port>
+			<port name="ILOGICE3_CLKB">open</port>
+			<port name="ILOGICE3_CLKDIV">open</port>
+			<port name="ILOGICE3_CLKDIVP">open</port>
+			<port name="ILOGICE3_DYNCLKDIVPSEL">open</port>
+			<port name="ILOGICE3_DYNCLKDIVSEL">open</port>
+			<port name="ILOGICE3_DYNCLKSEL">open</port>
+			<port name="ILOGICE3_OCLK">open</port>
+			<port name="ILOGICE3_OCLKB">open</port>
+			<port name="OLOGICE3_CLK">open</port>
+			<port name="OLOGICE3_CLKB">open</port>
+			<port name="OLOGICE3_CLKDIV">open</port>
+			<port name="OLOGICE3_CLKDIVB">open</port>
+			<port name="OLOGICE3_CLKDIVF">open</port>
+			<port name="OLOGICE3_CLKDIVFB">open</port>
+		</clocks>
+		<block name="open" instance="IDELAYE2[0]" />
+		<block name="open" instance="ILOGICE3[0]" />
+		<block name="$iopadmap$top.ready.obuft" instance="IOB33[0]" mode="default">
+			<inputs>
+				<port name="DIFFI_IN">open</port>
+				<port name="DIFFO_IN">open</port>
+				<port name="IBUFDISABLE">open</port>
+				<port name="INTERMDISABLE">open</port>
+				<port name="KEEPER_INT_EN">open</port>
+				<port name="O">OLOGICE3[0].OQ[0]-&gt;OLOGICE3.OQ_to_IOB33.O</port>
+				<port name="PD_INT_EN">open</port>
+				<port name="PU_INT_EN">open</port>
+				<port name="T">OLOGICE3[0].TQ[0]-&gt;OLOGICE3.TQ_to_IOB33.T</port>
+			</inputs>
+			<outputs>
+				<port name="DIFFO_OUT">open</port>
+				<port name="I">open</port>
+				<port name="O_OUT">open</port>
+				<port name="PADOUT">open</port>
+				<port name="T_OUT">open</port>
+			</outputs>
+			<clocks />
+			<block name="$iopadmap$top.ready.obuft" instance="IOB33_MODES[0]" mode="OBUFT">
+				<inputs>
+					<port name="IBUFDISABLE">open</port>
+					<port name="INTERMDISABLE">open</port>
+					<port name="KEEPER_INT_EN">open</port>
+					<port name="O">IOB33.O[0]-&gt;O</port>
+					<port name="PD_INT_EN">open</port>
+					<port name="PU_INT_EN">open</port>
+					<port name="T">IOB33.T[0]-&gt;T</port>
+				</inputs>
+				<outputs>
+					<port name="I">open</port>
+				</outputs>
+				<clocks />
+				<block name="$iopadmap$top.ready.obuft" instance="OBUFT_VPR[0]">
+					<attributes>
+						<attribute name="src">"/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:1955.5-1959.4|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:2098.5-2102.4"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters>
+						<parameter name="SSTL135_SSTL15_SLEW_FAST">0</parameter>
+						<parameter name="SSTL135_DRIVE_I_FIXED">0</parameter>
+						<parameter name="PULLTYPE_KEEPER">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_SSTL135_SSTL15_STEPDOWN">0</parameter>
+						<parameter name="PULLTYPE">"NONE"</parameter>
+						<parameter name="LVCMOS15_DRIVE_I8">0</parameter>
+						<parameter name="LVCMOS15_LVCMOS18_LVCMOS25_DRIVE_I4">0</parameter>
+						<parameter name="LVCMOS15_SSTL15_DRIVE_I16_I_FIXED">0</parameter>
+						<parameter name="IOSTANDARD">"LVCMOS33"</parameter>
+						<parameter name="LVCMOS25_DRIVE_I12">0</parameter>
+						<parameter name="LVTTL_DRIVE_I24">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_LVCMOS25_LVCMOS33_LVTTL_SLEW_FAST">0</parameter>
+						<parameter name="LVCMOS12_DRIVE_I12">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS25_DRIVE_I8">0</parameter>
+						<parameter name="IO_LOC_PAIRS">"ready:F17"</parameter>
+						<parameter name="LVCMOS33_LVTTL_DRIVE_I12_I16">1</parameter>
+						<parameter name="LVCMOS12_DRIVE_I4">0</parameter>
+						<parameter name="LVCMOS18_DRIVE_I24">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_LVCMOS25_LVCMOS33_LVTTL_SSTL135_SSTL15_SLEW_SLOW">1</parameter>
+						<parameter name="LVCMOS15_DRIVE_I12">0</parameter>
+						<parameter name="PULLTYPE_NONE">1</parameter>
+						<parameter name="LVCMOS33_LVTTL_DRIVE_I12_I8">0</parameter>
+						<parameter name="DRIVE">00000000000000000000000000001100</parameter>
+						<parameter name="LVCMOS18_DRIVE_I12_I8">0</parameter>
+						<parameter name="LVCMOS18_DRIVE_I16">0</parameter>
+						<parameter name="LVCMOS25_DRIVE_I16">0</parameter>
+						<parameter name="LVCMOS33_DRIVE_I16">0</parameter>
+						<parameter name="SLEW">"SLOW"</parameter>
+						<parameter name="LVCMOS33_LVTTL_DRIVE_I4">0</parameter>
+						<parameter name="PULLTYPE_PULLDOWN">0</parameter>
+						<parameter name="PULLTYPE_PULLUP">0</parameter>
+					</parameters>
+					<inputs>
+						<port name="I">IOB33_MODES.O[0]-&gt;IOB33_MODES.O_to_OBUFT_VPR.I</port>
+						<port name="T">IOB33_MODES.T[0]-&gt;IOB33_MODES.T_to_OBUFT_VPR.T</port>
+					</inputs>
+					<outputs>
+						<port name="O">ready</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="out:ready" instance="outpad[0]">
+					<attributes />
+					<parameters />
+					<inputs>
+						<port name="outpad">OBUFT_VPR[0].O[0]-&gt;OBUFT_VPR.O_to_outpad.outpad</port>
+					</inputs>
+					<outputs />
+					<clocks />
+				</block>
+			</block>
+		</block>
+		<block name="$iopadmap$top.ready.genblk1.t_inv" instance="OLOGICE3[0]" mode="OLOGIC">
+			<inputs>
+				<port name="CLK">open</port>
+				<port name="CLKB">open</port>
+				<port name="CLKDIV">open</port>
+				<port name="CLKDIVB">open</port>
+				<port name="CLKDIVF">open</port>
+				<port name="CLKDIVFB">open</port>
+				<port name="D1">BLK-TL-IOPAD.OLOGICE3_D1[0]-&gt;BLK-TL-IOPAD.OLOGICE3_D1_to_OLOGICE3.D1</port>
+				<port name="D2">open</port>
+				<port name="D3">open</port>
+				<port name="D4">open</port>
+				<port name="D5">open</port>
+				<port name="D6">open</port>
+				<port name="D7">open</port>
+				<port name="D8">open</port>
+				<port name="OCE">open</port>
+				<port name="SHIFTIN1">open</port>
+				<port name="SHIFTIN2">open</port>
+				<port name="SR">open</port>
+				<port name="T1">BLK-TL-IOPAD.OLOGICE3_T1[0]-&gt;BLK-TL-IOPAD.OLOGICE3_T1_to_OLOGICE3.T1</port>
+				<port name="T2">open</port>
+				<port name="T3">open</port>
+				<port name="T4">open</port>
+				<port name="TBYTEIN">open</port>
+				<port name="TCE">open</port>
+			</inputs>
+			<outputs>
+				<port name="IOCLKGLITCH">open</port>
+				<port name="OFB">open</port>
+				<port name="OQ">OLOGIC_OFF[0].OQ[0]-&gt;OLOGIC_OFF.OQ_to_OLOGICE3.OQ</port>
+				<port name="SHIFTOUT1">open</port>
+				<port name="SHIFTOUT2">open</port>
+				<port name="TBYTEOUT">open</port>
+				<port name="TFB">open</port>
+				<port name="TQ">OLOGIC_TFF[0].TQ[0]-&gt;OLOGIC_TFF.TQ_to_OLOGICE3.TQ</port>
+			</outputs>
+			<clocks />
+			<block name="$iopadmap$top.ready.genblk1.t_inv" instance="OLOGIC_TFF[0]" mode="T_INV">
+				<inputs>
+					<port name="CLK">open</port>
+					<port name="SR">open</port>
+					<port name="T1">OLOGICE3.T1[0]-&gt;OLOGICE3.T1_to_OLOGIC_TFF.T1</port>
+					<port name="T2">open</port>
+					<port name="TCE">open</port>
+				</inputs>
+				<outputs>
+					<port name="TFB">open</port>
+					<port name="TQ">T_INV[0].TO[0]-&gt;TO</port>
+				</outputs>
+				<clocks />
+				<block name="$iopadmap$top.ready.genblk1.t_inv" instance="T_INV[0]">
+					<attributes>
+						<attribute name="src">"/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:1955.5-1959.4|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:1984.11-1987.6"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters />
+					<inputs>
+						<port name="TI">OLOGIC_TFF.T1[0]-&gt;TI</port>
+					</inputs>
+					<outputs>
+						<port name="TO">$iopadmap$top.ready.t</port>
+					</outputs>
+					<clocks />
+				</block>
+			</block>
+			<block name="open" instance="OLOGIC_OFF[0]" mode="PASSTHROUGH" pb_type_num_modes="2">
+				<inputs>
+					<port name="CLK">open</port>
+					<port name="D1">OLOGICE3.D1[0]-&gt;OLOGICE3.D1_to_OLOGIC_OFF.D1</port>
+					<port name="D2">open</port>
+					<port name="OCE">open</port>
+					<port name="SR">open</port>
+				</inputs>
+				<outputs>
+					<port name="OFB">open</port>
+					<port name="OQ">OLOGIC_OFF[0].D1[0]-&gt;D1_to_OQ</port>
+				</outputs>
+				<clocks />
+			</block>
+		</block>
+	</block>
+	<block name="$iopadmap$top.valid.genblk1.t_inv" instance="BLK-TL-IOPAD[2]" mode="default">
+		<inputs>
+			<port name="IDELAYE2_C">open</port>
+			<port name="IDELAYE2_CE">open</port>
+			<port name="IDELAYE2_CINVCTRL">open</port>
+			<port name="IDELAYE2_CNTVALUEIN0">open</port>
+			<port name="IDELAYE2_CNTVALUEIN1">open</port>
+			<port name="IDELAYE2_CNTVALUEIN2">open</port>
+			<port name="IDELAYE2_CNTVALUEIN3">open</port>
+			<port name="IDELAYE2_CNTVALUEIN4">open</port>
+			<port name="IDELAYE2_DATAIN">open</port>
+			<port name="IDELAYE2_IFDLY0">open</port>
+			<port name="IDELAYE2_IFDLY1">open</port>
+			<port name="IDELAYE2_IFDLY2">open</port>
+			<port name="IDELAYE2_INC">open</port>
+			<port name="IDELAYE2_LD">open</port>
+			<port name="IDELAYE2_LDPIPEEN">open</port>
+			<port name="IDELAYE2_REGRST">open</port>
+			<port name="ILOGICE3_BITSLIP">open</port>
+			<port name="ILOGICE3_CE1">open</port>
+			<port name="ILOGICE3_CE2">open</port>
+			<port name="ILOGICE3_SR">open</port>
+			<port name="IOB33_IBUFDISABLE">open</port>
+			<port name="IOB33_INTERMDISABLE">open</port>
+			<port name="IOB33_KEEPER_INT_EN">open</port>
+			<port name="IOB33_PD_INT_EN">open</port>
+			<port name="IOB33_PU_INT_EN">open</port>
+			<port name="OLOGICE3_D1">valid_wire</port>
+			<port name="OLOGICE3_D2">open</port>
+			<port name="OLOGICE3_D3">open</port>
+			<port name="OLOGICE3_D4">open</port>
+			<port name="OLOGICE3_D5">open</port>
+			<port name="OLOGICE3_D6">open</port>
+			<port name="OLOGICE3_D7">open</port>
+			<port name="OLOGICE3_D8">open</port>
+			<port name="OLOGICE3_OCE">open</port>
+			<port name="OLOGICE3_SR">open</port>
+			<port name="OLOGICE3_T1">$true</port>
+			<port name="OLOGICE3_T2">open</port>
+			<port name="OLOGICE3_T3">open</port>
+			<port name="OLOGICE3_T4">open</port>
+			<port name="OLOGICE3_TBYTEIN">open</port>
+			<port name="OLOGICE3_TCE">open</port>
+		</inputs>
+		<outputs>
+			<port name="IDELAYE2_CNTVALUEOUT0">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT1">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT2">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT3">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT4">open</port>
+			<port name="ILOGICE3_O">open</port>
+			<port name="ILOGICE3_Q1">open</port>
+			<port name="ILOGICE3_Q2">open</port>
+			<port name="ILOGICE3_Q3">open</port>
+			<port name="ILOGICE3_Q4">open</port>
+			<port name="ILOGICE3_Q5">open</port>
+			<port name="ILOGICE3_Q6">open</port>
+			<port name="ILOGICE3_Q7">open</port>
+			<port name="ILOGICE3_Q8">open</port>
+			<port name="ILOGICE3_SHIFTOUT1">open</port>
+			<port name="ILOGICE3_SHIFTOUT2">open</port>
+			<port name="IOB33_DIFFO_OUT">open</port>
+			<port name="IOB33_O_OUT">open</port>
+			<port name="IOB33_PADOUT">open</port>
+			<port name="IOB33_T_OUT">open</port>
+			<port name="OLOGICE3_IOCLKGLITCH">open</port>
+			<port name="OLOGICE3_SHIFTOUT1">open</port>
+			<port name="OLOGICE3_SHIFTOUT2">open</port>
+			<port name="OLOGICE3_TBYTEOUT">open</port>
+		</outputs>
+		<clocks>
+			<port name="ILOGICE3_CLK">open</port>
+			<port name="ILOGICE3_CLKB">open</port>
+			<port name="ILOGICE3_CLKDIV">open</port>
+			<port name="ILOGICE3_CLKDIVP">open</port>
+			<port name="ILOGICE3_DYNCLKDIVPSEL">open</port>
+			<port name="ILOGICE3_DYNCLKDIVSEL">open</port>
+			<port name="ILOGICE3_DYNCLKSEL">open</port>
+			<port name="ILOGICE3_OCLK">open</port>
+			<port name="ILOGICE3_OCLKB">open</port>
+			<port name="OLOGICE3_CLK">open</port>
+			<port name="OLOGICE3_CLKB">open</port>
+			<port name="OLOGICE3_CLKDIV">open</port>
+			<port name="OLOGICE3_CLKDIVB">open</port>
+			<port name="OLOGICE3_CLKDIVF">open</port>
+			<port name="OLOGICE3_CLKDIVFB">open</port>
+		</clocks>
+		<block name="open" instance="IDELAYE2[0]" />
+		<block name="open" instance="ILOGICE3[0]" />
+		<block name="$iopadmap$top.valid.obuft" instance="IOB33[0]" mode="default">
+			<inputs>
+				<port name="DIFFI_IN">open</port>
+				<port name="DIFFO_IN">open</port>
+				<port name="IBUFDISABLE">open</port>
+				<port name="INTERMDISABLE">open</port>
+				<port name="KEEPER_INT_EN">open</port>
+				<port name="O">OLOGICE3[0].OQ[0]-&gt;OLOGICE3.OQ_to_IOB33.O</port>
+				<port name="PD_INT_EN">open</port>
+				<port name="PU_INT_EN">open</port>
+				<port name="T">OLOGICE3[0].TQ[0]-&gt;OLOGICE3.TQ_to_IOB33.T</port>
+			</inputs>
+			<outputs>
+				<port name="DIFFO_OUT">open</port>
+				<port name="I">open</port>
+				<port name="O_OUT">open</port>
+				<port name="PADOUT">open</port>
+				<port name="T_OUT">open</port>
+			</outputs>
+			<clocks />
+			<block name="$iopadmap$top.valid.obuft" instance="IOB33_MODES[0]" mode="OBUFT">
+				<inputs>
+					<port name="IBUFDISABLE">open</port>
+					<port name="INTERMDISABLE">open</port>
+					<port name="KEEPER_INT_EN">open</port>
+					<port name="O">IOB33.O[0]-&gt;O</port>
+					<port name="PD_INT_EN">open</port>
+					<port name="PU_INT_EN">open</port>
+					<port name="T">IOB33.T[0]-&gt;T</port>
+				</inputs>
+				<outputs>
+					<port name="I">open</port>
+				</outputs>
+				<clocks />
+				<block name="$iopadmap$top.valid.obuft" instance="OBUFT_VPR[0]">
+					<attributes>
+						<attribute name="src">"/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:1955.5-1959.4|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:2098.5-2102.4"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters>
+						<parameter name="SSTL135_SSTL15_SLEW_FAST">0</parameter>
+						<parameter name="SSTL135_DRIVE_I_FIXED">0</parameter>
+						<parameter name="PULLTYPE_KEEPER">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_SSTL135_SSTL15_STEPDOWN">0</parameter>
+						<parameter name="PULLTYPE">"NONE"</parameter>
+						<parameter name="LVCMOS15_DRIVE_I8">0</parameter>
+						<parameter name="LVCMOS15_LVCMOS18_LVCMOS25_DRIVE_I4">0</parameter>
+						<parameter name="LVCMOS15_SSTL15_DRIVE_I16_I_FIXED">0</parameter>
+						<parameter name="IOSTANDARD">"LVCMOS33"</parameter>
+						<parameter name="LVCMOS25_DRIVE_I12">0</parameter>
+						<parameter name="LVTTL_DRIVE_I24">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_LVCMOS25_LVCMOS33_LVTTL_SLEW_FAST">0</parameter>
+						<parameter name="LVCMOS12_DRIVE_I12">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS25_DRIVE_I8">0</parameter>
+						<parameter name="IO_LOC_PAIRS">"valid:V16"</parameter>
+						<parameter name="LVCMOS33_LVTTL_DRIVE_I12_I16">1</parameter>
+						<parameter name="LVCMOS12_DRIVE_I4">0</parameter>
+						<parameter name="LVCMOS18_DRIVE_I24">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_LVCMOS25_LVCMOS33_LVTTL_SSTL135_SSTL15_SLEW_SLOW">1</parameter>
+						<parameter name="LVCMOS15_DRIVE_I12">0</parameter>
+						<parameter name="PULLTYPE_NONE">1</parameter>
+						<parameter name="LVCMOS33_LVTTL_DRIVE_I12_I8">0</parameter>
+						<parameter name="DRIVE">00000000000000000000000000001100</parameter>
+						<parameter name="LVCMOS18_DRIVE_I12_I8">0</parameter>
+						<parameter name="LVCMOS18_DRIVE_I16">0</parameter>
+						<parameter name="LVCMOS25_DRIVE_I16">0</parameter>
+						<parameter name="LVCMOS33_DRIVE_I16">0</parameter>
+						<parameter name="SLEW">"SLOW"</parameter>
+						<parameter name="LVCMOS33_LVTTL_DRIVE_I4">0</parameter>
+						<parameter name="PULLTYPE_PULLDOWN">0</parameter>
+						<parameter name="PULLTYPE_PULLUP">0</parameter>
+					</parameters>
+					<inputs>
+						<port name="I">IOB33_MODES.O[0]-&gt;IOB33_MODES.O_to_OBUFT_VPR.I</port>
+						<port name="T">IOB33_MODES.T[0]-&gt;IOB33_MODES.T_to_OBUFT_VPR.T</port>
+					</inputs>
+					<outputs>
+						<port name="O">valid</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="out:valid" instance="outpad[0]">
+					<attributes />
+					<parameters />
+					<inputs>
+						<port name="outpad">OBUFT_VPR[0].O[0]-&gt;OBUFT_VPR.O_to_outpad.outpad</port>
+					</inputs>
+					<outputs />
+					<clocks />
+				</block>
+			</block>
+		</block>
+		<block name="$iopadmap$top.valid.genblk1.t_inv" instance="OLOGICE3[0]" mode="OLOGIC">
+			<inputs>
+				<port name="CLK">open</port>
+				<port name="CLKB">open</port>
+				<port name="CLKDIV">open</port>
+				<port name="CLKDIVB">open</port>
+				<port name="CLKDIVF">open</port>
+				<port name="CLKDIVFB">open</port>
+				<port name="D1">BLK-TL-IOPAD.OLOGICE3_D1[0]-&gt;BLK-TL-IOPAD.OLOGICE3_D1_to_OLOGICE3.D1</port>
+				<port name="D2">open</port>
+				<port name="D3">open</port>
+				<port name="D4">open</port>
+				<port name="D5">open</port>
+				<port name="D6">open</port>
+				<port name="D7">open</port>
+				<port name="D8">open</port>
+				<port name="OCE">open</port>
+				<port name="SHIFTIN1">open</port>
+				<port name="SHIFTIN2">open</port>
+				<port name="SR">open</port>
+				<port name="T1">BLK-TL-IOPAD.OLOGICE3_T1[0]-&gt;BLK-TL-IOPAD.OLOGICE3_T1_to_OLOGICE3.T1</port>
+				<port name="T2">open</port>
+				<port name="T3">open</port>
+				<port name="T4">open</port>
+				<port name="TBYTEIN">open</port>
+				<port name="TCE">open</port>
+			</inputs>
+			<outputs>
+				<port name="IOCLKGLITCH">open</port>
+				<port name="OFB">open</port>
+				<port name="OQ">OLOGIC_OFF[0].OQ[0]-&gt;OLOGIC_OFF.OQ_to_OLOGICE3.OQ</port>
+				<port name="SHIFTOUT1">open</port>
+				<port name="SHIFTOUT2">open</port>
+				<port name="TBYTEOUT">open</port>
+				<port name="TFB">open</port>
+				<port name="TQ">OLOGIC_TFF[0].TQ[0]-&gt;OLOGIC_TFF.TQ_to_OLOGICE3.TQ</port>
+			</outputs>
+			<clocks />
+			<block name="$iopadmap$top.valid.genblk1.t_inv" instance="OLOGIC_TFF[0]" mode="T_INV">
+				<inputs>
+					<port name="CLK">open</port>
+					<port name="SR">open</port>
+					<port name="T1">OLOGICE3.T1[0]-&gt;OLOGICE3.T1_to_OLOGIC_TFF.T1</port>
+					<port name="T2">open</port>
+					<port name="TCE">open</port>
+				</inputs>
+				<outputs>
+					<port name="TFB">open</port>
+					<port name="TQ">T_INV[0].TO[0]-&gt;TO</port>
+				</outputs>
+				<clocks />
+				<block name="$iopadmap$top.valid.genblk1.t_inv" instance="T_INV[0]">
+					<attributes>
+						<attribute name="src">"/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:1955.5-1959.4|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:1984.11-1987.6"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters />
+					<inputs>
+						<port name="TI">OLOGIC_TFF.T1[0]-&gt;TI</port>
+					</inputs>
+					<outputs>
+						<port name="TO">$iopadmap$top.valid.t</port>
+					</outputs>
+					<clocks />
+				</block>
+			</block>
+			<block name="open" instance="OLOGIC_OFF[0]" mode="PASSTHROUGH" pb_type_num_modes="2">
+				<inputs>
+					<port name="CLK">open</port>
+					<port name="D1">OLOGICE3.D1[0]-&gt;OLOGICE3.D1_to_OLOGIC_OFF.D1</port>
+					<port name="D2">open</port>
+					<port name="OCE">open</port>
+					<port name="SR">open</port>
+				</inputs>
+				<outputs>
+					<port name="OFB">open</port>
+					<port name="OQ">OLOGIC_OFF[0].D1[0]-&gt;D1_to_OQ</port>
+				</outputs>
+				<clocks />
+			</block>
+		</block>
+	</block>
+	<block name="$iopadmap$top.dataFpga.genblk1.t_inv" instance="BLK-TL-IOPAD[3]" mode="default">
+		<inputs>
+			<port name="IDELAYE2_C">open</port>
+			<port name="IDELAYE2_CE">open</port>
+			<port name="IDELAYE2_CINVCTRL">open</port>
+			<port name="IDELAYE2_CNTVALUEIN0">open</port>
+			<port name="IDELAYE2_CNTVALUEIN1">open</port>
+			<port name="IDELAYE2_CNTVALUEIN2">open</port>
+			<port name="IDELAYE2_CNTVALUEIN3">open</port>
+			<port name="IDELAYE2_CNTVALUEIN4">open</port>
+			<port name="IDELAYE2_DATAIN">open</port>
+			<port name="IDELAYE2_IFDLY0">open</port>
+			<port name="IDELAYE2_IFDLY1">open</port>
+			<port name="IDELAYE2_IFDLY2">open</port>
+			<port name="IDELAYE2_INC">open</port>
+			<port name="IDELAYE2_LD">open</port>
+			<port name="IDELAYE2_LDPIPEEN">open</port>
+			<port name="IDELAYE2_REGRST">open</port>
+			<port name="ILOGICE3_BITSLIP">open</port>
+			<port name="ILOGICE3_CE1">open</port>
+			<port name="ILOGICE3_CE2">open</port>
+			<port name="ILOGICE3_SR">open</port>
+			<port name="IOB33_IBUFDISABLE">open</port>
+			<port name="IOB33_INTERMDISABLE">open</port>
+			<port name="IOB33_KEEPER_INT_EN">open</port>
+			<port name="IOB33_PD_INT_EN">open</port>
+			<port name="IOB33_PU_INT_EN">open</port>
+			<port name="OLOGICE3_D1">dataout[0]</port>
+			<port name="OLOGICE3_D2">open</port>
+			<port name="OLOGICE3_D3">open</port>
+			<port name="OLOGICE3_D4">open</port>
+			<port name="OLOGICE3_D5">open</port>
+			<port name="OLOGICE3_D6">open</port>
+			<port name="OLOGICE3_D7">open</port>
+			<port name="OLOGICE3_D8">open</port>
+			<port name="OLOGICE3_OCE">open</port>
+			<port name="OLOGICE3_SR">open</port>
+			<port name="OLOGICE3_T1">$true</port>
+			<port name="OLOGICE3_T2">open</port>
+			<port name="OLOGICE3_T3">open</port>
+			<port name="OLOGICE3_T4">open</port>
+			<port name="OLOGICE3_TBYTEIN">open</port>
+			<port name="OLOGICE3_TCE">open</port>
+		</inputs>
+		<outputs>
+			<port name="IDELAYE2_CNTVALUEOUT0">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT1">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT2">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT3">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT4">open</port>
+			<port name="ILOGICE3_O">open</port>
+			<port name="ILOGICE3_Q1">open</port>
+			<port name="ILOGICE3_Q2">open</port>
+			<port name="ILOGICE3_Q3">open</port>
+			<port name="ILOGICE3_Q4">open</port>
+			<port name="ILOGICE3_Q5">open</port>
+			<port name="ILOGICE3_Q6">open</port>
+			<port name="ILOGICE3_Q7">open</port>
+			<port name="ILOGICE3_Q8">open</port>
+			<port name="ILOGICE3_SHIFTOUT1">open</port>
+			<port name="ILOGICE3_SHIFTOUT2">open</port>
+			<port name="IOB33_DIFFO_OUT">open</port>
+			<port name="IOB33_O_OUT">open</port>
+			<port name="IOB33_PADOUT">open</port>
+			<port name="IOB33_T_OUT">open</port>
+			<port name="OLOGICE3_IOCLKGLITCH">open</port>
+			<port name="OLOGICE3_SHIFTOUT1">open</port>
+			<port name="OLOGICE3_SHIFTOUT2">open</port>
+			<port name="OLOGICE3_TBYTEOUT">open</port>
+		</outputs>
+		<clocks>
+			<port name="ILOGICE3_CLK">open</port>
+			<port name="ILOGICE3_CLKB">open</port>
+			<port name="ILOGICE3_CLKDIV">open</port>
+			<port name="ILOGICE3_CLKDIVP">open</port>
+			<port name="ILOGICE3_DYNCLKDIVPSEL">open</port>
+			<port name="ILOGICE3_DYNCLKDIVSEL">open</port>
+			<port name="ILOGICE3_DYNCLKSEL">open</port>
+			<port name="ILOGICE3_OCLK">open</port>
+			<port name="ILOGICE3_OCLKB">open</port>
+			<port name="OLOGICE3_CLK">open</port>
+			<port name="OLOGICE3_CLKB">open</port>
+			<port name="OLOGICE3_CLKDIV">open</port>
+			<port name="OLOGICE3_CLKDIVB">open</port>
+			<port name="OLOGICE3_CLKDIVF">open</port>
+			<port name="OLOGICE3_CLKDIVFB">open</port>
+		</clocks>
+		<block name="open" instance="IDELAYE2[0]" />
+		<block name="open" instance="ILOGICE3[0]" />
+		<block name="$iopadmap$top.dataFpga.obuft" instance="IOB33[0]" mode="default">
+			<inputs>
+				<port name="DIFFI_IN">open</port>
+				<port name="DIFFO_IN">open</port>
+				<port name="IBUFDISABLE">open</port>
+				<port name="INTERMDISABLE">open</port>
+				<port name="KEEPER_INT_EN">open</port>
+				<port name="O">OLOGICE3[0].OQ[0]-&gt;OLOGICE3.OQ_to_IOB33.O</port>
+				<port name="PD_INT_EN">open</port>
+				<port name="PU_INT_EN">open</port>
+				<port name="T">OLOGICE3[0].TQ[0]-&gt;OLOGICE3.TQ_to_IOB33.T</port>
+			</inputs>
+			<outputs>
+				<port name="DIFFO_OUT">open</port>
+				<port name="I">open</port>
+				<port name="O_OUT">open</port>
+				<port name="PADOUT">open</port>
+				<port name="T_OUT">open</port>
+			</outputs>
+			<clocks />
+			<block name="$iopadmap$top.dataFpga.obuft" instance="IOB33_MODES[0]" mode="OBUFT">
+				<inputs>
+					<port name="IBUFDISABLE">open</port>
+					<port name="INTERMDISABLE">open</port>
+					<port name="KEEPER_INT_EN">open</port>
+					<port name="O">IOB33.O[0]-&gt;O</port>
+					<port name="PD_INT_EN">open</port>
+					<port name="PU_INT_EN">open</port>
+					<port name="T">IOB33.T[0]-&gt;T</port>
+				</inputs>
+				<outputs>
+					<port name="I">open</port>
+				</outputs>
+				<clocks />
+				<block name="$iopadmap$top.dataFpga.obuft" instance="OBUFT_VPR[0]">
+					<attributes>
+						<attribute name="src">"/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:1955.5-1959.4|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:2098.5-2102.4"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters>
+						<parameter name="SSTL135_SSTL15_SLEW_FAST">0</parameter>
+						<parameter name="SSTL135_DRIVE_I_FIXED">0</parameter>
+						<parameter name="PULLTYPE_KEEPER">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_SSTL135_SSTL15_STEPDOWN">0</parameter>
+						<parameter name="PULLTYPE">"NONE"</parameter>
+						<parameter name="LVCMOS15_DRIVE_I8">0</parameter>
+						<parameter name="LVCMOS15_LVCMOS18_LVCMOS25_DRIVE_I4">0</parameter>
+						<parameter name="LVCMOS15_SSTL15_DRIVE_I16_I_FIXED">0</parameter>
+						<parameter name="IOSTANDARD">"LVCMOS33"</parameter>
+						<parameter name="LVCMOS25_DRIVE_I12">0</parameter>
+						<parameter name="LVTTL_DRIVE_I24">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_LVCMOS25_LVCMOS33_LVTTL_SLEW_FAST">0</parameter>
+						<parameter name="LVCMOS12_DRIVE_I12">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS25_DRIVE_I8">0</parameter>
+						<parameter name="IO_LOC_PAIRS">"dataFpga[0]:K18"</parameter>
+						<parameter name="LVCMOS33_LVTTL_DRIVE_I12_I16">1</parameter>
+						<parameter name="LVCMOS12_DRIVE_I4">0</parameter>
+						<parameter name="LVCMOS18_DRIVE_I24">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_LVCMOS25_LVCMOS33_LVTTL_SSTL135_SSTL15_SLEW_SLOW">1</parameter>
+						<parameter name="LVCMOS15_DRIVE_I12">0</parameter>
+						<parameter name="PULLTYPE_NONE">1</parameter>
+						<parameter name="LVCMOS33_LVTTL_DRIVE_I12_I8">0</parameter>
+						<parameter name="DRIVE">00000000000000000000000000001100</parameter>
+						<parameter name="LVCMOS18_DRIVE_I12_I8">0</parameter>
+						<parameter name="LVCMOS18_DRIVE_I16">0</parameter>
+						<parameter name="LVCMOS25_DRIVE_I16">0</parameter>
+						<parameter name="LVCMOS33_DRIVE_I16">0</parameter>
+						<parameter name="SLEW">"SLOW"</parameter>
+						<parameter name="LVCMOS33_LVTTL_DRIVE_I4">0</parameter>
+						<parameter name="PULLTYPE_PULLDOWN">0</parameter>
+						<parameter name="PULLTYPE_PULLUP">0</parameter>
+					</parameters>
+					<inputs>
+						<port name="I">IOB33_MODES.O[0]-&gt;IOB33_MODES.O_to_OBUFT_VPR.I</port>
+						<port name="T">IOB33_MODES.T[0]-&gt;IOB33_MODES.T_to_OBUFT_VPR.T</port>
+					</inputs>
+					<outputs>
+						<port name="O">dataFpga[0]</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="out:dataFpga[0]" instance="outpad[0]">
+					<attributes />
+					<parameters />
+					<inputs>
+						<port name="outpad">OBUFT_VPR[0].O[0]-&gt;OBUFT_VPR.O_to_outpad.outpad</port>
+					</inputs>
+					<outputs />
+					<clocks />
+				</block>
+			</block>
+		</block>
+		<block name="$iopadmap$top.dataFpga.genblk1.t_inv" instance="OLOGICE3[0]" mode="OLOGIC">
+			<inputs>
+				<port name="CLK">open</port>
+				<port name="CLKB">open</port>
+				<port name="CLKDIV">open</port>
+				<port name="CLKDIVB">open</port>
+				<port name="CLKDIVF">open</port>
+				<port name="CLKDIVFB">open</port>
+				<port name="D1">BLK-TL-IOPAD.OLOGICE3_D1[0]-&gt;BLK-TL-IOPAD.OLOGICE3_D1_to_OLOGICE3.D1</port>
+				<port name="D2">open</port>
+				<port name="D3">open</port>
+				<port name="D4">open</port>
+				<port name="D5">open</port>
+				<port name="D6">open</port>
+				<port name="D7">open</port>
+				<port name="D8">open</port>
+				<port name="OCE">open</port>
+				<port name="SHIFTIN1">open</port>
+				<port name="SHIFTIN2">open</port>
+				<port name="SR">open</port>
+				<port name="T1">BLK-TL-IOPAD.OLOGICE3_T1[0]-&gt;BLK-TL-IOPAD.OLOGICE3_T1_to_OLOGICE3.T1</port>
+				<port name="T2">open</port>
+				<port name="T3">open</port>
+				<port name="T4">open</port>
+				<port name="TBYTEIN">open</port>
+				<port name="TCE">open</port>
+			</inputs>
+			<outputs>
+				<port name="IOCLKGLITCH">open</port>
+				<port name="OFB">open</port>
+				<port name="OQ">OLOGIC_OFF[0].OQ[0]-&gt;OLOGIC_OFF.OQ_to_OLOGICE3.OQ</port>
+				<port name="SHIFTOUT1">open</port>
+				<port name="SHIFTOUT2">open</port>
+				<port name="TBYTEOUT">open</port>
+				<port name="TFB">open</port>
+				<port name="TQ">OLOGIC_TFF[0].TQ[0]-&gt;OLOGIC_TFF.TQ_to_OLOGICE3.TQ</port>
+			</outputs>
+			<clocks />
+			<block name="$iopadmap$top.dataFpga.genblk1.t_inv" instance="OLOGIC_TFF[0]" mode="T_INV">
+				<inputs>
+					<port name="CLK">open</port>
+					<port name="SR">open</port>
+					<port name="T1">OLOGICE3.T1[0]-&gt;OLOGICE3.T1_to_OLOGIC_TFF.T1</port>
+					<port name="T2">open</port>
+					<port name="TCE">open</port>
+				</inputs>
+				<outputs>
+					<port name="TFB">open</port>
+					<port name="TQ">T_INV[0].TO[0]-&gt;TO</port>
+				</outputs>
+				<clocks />
+				<block name="$iopadmap$top.dataFpga.genblk1.t_inv" instance="T_INV[0]">
+					<attributes>
+						<attribute name="src">"/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:1955.5-1959.4|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:1984.11-1987.6"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters />
+					<inputs>
+						<port name="TI">OLOGIC_TFF.T1[0]-&gt;TI</port>
+					</inputs>
+					<outputs>
+						<port name="TO">$iopadmap$top.dataFpga.t</port>
+					</outputs>
+					<clocks />
+				</block>
+			</block>
+			<block name="open" instance="OLOGIC_OFF[0]" mode="PASSTHROUGH" pb_type_num_modes="2">
+				<inputs>
+					<port name="CLK">open</port>
+					<port name="D1">OLOGICE3.D1[0]-&gt;OLOGICE3.D1_to_OLOGIC_OFF.D1</port>
+					<port name="D2">open</port>
+					<port name="OCE">open</port>
+					<port name="SR">open</port>
+				</inputs>
+				<outputs>
+					<port name="OFB">open</port>
+					<port name="OQ">OLOGIC_OFF[0].D1[0]-&gt;D1_to_OQ</port>
+				</outputs>
+				<clocks />
+			</block>
+		</block>
+	</block>
+	<block name="$iopadmap$top.dataFpga_1.genblk1.t_inv" instance="BLK-TL-IOPAD[4]" mode="default">
+		<inputs>
+			<port name="IDELAYE2_C">open</port>
+			<port name="IDELAYE2_CE">open</port>
+			<port name="IDELAYE2_CINVCTRL">open</port>
+			<port name="IDELAYE2_CNTVALUEIN0">open</port>
+			<port name="IDELAYE2_CNTVALUEIN1">open</port>
+			<port name="IDELAYE2_CNTVALUEIN2">open</port>
+			<port name="IDELAYE2_CNTVALUEIN3">open</port>
+			<port name="IDELAYE2_CNTVALUEIN4">open</port>
+			<port name="IDELAYE2_DATAIN">open</port>
+			<port name="IDELAYE2_IFDLY0">open</port>
+			<port name="IDELAYE2_IFDLY1">open</port>
+			<port name="IDELAYE2_IFDLY2">open</port>
+			<port name="IDELAYE2_INC">open</port>
+			<port name="IDELAYE2_LD">open</port>
+			<port name="IDELAYE2_LDPIPEEN">open</port>
+			<port name="IDELAYE2_REGRST">open</port>
+			<port name="ILOGICE3_BITSLIP">open</port>
+			<port name="ILOGICE3_CE1">open</port>
+			<port name="ILOGICE3_CE2">open</port>
+			<port name="ILOGICE3_SR">open</port>
+			<port name="IOB33_IBUFDISABLE">open</port>
+			<port name="IOB33_INTERMDISABLE">open</port>
+			<port name="IOB33_KEEPER_INT_EN">open</port>
+			<port name="IOB33_PD_INT_EN">open</port>
+			<port name="IOB33_PU_INT_EN">open</port>
+			<port name="OLOGICE3_D1">dataout[1]</port>
+			<port name="OLOGICE3_D2">open</port>
+			<port name="OLOGICE3_D3">open</port>
+			<port name="OLOGICE3_D4">open</port>
+			<port name="OLOGICE3_D5">open</port>
+			<port name="OLOGICE3_D6">open</port>
+			<port name="OLOGICE3_D7">open</port>
+			<port name="OLOGICE3_D8">open</port>
+			<port name="OLOGICE3_OCE">open</port>
+			<port name="OLOGICE3_SR">open</port>
+			<port name="OLOGICE3_T1">$true</port>
+			<port name="OLOGICE3_T2">open</port>
+			<port name="OLOGICE3_T3">open</port>
+			<port name="OLOGICE3_T4">open</port>
+			<port name="OLOGICE3_TBYTEIN">open</port>
+			<port name="OLOGICE3_TCE">open</port>
+		</inputs>
+		<outputs>
+			<port name="IDELAYE2_CNTVALUEOUT0">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT1">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT2">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT3">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT4">open</port>
+			<port name="ILOGICE3_O">open</port>
+			<port name="ILOGICE3_Q1">open</port>
+			<port name="ILOGICE3_Q2">open</port>
+			<port name="ILOGICE3_Q3">open</port>
+			<port name="ILOGICE3_Q4">open</port>
+			<port name="ILOGICE3_Q5">open</port>
+			<port name="ILOGICE3_Q6">open</port>
+			<port name="ILOGICE3_Q7">open</port>
+			<port name="ILOGICE3_Q8">open</port>
+			<port name="ILOGICE3_SHIFTOUT1">open</port>
+			<port name="ILOGICE3_SHIFTOUT2">open</port>
+			<port name="IOB33_DIFFO_OUT">open</port>
+			<port name="IOB33_O_OUT">open</port>
+			<port name="IOB33_PADOUT">open</port>
+			<port name="IOB33_T_OUT">open</port>
+			<port name="OLOGICE3_IOCLKGLITCH">open</port>
+			<port name="OLOGICE3_SHIFTOUT1">open</port>
+			<port name="OLOGICE3_SHIFTOUT2">open</port>
+			<port name="OLOGICE3_TBYTEOUT">open</port>
+		</outputs>
+		<clocks>
+			<port name="ILOGICE3_CLK">open</port>
+			<port name="ILOGICE3_CLKB">open</port>
+			<port name="ILOGICE3_CLKDIV">open</port>
+			<port name="ILOGICE3_CLKDIVP">open</port>
+			<port name="ILOGICE3_DYNCLKDIVPSEL">open</port>
+			<port name="ILOGICE3_DYNCLKDIVSEL">open</port>
+			<port name="ILOGICE3_DYNCLKSEL">open</port>
+			<port name="ILOGICE3_OCLK">open</port>
+			<port name="ILOGICE3_OCLKB">open</port>
+			<port name="OLOGICE3_CLK">open</port>
+			<port name="OLOGICE3_CLKB">open</port>
+			<port name="OLOGICE3_CLKDIV">open</port>
+			<port name="OLOGICE3_CLKDIVB">open</port>
+			<port name="OLOGICE3_CLKDIVF">open</port>
+			<port name="OLOGICE3_CLKDIVFB">open</port>
+		</clocks>
+		<block name="open" instance="IDELAYE2[0]" />
+		<block name="open" instance="ILOGICE3[0]" />
+		<block name="$iopadmap$top.dataFpga_1.obuft" instance="IOB33[0]" mode="default">
+			<inputs>
+				<port name="DIFFI_IN">open</port>
+				<port name="DIFFO_IN">open</port>
+				<port name="IBUFDISABLE">open</port>
+				<port name="INTERMDISABLE">open</port>
+				<port name="KEEPER_INT_EN">open</port>
+				<port name="O">OLOGICE3[0].OQ[0]-&gt;OLOGICE3.OQ_to_IOB33.O</port>
+				<port name="PD_INT_EN">open</port>
+				<port name="PU_INT_EN">open</port>
+				<port name="T">OLOGICE3[0].TQ[0]-&gt;OLOGICE3.TQ_to_IOB33.T</port>
+			</inputs>
+			<outputs>
+				<port name="DIFFO_OUT">open</port>
+				<port name="I">open</port>
+				<port name="O_OUT">open</port>
+				<port name="PADOUT">open</port>
+				<port name="T_OUT">open</port>
+			</outputs>
+			<clocks />
+			<block name="$iopadmap$top.dataFpga_1.obuft" instance="IOB33_MODES[0]" mode="OBUFT">
+				<inputs>
+					<port name="IBUFDISABLE">open</port>
+					<port name="INTERMDISABLE">open</port>
+					<port name="KEEPER_INT_EN">open</port>
+					<port name="O">IOB33.O[0]-&gt;O</port>
+					<port name="PD_INT_EN">open</port>
+					<port name="PU_INT_EN">open</port>
+					<port name="T">IOB33.T[0]-&gt;T</port>
+				</inputs>
+				<outputs>
+					<port name="I">open</port>
+				</outputs>
+				<clocks />
+				<block name="$iopadmap$top.dataFpga_1.obuft" instance="OBUFT_VPR[0]">
+					<attributes>
+						<attribute name="src">"/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:1955.5-1959.4|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:2098.5-2102.4"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters>
+						<parameter name="SSTL135_SSTL15_SLEW_FAST">0</parameter>
+						<parameter name="SSTL135_DRIVE_I_FIXED">0</parameter>
+						<parameter name="PULLTYPE_KEEPER">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_SSTL135_SSTL15_STEPDOWN">0</parameter>
+						<parameter name="PULLTYPE">"NONE"</parameter>
+						<parameter name="LVCMOS15_DRIVE_I8">0</parameter>
+						<parameter name="LVCMOS15_LVCMOS18_LVCMOS25_DRIVE_I4">0</parameter>
+						<parameter name="LVCMOS15_SSTL15_DRIVE_I16_I_FIXED">0</parameter>
+						<parameter name="IOSTANDARD">"LVCMOS33"</parameter>
+						<parameter name="LVCMOS25_DRIVE_I12">0</parameter>
+						<parameter name="LVTTL_DRIVE_I24">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_LVCMOS25_LVCMOS33_LVTTL_SLEW_FAST">0</parameter>
+						<parameter name="LVCMOS12_DRIVE_I12">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS25_DRIVE_I8">0</parameter>
+						<parameter name="IO_LOC_PAIRS">"dataFpga[1]:P16"</parameter>
+						<parameter name="LVCMOS33_LVTTL_DRIVE_I12_I16">1</parameter>
+						<parameter name="LVCMOS12_DRIVE_I4">0</parameter>
+						<parameter name="LVCMOS18_DRIVE_I24">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_LVCMOS25_LVCMOS33_LVTTL_SSTL135_SSTL15_SLEW_SLOW">1</parameter>
+						<parameter name="LVCMOS15_DRIVE_I12">0</parameter>
+						<parameter name="PULLTYPE_NONE">1</parameter>
+						<parameter name="LVCMOS33_LVTTL_DRIVE_I12_I8">0</parameter>
+						<parameter name="DRIVE">00000000000000000000000000001100</parameter>
+						<parameter name="LVCMOS18_DRIVE_I12_I8">0</parameter>
+						<parameter name="LVCMOS18_DRIVE_I16">0</parameter>
+						<parameter name="LVCMOS25_DRIVE_I16">0</parameter>
+						<parameter name="LVCMOS33_DRIVE_I16">0</parameter>
+						<parameter name="SLEW">"SLOW"</parameter>
+						<parameter name="LVCMOS33_LVTTL_DRIVE_I4">0</parameter>
+						<parameter name="PULLTYPE_PULLDOWN">0</parameter>
+						<parameter name="PULLTYPE_PULLUP">0</parameter>
+					</parameters>
+					<inputs>
+						<port name="I">IOB33_MODES.O[0]-&gt;IOB33_MODES.O_to_OBUFT_VPR.I</port>
+						<port name="T">IOB33_MODES.T[0]-&gt;IOB33_MODES.T_to_OBUFT_VPR.T</port>
+					</inputs>
+					<outputs>
+						<port name="O">dataFpga[1]</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="out:dataFpga[1]" instance="outpad[0]">
+					<attributes />
+					<parameters />
+					<inputs>
+						<port name="outpad">OBUFT_VPR[0].O[0]-&gt;OBUFT_VPR.O_to_outpad.outpad</port>
+					</inputs>
+					<outputs />
+					<clocks />
+				</block>
+			</block>
+		</block>
+		<block name="$iopadmap$top.dataFpga_1.genblk1.t_inv" instance="OLOGICE3[0]" mode="OLOGIC">
+			<inputs>
+				<port name="CLK">open</port>
+				<port name="CLKB">open</port>
+				<port name="CLKDIV">open</port>
+				<port name="CLKDIVB">open</port>
+				<port name="CLKDIVF">open</port>
+				<port name="CLKDIVFB">open</port>
+				<port name="D1">BLK-TL-IOPAD.OLOGICE3_D1[0]-&gt;BLK-TL-IOPAD.OLOGICE3_D1_to_OLOGICE3.D1</port>
+				<port name="D2">open</port>
+				<port name="D3">open</port>
+				<port name="D4">open</port>
+				<port name="D5">open</port>
+				<port name="D6">open</port>
+				<port name="D7">open</port>
+				<port name="D8">open</port>
+				<port name="OCE">open</port>
+				<port name="SHIFTIN1">open</port>
+				<port name="SHIFTIN2">open</port>
+				<port name="SR">open</port>
+				<port name="T1">BLK-TL-IOPAD.OLOGICE3_T1[0]-&gt;BLK-TL-IOPAD.OLOGICE3_T1_to_OLOGICE3.T1</port>
+				<port name="T2">open</port>
+				<port name="T3">open</port>
+				<port name="T4">open</port>
+				<port name="TBYTEIN">open</port>
+				<port name="TCE">open</port>
+			</inputs>
+			<outputs>
+				<port name="IOCLKGLITCH">open</port>
+				<port name="OFB">open</port>
+				<port name="OQ">OLOGIC_OFF[0].OQ[0]-&gt;OLOGIC_OFF.OQ_to_OLOGICE3.OQ</port>
+				<port name="SHIFTOUT1">open</port>
+				<port name="SHIFTOUT2">open</port>
+				<port name="TBYTEOUT">open</port>
+				<port name="TFB">open</port>
+				<port name="TQ">OLOGIC_TFF[0].TQ[0]-&gt;OLOGIC_TFF.TQ_to_OLOGICE3.TQ</port>
+			</outputs>
+			<clocks />
+			<block name="$iopadmap$top.dataFpga_1.genblk1.t_inv" instance="OLOGIC_TFF[0]" mode="T_INV">
+				<inputs>
+					<port name="CLK">open</port>
+					<port name="SR">open</port>
+					<port name="T1">OLOGICE3.T1[0]-&gt;OLOGICE3.T1_to_OLOGIC_TFF.T1</port>
+					<port name="T2">open</port>
+					<port name="TCE">open</port>
+				</inputs>
+				<outputs>
+					<port name="TFB">open</port>
+					<port name="TQ">T_INV[0].TO[0]-&gt;TO</port>
+				</outputs>
+				<clocks />
+				<block name="$iopadmap$top.dataFpga_1.genblk1.t_inv" instance="T_INV[0]">
+					<attributes>
+						<attribute name="src">"/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:1955.5-1959.4|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:1984.11-1987.6"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters />
+					<inputs>
+						<port name="TI">OLOGIC_TFF.T1[0]-&gt;TI</port>
+					</inputs>
+					<outputs>
+						<port name="TO">$iopadmap$top.dataFpga_1.t</port>
+					</outputs>
+					<clocks />
+				</block>
+			</block>
+			<block name="open" instance="OLOGIC_OFF[0]" mode="PASSTHROUGH" pb_type_num_modes="2">
+				<inputs>
+					<port name="CLK">open</port>
+					<port name="D1">OLOGICE3.D1[0]-&gt;OLOGICE3.D1_to_OLOGIC_OFF.D1</port>
+					<port name="D2">open</port>
+					<port name="OCE">open</port>
+					<port name="SR">open</port>
+				</inputs>
+				<outputs>
+					<port name="OFB">open</port>
+					<port name="OQ">OLOGIC_OFF[0].D1[0]-&gt;D1_to_OQ</port>
+				</outputs>
+				<clocks />
+			</block>
+		</block>
+	</block>
+	<block name="$iopadmap$top.dataFpga_2.genblk1.t_inv" instance="BLK-TL-IOPAD[5]" mode="default">
+		<inputs>
+			<port name="IDELAYE2_C">open</port>
+			<port name="IDELAYE2_CE">open</port>
+			<port name="IDELAYE2_CINVCTRL">open</port>
+			<port name="IDELAYE2_CNTVALUEIN0">open</port>
+			<port name="IDELAYE2_CNTVALUEIN1">open</port>
+			<port name="IDELAYE2_CNTVALUEIN2">open</port>
+			<port name="IDELAYE2_CNTVALUEIN3">open</port>
+			<port name="IDELAYE2_CNTVALUEIN4">open</port>
+			<port name="IDELAYE2_DATAIN">open</port>
+			<port name="IDELAYE2_IFDLY0">open</port>
+			<port name="IDELAYE2_IFDLY1">open</port>
+			<port name="IDELAYE2_IFDLY2">open</port>
+			<port name="IDELAYE2_INC">open</port>
+			<port name="IDELAYE2_LD">open</port>
+			<port name="IDELAYE2_LDPIPEEN">open</port>
+			<port name="IDELAYE2_REGRST">open</port>
+			<port name="ILOGICE3_BITSLIP">open</port>
+			<port name="ILOGICE3_CE1">open</port>
+			<port name="ILOGICE3_CE2">open</port>
+			<port name="ILOGICE3_SR">open</port>
+			<port name="IOB33_IBUFDISABLE">open</port>
+			<port name="IOB33_INTERMDISABLE">open</port>
+			<port name="IOB33_KEEPER_INT_EN">open</port>
+			<port name="IOB33_PD_INT_EN">open</port>
+			<port name="IOB33_PU_INT_EN">open</port>
+			<port name="OLOGICE3_D1">dataout[2]</port>
+			<port name="OLOGICE3_D2">open</port>
+			<port name="OLOGICE3_D3">open</port>
+			<port name="OLOGICE3_D4">open</port>
+			<port name="OLOGICE3_D5">open</port>
+			<port name="OLOGICE3_D6">open</port>
+			<port name="OLOGICE3_D7">open</port>
+			<port name="OLOGICE3_D8">open</port>
+			<port name="OLOGICE3_OCE">open</port>
+			<port name="OLOGICE3_SR">open</port>
+			<port name="OLOGICE3_T1">$true</port>
+			<port name="OLOGICE3_T2">open</port>
+			<port name="OLOGICE3_T3">open</port>
+			<port name="OLOGICE3_T4">open</port>
+			<port name="OLOGICE3_TBYTEIN">open</port>
+			<port name="OLOGICE3_TCE">open</port>
+		</inputs>
+		<outputs>
+			<port name="IDELAYE2_CNTVALUEOUT0">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT1">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT2">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT3">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT4">open</port>
+			<port name="ILOGICE3_O">open</port>
+			<port name="ILOGICE3_Q1">open</port>
+			<port name="ILOGICE3_Q2">open</port>
+			<port name="ILOGICE3_Q3">open</port>
+			<port name="ILOGICE3_Q4">open</port>
+			<port name="ILOGICE3_Q5">open</port>
+			<port name="ILOGICE3_Q6">open</port>
+			<port name="ILOGICE3_Q7">open</port>
+			<port name="ILOGICE3_Q8">open</port>
+			<port name="ILOGICE3_SHIFTOUT1">open</port>
+			<port name="ILOGICE3_SHIFTOUT2">open</port>
+			<port name="IOB33_DIFFO_OUT">open</port>
+			<port name="IOB33_O_OUT">open</port>
+			<port name="IOB33_PADOUT">open</port>
+			<port name="IOB33_T_OUT">open</port>
+			<port name="OLOGICE3_IOCLKGLITCH">open</port>
+			<port name="OLOGICE3_SHIFTOUT1">open</port>
+			<port name="OLOGICE3_SHIFTOUT2">open</port>
+			<port name="OLOGICE3_TBYTEOUT">open</port>
+		</outputs>
+		<clocks>
+			<port name="ILOGICE3_CLK">open</port>
+			<port name="ILOGICE3_CLKB">open</port>
+			<port name="ILOGICE3_CLKDIV">open</port>
+			<port name="ILOGICE3_CLKDIVP">open</port>
+			<port name="ILOGICE3_DYNCLKDIVPSEL">open</port>
+			<port name="ILOGICE3_DYNCLKDIVSEL">open</port>
+			<port name="ILOGICE3_DYNCLKSEL">open</port>
+			<port name="ILOGICE3_OCLK">open</port>
+			<port name="ILOGICE3_OCLKB">open</port>
+			<port name="OLOGICE3_CLK">open</port>
+			<port name="OLOGICE3_CLKB">open</port>
+			<port name="OLOGICE3_CLKDIV">open</port>
+			<port name="OLOGICE3_CLKDIVB">open</port>
+			<port name="OLOGICE3_CLKDIVF">open</port>
+			<port name="OLOGICE3_CLKDIVFB">open</port>
+		</clocks>
+		<block name="open" instance="IDELAYE2[0]" />
+		<block name="open" instance="ILOGICE3[0]" />
+		<block name="$iopadmap$top.dataFpga_2.obuft" instance="IOB33[0]" mode="default">
+			<inputs>
+				<port name="DIFFI_IN">open</port>
+				<port name="DIFFO_IN">open</port>
+				<port name="IBUFDISABLE">open</port>
+				<port name="INTERMDISABLE">open</port>
+				<port name="KEEPER_INT_EN">open</port>
+				<port name="O">OLOGICE3[0].OQ[0]-&gt;OLOGICE3.OQ_to_IOB33.O</port>
+				<port name="PD_INT_EN">open</port>
+				<port name="PU_INT_EN">open</port>
+				<port name="T">OLOGICE3[0].TQ[0]-&gt;OLOGICE3.TQ_to_IOB33.T</port>
+			</inputs>
+			<outputs>
+				<port name="DIFFO_OUT">open</port>
+				<port name="I">open</port>
+				<port name="O_OUT">open</port>
+				<port name="PADOUT">open</port>
+				<port name="T_OUT">open</port>
+			</outputs>
+			<clocks />
+			<block name="$iopadmap$top.dataFpga_2.obuft" instance="IOB33_MODES[0]" mode="OBUFT">
+				<inputs>
+					<port name="IBUFDISABLE">open</port>
+					<port name="INTERMDISABLE">open</port>
+					<port name="KEEPER_INT_EN">open</port>
+					<port name="O">IOB33.O[0]-&gt;O</port>
+					<port name="PD_INT_EN">open</port>
+					<port name="PU_INT_EN">open</port>
+					<port name="T">IOB33.T[0]-&gt;T</port>
+				</inputs>
+				<outputs>
+					<port name="I">open</port>
+				</outputs>
+				<clocks />
+				<block name="$iopadmap$top.dataFpga_2.obuft" instance="OBUFT_VPR[0]">
+					<attributes>
+						<attribute name="src">"/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:1955.5-1959.4|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:2098.5-2102.4"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters>
+						<parameter name="SSTL135_SSTL15_SLEW_FAST">0</parameter>
+						<parameter name="SSTL135_DRIVE_I_FIXED">0</parameter>
+						<parameter name="PULLTYPE_KEEPER">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_SSTL135_SSTL15_STEPDOWN">0</parameter>
+						<parameter name="PULLTYPE">"NONE"</parameter>
+						<parameter name="LVCMOS15_DRIVE_I8">0</parameter>
+						<parameter name="LVCMOS15_LVCMOS18_LVCMOS25_DRIVE_I4">0</parameter>
+						<parameter name="LVCMOS15_SSTL15_DRIVE_I16_I_FIXED">0</parameter>
+						<parameter name="IOSTANDARD">"LVCMOS33"</parameter>
+						<parameter name="LVCMOS25_DRIVE_I12">0</parameter>
+						<parameter name="LVTTL_DRIVE_I24">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_LVCMOS25_LVCMOS33_LVTTL_SLEW_FAST">0</parameter>
+						<parameter name="LVCMOS12_DRIVE_I12">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS25_DRIVE_I8">0</parameter>
+						<parameter name="IO_LOC_PAIRS">"dataFpga[2]:K19"</parameter>
+						<parameter name="LVCMOS33_LVTTL_DRIVE_I12_I16">1</parameter>
+						<parameter name="LVCMOS12_DRIVE_I4">0</parameter>
+						<parameter name="LVCMOS18_DRIVE_I24">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_LVCMOS25_LVCMOS33_LVTTL_SSTL135_SSTL15_SLEW_SLOW">1</parameter>
+						<parameter name="LVCMOS15_DRIVE_I12">0</parameter>
+						<parameter name="PULLTYPE_NONE">1</parameter>
+						<parameter name="LVCMOS33_LVTTL_DRIVE_I12_I8">0</parameter>
+						<parameter name="DRIVE">00000000000000000000000000001100</parameter>
+						<parameter name="LVCMOS18_DRIVE_I12_I8">0</parameter>
+						<parameter name="LVCMOS18_DRIVE_I16">0</parameter>
+						<parameter name="LVCMOS25_DRIVE_I16">0</parameter>
+						<parameter name="LVCMOS33_DRIVE_I16">0</parameter>
+						<parameter name="SLEW">"SLOW"</parameter>
+						<parameter name="LVCMOS33_LVTTL_DRIVE_I4">0</parameter>
+						<parameter name="PULLTYPE_PULLDOWN">0</parameter>
+						<parameter name="PULLTYPE_PULLUP">0</parameter>
+					</parameters>
+					<inputs>
+						<port name="I">IOB33_MODES.O[0]-&gt;IOB33_MODES.O_to_OBUFT_VPR.I</port>
+						<port name="T">IOB33_MODES.T[0]-&gt;IOB33_MODES.T_to_OBUFT_VPR.T</port>
+					</inputs>
+					<outputs>
+						<port name="O">dataFpga[2]</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="out:dataFpga[2]" instance="outpad[0]">
+					<attributes />
+					<parameters />
+					<inputs>
+						<port name="outpad">OBUFT_VPR[0].O[0]-&gt;OBUFT_VPR.O_to_outpad.outpad</port>
+					</inputs>
+					<outputs />
+					<clocks />
+				</block>
+			</block>
+		</block>
+		<block name="$iopadmap$top.dataFpga_2.genblk1.t_inv" instance="OLOGICE3[0]" mode="OLOGIC">
+			<inputs>
+				<port name="CLK">open</port>
+				<port name="CLKB">open</port>
+				<port name="CLKDIV">open</port>
+				<port name="CLKDIVB">open</port>
+				<port name="CLKDIVF">open</port>
+				<port name="CLKDIVFB">open</port>
+				<port name="D1">BLK-TL-IOPAD.OLOGICE3_D1[0]-&gt;BLK-TL-IOPAD.OLOGICE3_D1_to_OLOGICE3.D1</port>
+				<port name="D2">open</port>
+				<port name="D3">open</port>
+				<port name="D4">open</port>
+				<port name="D5">open</port>
+				<port name="D6">open</port>
+				<port name="D7">open</port>
+				<port name="D8">open</port>
+				<port name="OCE">open</port>
+				<port name="SHIFTIN1">open</port>
+				<port name="SHIFTIN2">open</port>
+				<port name="SR">open</port>
+				<port name="T1">BLK-TL-IOPAD.OLOGICE3_T1[0]-&gt;BLK-TL-IOPAD.OLOGICE3_T1_to_OLOGICE3.T1</port>
+				<port name="T2">open</port>
+				<port name="T3">open</port>
+				<port name="T4">open</port>
+				<port name="TBYTEIN">open</port>
+				<port name="TCE">open</port>
+			</inputs>
+			<outputs>
+				<port name="IOCLKGLITCH">open</port>
+				<port name="OFB">open</port>
+				<port name="OQ">OLOGIC_OFF[0].OQ[0]-&gt;OLOGIC_OFF.OQ_to_OLOGICE3.OQ</port>
+				<port name="SHIFTOUT1">open</port>
+				<port name="SHIFTOUT2">open</port>
+				<port name="TBYTEOUT">open</port>
+				<port name="TFB">open</port>
+				<port name="TQ">OLOGIC_TFF[0].TQ[0]-&gt;OLOGIC_TFF.TQ_to_OLOGICE3.TQ</port>
+			</outputs>
+			<clocks />
+			<block name="$iopadmap$top.dataFpga_2.genblk1.t_inv" instance="OLOGIC_TFF[0]" mode="T_INV">
+				<inputs>
+					<port name="CLK">open</port>
+					<port name="SR">open</port>
+					<port name="T1">OLOGICE3.T1[0]-&gt;OLOGICE3.T1_to_OLOGIC_TFF.T1</port>
+					<port name="T2">open</port>
+					<port name="TCE">open</port>
+				</inputs>
+				<outputs>
+					<port name="TFB">open</port>
+					<port name="TQ">T_INV[0].TO[0]-&gt;TO</port>
+				</outputs>
+				<clocks />
+				<block name="$iopadmap$top.dataFpga_2.genblk1.t_inv" instance="T_INV[0]">
+					<attributes>
+						<attribute name="src">"/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:1955.5-1959.4|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:1984.11-1987.6"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters />
+					<inputs>
+						<port name="TI">OLOGIC_TFF.T1[0]-&gt;TI</port>
+					</inputs>
+					<outputs>
+						<port name="TO">$iopadmap$top.dataFpga_2.t</port>
+					</outputs>
+					<clocks />
+				</block>
+			</block>
+			<block name="open" instance="OLOGIC_OFF[0]" mode="PASSTHROUGH" pb_type_num_modes="2">
+				<inputs>
+					<port name="CLK">open</port>
+					<port name="D1">OLOGICE3.D1[0]-&gt;OLOGICE3.D1_to_OLOGIC_OFF.D1</port>
+					<port name="D2">open</port>
+					<port name="OCE">open</port>
+					<port name="SR">open</port>
+				</inputs>
+				<outputs>
+					<port name="OFB">open</port>
+					<port name="OQ">OLOGIC_OFF[0].D1[0]-&gt;D1_to_OQ</port>
+				</outputs>
+				<clocks />
+			</block>
+		</block>
+	</block>
+	<block name="$iopadmap$top.dataFpga_3.genblk1.t_inv" instance="BLK-TL-IOPAD[6]" mode="default">
+		<inputs>
+			<port name="IDELAYE2_C">open</port>
+			<port name="IDELAYE2_CE">open</port>
+			<port name="IDELAYE2_CINVCTRL">open</port>
+			<port name="IDELAYE2_CNTVALUEIN0">open</port>
+			<port name="IDELAYE2_CNTVALUEIN1">open</port>
+			<port name="IDELAYE2_CNTVALUEIN2">open</port>
+			<port name="IDELAYE2_CNTVALUEIN3">open</port>
+			<port name="IDELAYE2_CNTVALUEIN4">open</port>
+			<port name="IDELAYE2_DATAIN">open</port>
+			<port name="IDELAYE2_IFDLY0">open</port>
+			<port name="IDELAYE2_IFDLY1">open</port>
+			<port name="IDELAYE2_IFDLY2">open</port>
+			<port name="IDELAYE2_INC">open</port>
+			<port name="IDELAYE2_LD">open</port>
+			<port name="IDELAYE2_LDPIPEEN">open</port>
+			<port name="IDELAYE2_REGRST">open</port>
+			<port name="ILOGICE3_BITSLIP">open</port>
+			<port name="ILOGICE3_CE1">open</port>
+			<port name="ILOGICE3_CE2">open</port>
+			<port name="ILOGICE3_SR">open</port>
+			<port name="IOB33_IBUFDISABLE">open</port>
+			<port name="IOB33_INTERMDISABLE">open</port>
+			<port name="IOB33_KEEPER_INT_EN">open</port>
+			<port name="IOB33_PD_INT_EN">open</port>
+			<port name="IOB33_PU_INT_EN">open</port>
+			<port name="OLOGICE3_D1">dataout[3]</port>
+			<port name="OLOGICE3_D2">open</port>
+			<port name="OLOGICE3_D3">open</port>
+			<port name="OLOGICE3_D4">open</port>
+			<port name="OLOGICE3_D5">open</port>
+			<port name="OLOGICE3_D6">open</port>
+			<port name="OLOGICE3_D7">open</port>
+			<port name="OLOGICE3_D8">open</port>
+			<port name="OLOGICE3_OCE">open</port>
+			<port name="OLOGICE3_SR">open</port>
+			<port name="OLOGICE3_T1">$true</port>
+			<port name="OLOGICE3_T2">open</port>
+			<port name="OLOGICE3_T3">open</port>
+			<port name="OLOGICE3_T4">open</port>
+			<port name="OLOGICE3_TBYTEIN">open</port>
+			<port name="OLOGICE3_TCE">open</port>
+		</inputs>
+		<outputs>
+			<port name="IDELAYE2_CNTVALUEOUT0">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT1">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT2">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT3">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT4">open</port>
+			<port name="ILOGICE3_O">open</port>
+			<port name="ILOGICE3_Q1">open</port>
+			<port name="ILOGICE3_Q2">open</port>
+			<port name="ILOGICE3_Q3">open</port>
+			<port name="ILOGICE3_Q4">open</port>
+			<port name="ILOGICE3_Q5">open</port>
+			<port name="ILOGICE3_Q6">open</port>
+			<port name="ILOGICE3_Q7">open</port>
+			<port name="ILOGICE3_Q8">open</port>
+			<port name="ILOGICE3_SHIFTOUT1">open</port>
+			<port name="ILOGICE3_SHIFTOUT2">open</port>
+			<port name="IOB33_DIFFO_OUT">open</port>
+			<port name="IOB33_O_OUT">open</port>
+			<port name="IOB33_PADOUT">open</port>
+			<port name="IOB33_T_OUT">open</port>
+			<port name="OLOGICE3_IOCLKGLITCH">open</port>
+			<port name="OLOGICE3_SHIFTOUT1">open</port>
+			<port name="OLOGICE3_SHIFTOUT2">open</port>
+			<port name="OLOGICE3_TBYTEOUT">open</port>
+		</outputs>
+		<clocks>
+			<port name="ILOGICE3_CLK">open</port>
+			<port name="ILOGICE3_CLKB">open</port>
+			<port name="ILOGICE3_CLKDIV">open</port>
+			<port name="ILOGICE3_CLKDIVP">open</port>
+			<port name="ILOGICE3_DYNCLKDIVPSEL">open</port>
+			<port name="ILOGICE3_DYNCLKDIVSEL">open</port>
+			<port name="ILOGICE3_DYNCLKSEL">open</port>
+			<port name="ILOGICE3_OCLK">open</port>
+			<port name="ILOGICE3_OCLKB">open</port>
+			<port name="OLOGICE3_CLK">open</port>
+			<port name="OLOGICE3_CLKB">open</port>
+			<port name="OLOGICE3_CLKDIV">open</port>
+			<port name="OLOGICE3_CLKDIVB">open</port>
+			<port name="OLOGICE3_CLKDIVF">open</port>
+			<port name="OLOGICE3_CLKDIVFB">open</port>
+		</clocks>
+		<block name="open" instance="IDELAYE2[0]" />
+		<block name="open" instance="ILOGICE3[0]" />
+		<block name="$iopadmap$top.dataFpga_3.obuft" instance="IOB33[0]" mode="default">
+			<inputs>
+				<port name="DIFFI_IN">open</port>
+				<port name="DIFFO_IN">open</port>
+				<port name="IBUFDISABLE">open</port>
+				<port name="INTERMDISABLE">open</port>
+				<port name="KEEPER_INT_EN">open</port>
+				<port name="O">OLOGICE3[0].OQ[0]-&gt;OLOGICE3.OQ_to_IOB33.O</port>
+				<port name="PD_INT_EN">open</port>
+				<port name="PU_INT_EN">open</port>
+				<port name="T">OLOGICE3[0].TQ[0]-&gt;OLOGICE3.TQ_to_IOB33.T</port>
+			</inputs>
+			<outputs>
+				<port name="DIFFO_OUT">open</port>
+				<port name="I">open</port>
+				<port name="O_OUT">open</port>
+				<port name="PADOUT">open</port>
+				<port name="T_OUT">open</port>
+			</outputs>
+			<clocks />
+			<block name="$iopadmap$top.dataFpga_3.obuft" instance="IOB33_MODES[0]" mode="OBUFT">
+				<inputs>
+					<port name="IBUFDISABLE">open</port>
+					<port name="INTERMDISABLE">open</port>
+					<port name="KEEPER_INT_EN">open</port>
+					<port name="O">IOB33.O[0]-&gt;O</port>
+					<port name="PD_INT_EN">open</port>
+					<port name="PU_INT_EN">open</port>
+					<port name="T">IOB33.T[0]-&gt;T</port>
+				</inputs>
+				<outputs>
+					<port name="I">open</port>
+				</outputs>
+				<clocks />
+				<block name="$iopadmap$top.dataFpga_3.obuft" instance="OBUFT_VPR[0]">
+					<attributes>
+						<attribute name="src">"/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:1955.5-1959.4|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:2098.5-2102.4"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters>
+						<parameter name="SSTL135_SSTL15_SLEW_FAST">0</parameter>
+						<parameter name="SSTL135_DRIVE_I_FIXED">0</parameter>
+						<parameter name="PULLTYPE_KEEPER">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_SSTL135_SSTL15_STEPDOWN">0</parameter>
+						<parameter name="PULLTYPE">"NONE"</parameter>
+						<parameter name="LVCMOS15_DRIVE_I8">0</parameter>
+						<parameter name="LVCMOS15_LVCMOS18_LVCMOS25_DRIVE_I4">0</parameter>
+						<parameter name="LVCMOS15_SSTL15_DRIVE_I16_I_FIXED">0</parameter>
+						<parameter name="IOSTANDARD">"LVCMOS33"</parameter>
+						<parameter name="LVCMOS25_DRIVE_I12">0</parameter>
+						<parameter name="LVTTL_DRIVE_I24">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_LVCMOS25_LVCMOS33_LVTTL_SLEW_FAST">0</parameter>
+						<parameter name="LVCMOS12_DRIVE_I12">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS25_DRIVE_I8">0</parameter>
+						<parameter name="IO_LOC_PAIRS">"dataFpga[3]:Y16"</parameter>
+						<parameter name="LVCMOS33_LVTTL_DRIVE_I12_I16">1</parameter>
+						<parameter name="LVCMOS12_DRIVE_I4">0</parameter>
+						<parameter name="LVCMOS18_DRIVE_I24">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_LVCMOS25_LVCMOS33_LVTTL_SSTL135_SSTL15_SLEW_SLOW">1</parameter>
+						<parameter name="LVCMOS15_DRIVE_I12">0</parameter>
+						<parameter name="PULLTYPE_NONE">1</parameter>
+						<parameter name="LVCMOS33_LVTTL_DRIVE_I12_I8">0</parameter>
+						<parameter name="DRIVE">00000000000000000000000000001100</parameter>
+						<parameter name="LVCMOS18_DRIVE_I12_I8">0</parameter>
+						<parameter name="LVCMOS18_DRIVE_I16">0</parameter>
+						<parameter name="LVCMOS25_DRIVE_I16">0</parameter>
+						<parameter name="LVCMOS33_DRIVE_I16">0</parameter>
+						<parameter name="SLEW">"SLOW"</parameter>
+						<parameter name="LVCMOS33_LVTTL_DRIVE_I4">0</parameter>
+						<parameter name="PULLTYPE_PULLDOWN">0</parameter>
+						<parameter name="PULLTYPE_PULLUP">0</parameter>
+					</parameters>
+					<inputs>
+						<port name="I">IOB33_MODES.O[0]-&gt;IOB33_MODES.O_to_OBUFT_VPR.I</port>
+						<port name="T">IOB33_MODES.T[0]-&gt;IOB33_MODES.T_to_OBUFT_VPR.T</port>
+					</inputs>
+					<outputs>
+						<port name="O">dataFpga[3]</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="out:dataFpga[3]" instance="outpad[0]">
+					<attributes />
+					<parameters />
+					<inputs>
+						<port name="outpad">OBUFT_VPR[0].O[0]-&gt;OBUFT_VPR.O_to_outpad.outpad</port>
+					</inputs>
+					<outputs />
+					<clocks />
+				</block>
+			</block>
+		</block>
+		<block name="$iopadmap$top.dataFpga_3.genblk1.t_inv" instance="OLOGICE3[0]" mode="OLOGIC">
+			<inputs>
+				<port name="CLK">open</port>
+				<port name="CLKB">open</port>
+				<port name="CLKDIV">open</port>
+				<port name="CLKDIVB">open</port>
+				<port name="CLKDIVF">open</port>
+				<port name="CLKDIVFB">open</port>
+				<port name="D1">BLK-TL-IOPAD.OLOGICE3_D1[0]-&gt;BLK-TL-IOPAD.OLOGICE3_D1_to_OLOGICE3.D1</port>
+				<port name="D2">open</port>
+				<port name="D3">open</port>
+				<port name="D4">open</port>
+				<port name="D5">open</port>
+				<port name="D6">open</port>
+				<port name="D7">open</port>
+				<port name="D8">open</port>
+				<port name="OCE">open</port>
+				<port name="SHIFTIN1">open</port>
+				<port name="SHIFTIN2">open</port>
+				<port name="SR">open</port>
+				<port name="T1">BLK-TL-IOPAD.OLOGICE3_T1[0]-&gt;BLK-TL-IOPAD.OLOGICE3_T1_to_OLOGICE3.T1</port>
+				<port name="T2">open</port>
+				<port name="T3">open</port>
+				<port name="T4">open</port>
+				<port name="TBYTEIN">open</port>
+				<port name="TCE">open</port>
+			</inputs>
+			<outputs>
+				<port name="IOCLKGLITCH">open</port>
+				<port name="OFB">open</port>
+				<port name="OQ">OLOGIC_OFF[0].OQ[0]-&gt;OLOGIC_OFF.OQ_to_OLOGICE3.OQ</port>
+				<port name="SHIFTOUT1">open</port>
+				<port name="SHIFTOUT2">open</port>
+				<port name="TBYTEOUT">open</port>
+				<port name="TFB">open</port>
+				<port name="TQ">OLOGIC_TFF[0].TQ[0]-&gt;OLOGIC_TFF.TQ_to_OLOGICE3.TQ</port>
+			</outputs>
+			<clocks />
+			<block name="$iopadmap$top.dataFpga_3.genblk1.t_inv" instance="OLOGIC_TFF[0]" mode="T_INV">
+				<inputs>
+					<port name="CLK">open</port>
+					<port name="SR">open</port>
+					<port name="T1">OLOGICE3.T1[0]-&gt;OLOGICE3.T1_to_OLOGIC_TFF.T1</port>
+					<port name="T2">open</port>
+					<port name="TCE">open</port>
+				</inputs>
+				<outputs>
+					<port name="TFB">open</port>
+					<port name="TQ">T_INV[0].TO[0]-&gt;TO</port>
+				</outputs>
+				<clocks />
+				<block name="$iopadmap$top.dataFpga_3.genblk1.t_inv" instance="T_INV[0]">
+					<attributes>
+						<attribute name="src">"/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:1955.5-1959.4|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:1984.11-1987.6"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters />
+					<inputs>
+						<port name="TI">OLOGIC_TFF.T1[0]-&gt;TI</port>
+					</inputs>
+					<outputs>
+						<port name="TO">$iopadmap$top.dataFpga_3.t</port>
+					</outputs>
+					<clocks />
+				</block>
+			</block>
+			<block name="open" instance="OLOGIC_OFF[0]" mode="PASSTHROUGH" pb_type_num_modes="2">
+				<inputs>
+					<port name="CLK">open</port>
+					<port name="D1">OLOGICE3.D1[0]-&gt;OLOGICE3.D1_to_OLOGIC_OFF.D1</port>
+					<port name="D2">open</port>
+					<port name="OCE">open</port>
+					<port name="SR">open</port>
+				</inputs>
+				<outputs>
+					<port name="OFB">open</port>
+					<port name="OQ">OLOGIC_OFF[0].D1[0]-&gt;D1_to_OQ</port>
+				</outputs>
+				<clocks />
+			</block>
+		</block>
+	</block>
+	<block name="valid_wire" instance="BLK-TL-SLICEL[7]" mode="default">
+		<inputs>
+			<port name="A1">M1.start</port>
+			<port name="A2">M1.state[0]</port>
+			<port name="A3">open</port>
+			<port name="A4">open</port>
+			<port name="A5">M1.state[1]</port>
+			<port name="A6">open</port>
+			<port name="AX">open</port>
+			<port name="B1">S1.state[0]</port>
+			<port name="B2">M1.state[0]</port>
+			<port name="B3">M1.state[1]</port>
+			<port name="B4">open</port>
+			<port name="B5">S1.state[1]</port>
+			<port name="B6">open</port>
+			<port name="BX">open</port>
+			<port name="C1">S1.state[0]</port>
+			<port name="C2">open</port>
+			<port name="C3">open</port>
+			<port name="C4">open</port>
+			<port name="C5">S1.state[1]</port>
+			<port name="C6">open</port>
+			<port name="CE">open</port>
+			<port name="CIN">open</port>
+			<port name="CX">M1.next_state[1]</port>
+			<port name="D1">M1.state[0]</port>
+			<port name="D2">S1.state[1]</port>
+			<port name="D3">S1.state[0]</port>
+			<port name="D4">open</port>
+			<port name="D5">M1.state[1]</port>
+			<port name="D6">open</port>
+			<port name="DX">M1.next_state[0]</port>
+			<port name="SR">S1.rst</port>
+		</inputs>
+		<outputs>
+			<port name="A">SLICEL0[0].A[0]-&gt;SLICEL0.A_to_BLK-TL-SLICEL.A</port>
+			<port name="AMUX">SLICEL0[0].AMUX[0]-&gt;SLICEL0.AMUX_to_BLK-TL-SLICEL.AMUX</port>
+			<port name="AQ">open</port>
+			<port name="B">SLICEL0[0].B[0]-&gt;SLICEL0.B_to_BLK-TL-SLICEL.B</port>
+			<port name="BMUX">SLICEL0[0].BMUX[0]-&gt;SLICEL0.BMUX_to_BLK-TL-SLICEL.BMUX</port>
+			<port name="BQ">open</port>
+			<port name="C">SLICEL0[0].C[0]-&gt;SLICEL0.C_to_BLK-TL-SLICEL.C</port>
+			<port name="CMUX">SLICEL0[0].CMUX[0]-&gt;SLICEL0.CMUX_to_BLK-TL-SLICEL.CMUX</port>
+			<port name="COUT">open</port>
+			<port name="CQ">open</port>
+			<port name="D">open</port>
+			<port name="DMUX">SLICEL0[0].DMUX[0]-&gt;SLICEL0.DMUX_to_BLK-TL-SLICEL.DMUX</port>
+			<port name="DQ">SLICEL0[0].DQ[0]-&gt;SLICEL0.DQ_to_BLK-TL-SLICEL.DQ</port>
+		</outputs>
+		<clocks>
+			<port name="CLK">S1.clk</port>
+		</clocks>
+		<block name="valid_wire" instance="SLICEL0[0]" mode="default">
+			<inputs>
+				<port name="A1">BLK-TL-SLICEL.A1[0]-&gt;BLK-TL-SLICEL.A1_to_SLICEL0.A1</port>
+				<port name="A2">BLK-TL-SLICEL.A2[0]-&gt;BLK-TL-SLICEL.A2_to_SLICEL0.A2</port>
+				<port name="A3">open</port>
+				<port name="A4">open</port>
+				<port name="A5">BLK-TL-SLICEL.A5[0]-&gt;BLK-TL-SLICEL.A5_to_SLICEL0.A5</port>
+				<port name="A6">open</port>
+				<port name="AX">open</port>
+				<port name="B1">BLK-TL-SLICEL.B1[0]-&gt;BLK-TL-SLICEL.B1_to_SLICEL0.B1</port>
+				<port name="B2">BLK-TL-SLICEL.B2[0]-&gt;BLK-TL-SLICEL.B2_to_SLICEL0.B2</port>
+				<port name="B3">BLK-TL-SLICEL.B3[0]-&gt;BLK-TL-SLICEL.B3_to_SLICEL0.B3</port>
+				<port name="B4">open</port>
+				<port name="B5">BLK-TL-SLICEL.B5[0]-&gt;BLK-TL-SLICEL.B5_to_SLICEL0.B5</port>
+				<port name="B6">open</port>
+				<port name="BX">open</port>
+				<port name="C1">BLK-TL-SLICEL.C1[0]-&gt;BLK-TL-SLICEL.C1_to_SLICEL0.C1</port>
+				<port name="C2">open</port>
+				<port name="C3">open</port>
+				<port name="C4">open</port>
+				<port name="C5">BLK-TL-SLICEL.C5[0]-&gt;BLK-TL-SLICEL.C5_to_SLICEL0.C5</port>
+				<port name="C6">open</port>
+				<port name="CE">open</port>
+				<port name="CIN">open</port>
+				<port name="CX">BLK-TL-SLICEL.CX[0]-&gt;BLK-TL-SLICEL.CX_to_SLICEL0.CX</port>
+				<port name="D1">BLK-TL-SLICEL.D1[0]-&gt;BLK-TL-SLICEL.D1_to_SLICEL0.D1</port>
+				<port name="D2">BLK-TL-SLICEL.D2[0]-&gt;BLK-TL-SLICEL.D2_to_SLICEL0.D2</port>
+				<port name="D3">BLK-TL-SLICEL.D3[0]-&gt;BLK-TL-SLICEL.D3_to_SLICEL0.D3</port>
+				<port name="D4">open</port>
+				<port name="D5">BLK-TL-SLICEL.D5[0]-&gt;BLK-TL-SLICEL.D5_to_SLICEL0.D5</port>
+				<port name="D6">open</port>
+				<port name="DX">BLK-TL-SLICEL.DX[0]-&gt;BLK-TL-SLICEL.DX_to_SLICEL0.DX</port>
+				<port name="SR">BLK-TL-SLICEL.SR[0]-&gt;BLK-TL-SLICEL.SR_to_SLICEL0.SR</port>
+			</inputs>
+			<outputs>
+				<port name="A">COMMON_SLICE[0].A[0]-&gt;SLICEL_AOUT</port>
+				<port name="AMUX">COMMON_SLICE[0].AMUX[0]-&gt;SLICEL_AMUX</port>
+				<port name="AQ">open</port>
+				<port name="B">COMMON_SLICE[0].B[0]-&gt;SLICEL_BOUT</port>
+				<port name="BMUX">COMMON_SLICE[0].BMUX[0]-&gt;SLICEL_BMUX</port>
+				<port name="BQ">open</port>
+				<port name="C">COMMON_SLICE[0].C[0]-&gt;SLICEL_COUT</port>
+				<port name="CMUX">COMMON_SLICE[0].CMUX[0]-&gt;SLICEL_CMUX</port>
+				<port name="COUT">open</port>
+				<port name="CQ">open</port>
+				<port name="D">open</port>
+				<port name="DMUX">COMMON_SLICE[0].DMUX[0]-&gt;SLICEL_DMUX</port>
+				<port name="DQ">COMMON_SLICE[0].DQ[0]-&gt;DQ</port>
+			</outputs>
+			<clocks>
+				<port name="CLK">BLK-TL-SLICEL.CLK[0]-&gt;BLK-TL-SLICEL.CLK_to_SLICEL0.CLK</port>
+			</clocks>
+			<block name="valid_wire" instance="COMMON_LUT_AND_F78MUX[0]" mode="default">
+				<inputs>
+					<port name="A1">SLICEL0.A1[0]-&gt;A1</port>
+					<port name="A2">SLICEL0.A2[0]-&gt;A2</port>
+					<port name="A3">open</port>
+					<port name="A4">open</port>
+					<port name="A5">SLICEL0.A5[0]-&gt;A5</port>
+					<port name="A6">open</port>
+					<port name="AX">open</port>
+					<port name="B1">SLICEL0.B1[0]-&gt;B1</port>
+					<port name="B2">SLICEL0.B2[0]-&gt;B2</port>
+					<port name="B3">SLICEL0.B3[0]-&gt;B3</port>
+					<port name="B4">open</port>
+					<port name="B5">SLICEL0.B5[0]-&gt;B5</port>
+					<port name="B6">open</port>
+					<port name="BX">open</port>
+					<port name="C1">SLICEL0.C1[0]-&gt;C1</port>
+					<port name="C2">open</port>
+					<port name="C3">open</port>
+					<port name="C4">open</port>
+					<port name="C5">SLICEL0.C5[0]-&gt;C5</port>
+					<port name="C6">open</port>
+					<port name="CX">open</port>
+					<port name="D1">SLICEL0.D1[0]-&gt;D1</port>
+					<port name="D2">SLICEL0.D2[0]-&gt;D2</port>
+					<port name="D3">SLICEL0.D3[0]-&gt;D3</port>
+					<port name="D4">open</port>
+					<port name="D5">SLICEL0.D5[0]-&gt;D5</port>
+					<port name="D6">open</port>
+				</inputs>
+				<outputs>
+					<port name="AO5">ALUT[0].O5[0]-&gt;AO5</port>
+					<port name="AO6">ALUT[0].O6[0]-&gt;AO6</port>
+					<port name="BO5">BLUT[0].O5[0]-&gt;BO5</port>
+					<port name="BO6">BLUT[0].O6[0]-&gt;BO6</port>
+					<port name="CO5">open</port>
+					<port name="CO6">CLUT[0].O6[0]-&gt;CO6</port>
+					<port name="DO5">open</port>
+					<port name="DO6">DLUT[0].O6[0]-&gt;DO6</port>
+					<port name="F7AMUX_O">open</port>
+					<port name="F7BMUX_O">open</port>
+					<port name="F8MUX_O">open</port>
+				</outputs>
+				<clocks />
+				<block name="valid_wire" instance="ALUT[0]" mode="ALUT-LUT5_MUX">
+					<inputs>
+						<port name="A1">COMMON_LUT_AND_F78MUX.A1[0]-&gt;A1</port>
+						<port name="A2">COMMON_LUT_AND_F78MUX.A2[0]-&gt;A2</port>
+						<port name="A3">open</port>
+						<port name="A4">open</port>
+						<port name="A5">COMMON_LUT_AND_F78MUX.A5[0]-&gt;A5</port>
+						<port name="A6">open</port>
+					</inputs>
+					<outputs>
+						<port name="O5">A5LUT[0].out[0]-&gt;O5</port>
+						<port name="O6">A5LUT[1].out[0]-&gt;O6</port>
+					</outputs>
+					<clocks />
+					<block name="M1.next_state[0]" instance="A5LUT[0]" mode="A5LUT">
+						<inputs>
+							<port name="in">ALUT.A1[0]-&gt;ALUT_A1_0 ALUT.A2[0]-&gt;ALUT_A2_0 open open ALUT.A5[0]-&gt;ALUT_A5_0</port>
+						</inputs>
+						<outputs>
+							<port name="out">lut[0].out[0]-&gt;direct:A5LUT</port>
+						</outputs>
+						<clocks />
+						<block name="M1.next_state[0]" instance="lut[0]">
+							<attributes />
+							<parameters />
+							<inputs>
+								<port name="in">A5LUT.in[0]-&gt;direct:A5LUT A5LUT.in[1]-&gt;direct:A5LUT open open A5LUT.in[4]-&gt;direct:A5LUT</port>
+								<port_rotation_map name="in">0 2 open open 1</port_rotation_map>
+							</inputs>
+							<outputs>
+								<port name="out">M1.next_state[0]</port>
+							</outputs>
+							<clocks />
+						</block>
+					</block>
+					<block name="valid_wire" instance="A5LUT[1]" mode="A5LUT">
+						<inputs>
+							<port name="in">open ALUT.A2[0]-&gt;ALUT_A2_1 open open ALUT.A5[0]-&gt;ALUT_A5_1</port>
+						</inputs>
+						<outputs>
+							<port name="out">lut[0].out[0]-&gt;direct:A5LUT</port>
+						</outputs>
+						<clocks />
+						<block name="valid_wire" instance="lut[0]">
+							<attributes />
+							<parameters />
+							<inputs>
+								<port name="in">open A5LUT.in[1]-&gt;direct:A5LUT open open A5LUT.in[4]-&gt;direct:A5LUT</port>
+								<port_rotation_map name="in">open 1 open open 0</port_rotation_map>
+							</inputs>
+							<outputs>
+								<port name="out">valid_wire</port>
+							</outputs>
+							<clocks />
+						</block>
+					</block>
+					<block name="open" instance="F6MUX[0]" />
+				</block>
+				<block name="M1.next_state[1]" instance="BLUT[0]" mode="BLUT-LUT5_MUX">
+					<inputs>
+						<port name="A1">COMMON_LUT_AND_F78MUX.B1[0]-&gt;B1</port>
+						<port name="A2">COMMON_LUT_AND_F78MUX.B2[0]-&gt;B2</port>
+						<port name="A3">COMMON_LUT_AND_F78MUX.B3[0]-&gt;B3</port>
+						<port name="A4">open</port>
+						<port name="A5">COMMON_LUT_AND_F78MUX.B5[0]-&gt;B5</port>
+						<port name="A6">open</port>
+					</inputs>
+					<outputs>
+						<port name="O5">B5LUT[0].out[0]-&gt;O5</port>
+						<port name="O6">B5LUT[1].out[0]-&gt;O6</port>
+					</outputs>
+					<clocks />
+					<block name="S1.next_state[1]" instance="B5LUT[0]" mode="B5LUT">
+						<inputs>
+							<port name="in">BLUT.A1[0]-&gt;BLUT_A1_0 BLUT.A2[0]-&gt;BLUT_A2_0 BLUT.A3[0]-&gt;BLUT_A3_0 open BLUT.A5[0]-&gt;BLUT_A5_0</port>
+						</inputs>
+						<outputs>
+							<port name="out">lut[0].out[0]-&gt;direct:B5LUT</port>
+						</outputs>
+						<clocks />
+						<block name="S1.next_state[1]" instance="lut[0]">
+							<attributes />
+							<parameters />
+							<inputs>
+								<port name="in">B5LUT.in[0]-&gt;direct:B5LUT B5LUT.in[1]-&gt;direct:B5LUT B5LUT.in[2]-&gt;direct:B5LUT open B5LUT.in[4]-&gt;direct:B5LUT</port>
+								<port_rotation_map name="in">1 3 2 open 0</port_rotation_map>
+							</inputs>
+							<outputs>
+								<port name="out">S1.next_state[1]</port>
+							</outputs>
+							<clocks />
+						</block>
+					</block>
+					<block name="M1.next_state[1]" instance="B5LUT[1]" mode="B5LUT">
+						<inputs>
+							<port name="in">BLUT.A1[0]-&gt;BLUT_A1_1 BLUT.A2[0]-&gt;BLUT_A2_1 BLUT.A3[0]-&gt;BLUT_A3_1 open BLUT.A5[0]-&gt;BLUT_A5_1</port>
+						</inputs>
+						<outputs>
+							<port name="out">lut[0].out[0]-&gt;direct:B5LUT</port>
+						</outputs>
+						<clocks />
+						<block name="M1.next_state[1]" instance="lut[0]">
+							<attributes />
+							<parameters />
+							<inputs>
+								<port name="in">B5LUT.in[0]-&gt;direct:B5LUT B5LUT.in[1]-&gt;direct:B5LUT B5LUT.in[2]-&gt;direct:B5LUT open B5LUT.in[4]-&gt;direct:B5LUT</port>
+								<port_rotation_map name="in">2 1 0 open 3</port_rotation_map>
+							</inputs>
+							<outputs>
+								<port name="out">M1.next_state[1]</port>
+							</outputs>
+							<clocks />
+						</block>
+					</block>
+					<block name="open" instance="F6MUX[0]" />
+				</block>
+				<block name="ready_wire" instance="CLUT[0]" mode="CLUT-LUT5_MUX">
+					<inputs>
+						<port name="A1">COMMON_LUT_AND_F78MUX.C1[0]-&gt;C1</port>
+						<port name="A2">open</port>
+						<port name="A3">open</port>
+						<port name="A4">open</port>
+						<port name="A5">COMMON_LUT_AND_F78MUX.C5[0]-&gt;C5</port>
+						<port name="A6">open</port>
+					</inputs>
+					<outputs>
+						<port name="O5">open</port>
+						<port name="O6">C5LUT[1].out[0]-&gt;O6</port>
+					</outputs>
+					<clocks />
+					<block name="open" instance="C5LUT[0]" />
+					<block name="ready_wire" instance="C5LUT[1]" mode="C5LUT">
+						<inputs>
+							<port name="in">CLUT.A1[0]-&gt;CLUT_A1_1 open open open CLUT.A5[0]-&gt;CLUT_A5_1</port>
+						</inputs>
+						<outputs>
+							<port name="out">lut[0].out[0]-&gt;direct:C5LUT</port>
+						</outputs>
+						<clocks />
+						<block name="ready_wire" instance="lut[0]">
+							<attributes />
+							<parameters />
+							<inputs>
+								<port name="in">C5LUT.in[0]-&gt;direct:C5LUT open open open C5LUT.in[4]-&gt;direct:C5LUT</port>
+								<port_rotation_map name="in">1 open open open 0</port_rotation_map>
+							</inputs>
+							<outputs>
+								<port name="out">ready_wire</port>
+							</outputs>
+							<clocks />
+						</block>
+					</block>
+					<block name="open" instance="F6MUX[0]" />
+				</block>
+				<block name="S1.next_state[0]" instance="DLUT[0]" mode="DLUT-LUT5_MUX">
+					<inputs>
+						<port name="A1">COMMON_LUT_AND_F78MUX.D1[0]-&gt;D1</port>
+						<port name="A2">COMMON_LUT_AND_F78MUX.D2[0]-&gt;D2</port>
+						<port name="A3">COMMON_LUT_AND_F78MUX.D3[0]-&gt;D3</port>
+						<port name="A4">open</port>
+						<port name="A5">COMMON_LUT_AND_F78MUX.D5[0]-&gt;D5</port>
+						<port name="A6">open</port>
+					</inputs>
+					<outputs>
+						<port name="O5">open</port>
+						<port name="O6">D5LUT[1].out[0]-&gt;O6</port>
+					</outputs>
+					<clocks />
+					<block name="open" instance="D5LUT[0]" />
+					<block name="S1.next_state[0]" instance="D5LUT[1]" mode="D5LUT">
+						<inputs>
+							<port name="in">DLUT.A1[0]-&gt;DLUT_A1_1 DLUT.A2[0]-&gt;DLUT_A2_1 DLUT.A3[0]-&gt;DLUT_A3_1 open DLUT.A5[0]-&gt;DLUT_A5_1</port>
+						</inputs>
+						<outputs>
+							<port name="out">lut[0].out[0]-&gt;direct:D5LUT</port>
+						</outputs>
+						<clocks />
+						<block name="S1.next_state[0]" instance="lut[0]">
+							<attributes />
+							<parameters />
+							<inputs>
+								<port name="in">D5LUT.in[0]-&gt;direct:D5LUT D5LUT.in[1]-&gt;direct:D5LUT D5LUT.in[2]-&gt;direct:D5LUT open D5LUT.in[4]-&gt;direct:D5LUT</port>
+								<port_rotation_map name="in">1 2 3 open 0</port_rotation_map>
+							</inputs>
+							<outputs>
+								<port name="out">S1.next_state[0]</port>
+							</outputs>
+							<clocks />
+						</block>
+					</block>
+					<block name="open" instance="F6MUX[0]" />
+				</block>
+				<block name="open" instance="F7AMUX[0]" />
+				<block name="open" instance="F7BMUX[0]" />
+				<block name="open" instance="F8MUX[0]" />
+			</block>
+			<block name="$techmap4637$auto$ff.cc:266:slice$2178.cesr_mux.genblk1.ce" instance="COMMON_SLICE[0]" mode="default">
+				<inputs>
+					<port name="AMC31">open</port>
+					<port name="AO5">COMMON_LUT_AND_F78MUX[0].AO5[0]-&gt;AO5</port>
+					<port name="AO6">COMMON_LUT_AND_F78MUX[0].AO6[0]-&gt;AO6</port>
+					<port name="AX">open</port>
+					<port name="BO5">COMMON_LUT_AND_F78MUX[0].BO5[0]-&gt;BO5</port>
+					<port name="BO6">COMMON_LUT_AND_F78MUX[0].BO6[0]-&gt;BO6</port>
+					<port name="BX">open</port>
+					<port name="CE">open</port>
+					<port name="CIN">open</port>
+					<port name="CO5">open</port>
+					<port name="CO6">COMMON_LUT_AND_F78MUX[0].CO6[0]-&gt;CO6</port>
+					<port name="CX">SLICEL0.CX[0]-&gt;CX2</port>
+					<port name="DO5">open</port>
+					<port name="DO6">COMMON_LUT_AND_F78MUX[0].DO6[0]-&gt;DO6</port>
+					<port name="DX">SLICEL0.DX[0]-&gt;DX2</port>
+					<port name="F7AMUX_O">open</port>
+					<port name="F7BMUX_O">open</port>
+					<port name="F8MUX_O">open</port>
+					<port name="SR">SLICEL0.SR[0]-&gt;SR</port>
+				</inputs>
+				<outputs>
+					<port name="A">COMMON_SLICE[0].AO6[0]-&gt;COMMON_SLICE_AOUT</port>
+					<port name="AMUX">COMMON_SLICE[0].AO5[0]-&gt;AOUTMUX</port>
+					<port name="AQ">open</port>
+					<port name="B">COMMON_SLICE[0].BO6[0]-&gt;COMMON_SLICE_BOUT</port>
+					<port name="BMUX">SLICE_FF[0].Q5[1]-&gt;BOUTMUX</port>
+					<port name="BQ">open</port>
+					<port name="C">COMMON_SLICE[0].CO6[0]-&gt;COMMON_SLICE_COUT</port>
+					<port name="CMUX">SLICE_FF[0].Q5[2]-&gt;COUTMUX</port>
+					<port name="COUT">open</port>
+					<port name="CQ">open</port>
+					<port name="D">open</port>
+					<port name="DMUX">SLICE_FF[0].Q5[3]-&gt;DOUTMUX</port>
+					<port name="DQ">SLICE_FF[0].Q[3]-&gt;DFF</port>
+				</outputs>
+				<clocks>
+					<port name="CLK">SLICEL0.CLK[0]-&gt;CK</port>
+				</clocks>
+				<block name="open" instance="CARRY4_VPR[0]" />
+				<block name="open" instance="CARRY_COUT_PLUG[0]" />
+				<block name="$techmap4637$auto$ff.cc:266:slice$2178.cesr_mux.genblk1.ce" instance="CEUSEDMUX[0]" mode="CE_VCC">
+					<inputs>
+						<port name="CE">open</port>
+					</inputs>
+					<outputs>
+						<port name="CE_OUT">open open open CE_VCC[3].VCC[0]-&gt;CE3 open CE_VCC[5].VCC[0]-&gt;CE5 CE_VCC[6].VCC[0]-&gt;CE6 CE_VCC[7].VCC[0]-&gt;CE7</port>
+					</outputs>
+					<clocks />
+					<block name="open" instance="CE_VCC[0]" />
+					<block name="open" instance="CE_VCC[1]" />
+					<block name="open" instance="CE_VCC[2]" />
+					<block name="$techmap4639$auto$ff.cc:266:slice$2223.cesr_mux.genblk1.ce" instance="CE_VCC[3]">
+						<attributes>
+							<attribute name="src">"/home/cl4/f4pga-examples/xc7/handshake/top.v:43.7-57.2|/home/cl4/f4pga-examples/xc7/handshake/slave.v:25.1-31.4|/home/cl4/opt/f4pga/xc7/conda/envs/xc7/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:96.10-101.2|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:17.12-19.6"</attribute>
+							<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+						</attributes>
+						<parameters />
+						<inputs />
+						<outputs>
+							<port name="VCC">$techmap4639$auto$ff.cc:266:slice$2223.CE_SIG</port>
+						</outputs>
+						<clocks />
+					</block>
+					<block name="open" instance="CE_VCC[4]" />
+					<block name="$techmap4641$auto$ff.cc:266:slice$2224.cesr_mux.genblk1.ce" instance="CE_VCC[5]">
+						<attributes>
+							<attribute name="src">"/home/cl4/f4pga-examples/xc7/handshake/top.v:43.7-57.2|/home/cl4/f4pga-examples/xc7/handshake/slave.v:25.1-31.4|/home/cl4/opt/f4pga/xc7/conda/envs/xc7/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:96.10-101.2|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:17.12-19.6"</attribute>
+							<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+						</attributes>
+						<parameters />
+						<inputs />
+						<outputs>
+							<port name="VCC">$techmap4641$auto$ff.cc:266:slice$2224.CE_SIG</port>
+						</outputs>
+						<clocks />
+					</block>
+					<block name="$techmap4634$auto$ff.cc:266:slice$2179.cesr_mux.genblk1.ce" instance="CE_VCC[6]">
+						<attributes>
+							<attribute name="src">"/home/cl4/f4pga-examples/xc7/handshake/top.v:25.8-41.2|/home/cl4/f4pga-examples/xc7/handshake/master.v:25.1-31.4|/home/cl4/opt/f4pga/xc7/conda/envs/xc7/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:96.10-101.2|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:17.12-19.6"</attribute>
+							<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+						</attributes>
+						<parameters />
+						<inputs />
+						<outputs>
+							<port name="VCC">$techmap4634$auto$ff.cc:266:slice$2179.CE_SIG</port>
+						</outputs>
+						<clocks />
+					</block>
+					<block name="$techmap4637$auto$ff.cc:266:slice$2178.cesr_mux.genblk1.ce" instance="CE_VCC[7]">
+						<attributes>
+							<attribute name="src">"/home/cl4/f4pga-examples/xc7/handshake/top.v:25.8-41.2|/home/cl4/f4pga-examples/xc7/handshake/master.v:25.1-31.4|/home/cl4/opt/f4pga/xc7/conda/envs/xc7/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:96.10-101.2|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:17.12-19.6"</attribute>
+							<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+						</attributes>
+						<parameters />
+						<inputs />
+						<outputs>
+							<port name="VCC">$techmap4637$auto$ff.cc:266:slice$2178.CE_SIG</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+				<block name="$auto$ff.cc:266:slice$2178" instance="SLICE_FF[0]" mode="FDPE_or_FDCE">
+					<inputs>
+						<port name="CE">open open open CEUSEDMUX[0].CE_OUT[3]-&gt;CE_OUT open CEUSEDMUX[0].CE_OUT[5]-&gt;CE_OUT CEUSEDMUX[0].CE_OUT[6]-&gt;CE_OUT CEUSEDMUX[0].CE_OUT[7]-&gt;CE_OUT</port>
+						<port name="D">open open open COMMON_SLICE.DO6[0]-&gt;DFFMUX</port>
+						<port name="D5">open COMMON_SLICE.BO5[0]-&gt;B5FFMUX COMMON_SLICE.CX[0]-&gt;C5FFMUX COMMON_SLICE.DX[0]-&gt;D5FFMUX</port>
+						<port name="SR">open open open SRUSEDMUX[0].SR_OUT[3]-&gt;SR_OUT open SRUSEDMUX[0].SR_OUT[5]-&gt;SR_OUT SRUSEDMUX[0].SR_OUT[6]-&gt;SR_OUT SRUSEDMUX[0].SR_OUT[7]-&gt;SR_OUT</port>
+					</inputs>
+					<outputs>
+						<port name="Q">open open open REG_FDPE_or_FDCE[3].Q[0]-&gt;Q</port>
+						<port name="Q5">open FF_FDPE_or_FDCE[1].Q[0]-&gt;Q5 FF_FDPE_or_FDCE[2].Q[0]-&gt;Q5 FF_FDPE_or_FDCE[3].Q[0]-&gt;Q5</port>
+					</outputs>
+					<clocks>
+						<port name="CK">COMMON_SLICE.CLK[0]-&gt;CK</port>
+					</clocks>
+					<block name="open" instance="FF_FDPE_or_FDCE[0]" />
+					<block name="$auto$ff.cc:266:slice$2224" instance="FF_FDPE_or_FDCE[1]" mode="FDCE">
+						<inputs>
+							<port name="CE">SLICE_FF.CE[5]-&gt;CE_FF</port>
+							<port name="D">SLICE_FF.D5[1]-&gt;D5</port>
+							<port name="SR">SLICE_FF.SR[5]-&gt;SR_FF</port>
+						</inputs>
+						<outputs>
+							<port name="Q">FDCE[0].Q[0]-&gt;Q</port>
+						</outputs>
+						<clocks>
+							<port name="C">SLICE_FF.CK[0]-&gt;C_FF</port>
+						</clocks>
+						<block name="$auto$ff.cc:266:slice$2224" instance="FDCE[0]">
+							<attributes>
+								<attribute name="src">"/home/cl4/f4pga-examples/xc7/handshake/top.v:43.7-57.2|/home/cl4/f4pga-examples/xc7/handshake/slave.v:25.1-31.4|/home/cl4/opt/f4pga/xc7/conda/envs/xc7/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:104.3-104.69"</attribute>
+								<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+							</attributes>
+							<parameters>
+								<parameter name="ZINI">0</parameter>
+								<parameter name="IS_C_INVERTED">0</parameter>
+							</parameters>
+							<inputs>
+								<port name="CE">FF_FDPE_or_FDCE.CE[0]-&gt;CE</port>
+								<port name="CLR">FF_FDPE_or_FDCE.SR[0]-&gt;CLR</port>
+								<port name="D">FF_FDPE_or_FDCE.D[0]-&gt;D</port>
+							</inputs>
+							<outputs>
+								<port name="Q">S1.state[1]</port>
+							</outputs>
+							<clocks>
+								<port name="C">FF_FDPE_or_FDCE.C[0]-&gt;C</port>
+							</clocks>
+						</block>
+					</block>
+					<block name="$auto$ff.cc:266:slice$2179" instance="FF_FDPE_or_FDCE[2]" mode="FDCE">
+						<inputs>
+							<port name="CE">SLICE_FF.CE[6]-&gt;CE_FF</port>
+							<port name="D">SLICE_FF.D5[2]-&gt;D5</port>
+							<port name="SR">SLICE_FF.SR[6]-&gt;SR_FF</port>
+						</inputs>
+						<outputs>
+							<port name="Q">FDCE[0].Q[0]-&gt;Q</port>
+						</outputs>
+						<clocks>
+							<port name="C">SLICE_FF.CK[0]-&gt;C_FF</port>
+						</clocks>
+						<block name="$auto$ff.cc:266:slice$2179" instance="FDCE[0]">
+							<attributes>
+								<attribute name="src">"/home/cl4/f4pga-examples/xc7/handshake/top.v:25.8-41.2|/home/cl4/f4pga-examples/xc7/handshake/master.v:25.1-31.4|/home/cl4/opt/f4pga/xc7/conda/envs/xc7/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:104.3-104.69"</attribute>
+								<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+							</attributes>
+							<parameters>
+								<parameter name="ZINI">0</parameter>
+								<parameter name="IS_C_INVERTED">0</parameter>
+							</parameters>
+							<inputs>
+								<port name="CE">FF_FDPE_or_FDCE.CE[0]-&gt;CE</port>
+								<port name="CLR">FF_FDPE_or_FDCE.SR[0]-&gt;CLR</port>
+								<port name="D">FF_FDPE_or_FDCE.D[0]-&gt;D</port>
+							</inputs>
+							<outputs>
+								<port name="Q">M1.state[1]</port>
+							</outputs>
+							<clocks>
+								<port name="C">FF_FDPE_or_FDCE.C[0]-&gt;C</port>
+							</clocks>
+						</block>
+					</block>
+					<block name="$auto$ff.cc:266:slice$2178" instance="FF_FDPE_or_FDCE[3]" mode="FDCE">
+						<inputs>
+							<port name="CE">SLICE_FF.CE[7]-&gt;CE_FF</port>
+							<port name="D">SLICE_FF.D5[3]-&gt;D5</port>
+							<port name="SR">SLICE_FF.SR[7]-&gt;SR_FF</port>
+						</inputs>
+						<outputs>
+							<port name="Q">FDCE[0].Q[0]-&gt;Q</port>
+						</outputs>
+						<clocks>
+							<port name="C">SLICE_FF.CK[0]-&gt;C_FF</port>
+						</clocks>
+						<block name="$auto$ff.cc:266:slice$2178" instance="FDCE[0]">
+							<attributes>
+								<attribute name="src">"/home/cl4/f4pga-examples/xc7/handshake/top.v:25.8-41.2|/home/cl4/f4pga-examples/xc7/handshake/master.v:25.1-31.4|/home/cl4/opt/f4pga/xc7/conda/envs/xc7/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:104.3-104.69"</attribute>
+								<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+							</attributes>
+							<parameters>
+								<parameter name="ZINI">0</parameter>
+								<parameter name="IS_C_INVERTED">0</parameter>
+							</parameters>
+							<inputs>
+								<port name="CE">FF_FDPE_or_FDCE.CE[0]-&gt;CE</port>
+								<port name="CLR">FF_FDPE_or_FDCE.SR[0]-&gt;CLR</port>
+								<port name="D">FF_FDPE_or_FDCE.D[0]-&gt;D</port>
+							</inputs>
+							<outputs>
+								<port name="Q">M1.state[0]</port>
+							</outputs>
+							<clocks>
+								<port name="C">FF_FDPE_or_FDCE.C[0]-&gt;C</port>
+							</clocks>
+						</block>
+					</block>
+					<block name="open" instance="REG_FDPE_or_FDCE[0]" />
+					<block name="open" instance="REG_FDPE_or_FDCE[1]" />
+					<block name="open" instance="REG_FDPE_or_FDCE[2]" />
+					<block name="$auto$ff.cc:266:slice$2223" instance="REG_FDPE_or_FDCE[3]" mode="FDCE">
+						<inputs>
+							<port name="CE">SLICE_FF.CE[3]-&gt;CE_REG</port>
+							<port name="D">SLICE_FF.D[3]-&gt;D</port>
+							<port name="SR">SLICE_FF.SR[3]-&gt;SR_REG</port>
+						</inputs>
+						<outputs>
+							<port name="Q">FDCE[0].Q[0]-&gt;Q</port>
+						</outputs>
+						<clocks>
+							<port name="C">SLICE_FF.CK[0]-&gt;C_REG</port>
+						</clocks>
+						<block name="$auto$ff.cc:266:slice$2223" instance="FDCE[0]">
+							<attributes>
+								<attribute name="src">"/home/cl4/f4pga-examples/xc7/handshake/top.v:43.7-57.2|/home/cl4/f4pga-examples/xc7/handshake/slave.v:25.1-31.4|/home/cl4/opt/f4pga/xc7/conda/envs/xc7/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:104.3-104.69"</attribute>
+								<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+							</attributes>
+							<parameters>
+								<parameter name="ZINI">0</parameter>
+								<parameter name="IS_C_INVERTED">0</parameter>
+							</parameters>
+							<inputs>
+								<port name="CE">REG_FDPE_or_FDCE.CE[0]-&gt;CE</port>
+								<port name="CLR">REG_FDPE_or_FDCE.SR[0]-&gt;CLR</port>
+								<port name="D">REG_FDPE_or_FDCE.D[0]-&gt;D</port>
+							</inputs>
+							<outputs>
+								<port name="Q">S1.state[0]</port>
+							</outputs>
+							<clocks>
+								<port name="C">REG_FDPE_or_FDCE.C[0]-&gt;C</port>
+							</clocks>
+						</block>
+					</block>
+				</block>
+				<block name="open" instance="SRUSEDMUX[0]" mode="SRUSEDMUX" pb_type_num_modes="2">
+					<inputs>
+						<port name="SR">COMMON_SLICE.SR[0]-&gt;SR</port>
+					</inputs>
+					<outputs>
+						<port name="SR_OUT">open open open SRUSEDMUX[0].SR[0]-&gt;SR open SRUSEDMUX[0].SR[0]-&gt;SR SRUSEDMUX[0].SR[0]-&gt;SR SRUSEDMUX[0].SR[0]-&gt;SR</port>
+					</outputs>
+					<clocks />
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="$abc$2377$flatten\S1.$0$memwr$\mem$/home/cl4/f4pga-examples/xc7/handshake/slave.v:67$1359_EN[7:0]$1365[7]" instance="BLK-TL-SLICEL[8]" mode="default">
+		<inputs>
+			<port name="A1">M1.state[0]</port>
+			<port name="A2">M1.rw_in</port>
+			<port name="A3">S1.state[0]</port>
+			<port name="A4">S1.state[1]</port>
+			<port name="A5">M1.state[1]</port>
+			<port name="A6">open</port>
+			<port name="AX">open</port>
+			<port name="B1">open</port>
+			<port name="B2">open</port>
+			<port name="B3">open</port>
+			<port name="B4">open</port>
+			<port name="B5">open</port>
+			<port name="B6">open</port>
+			<port name="BX">open</port>
+			<port name="C1">open</port>
+			<port name="C2">open</port>
+			<port name="C3">open</port>
+			<port name="C4">open</port>
+			<port name="C5">open</port>
+			<port name="C6">open</port>
+			<port name="CE">open</port>
+			<port name="CIN">open</port>
+			<port name="CX">open</port>
+			<port name="D1">open</port>
+			<port name="D2">open</port>
+			<port name="D3">open</port>
+			<port name="D4">open</port>
+			<port name="D5">open</port>
+			<port name="D6">open</port>
+			<port name="DX">open</port>
+			<port name="SR">open</port>
+		</inputs>
+		<outputs>
+			<port name="A">SLICEL0[0].A[0]-&gt;SLICEL0.A_to_BLK-TL-SLICEL.A</port>
+			<port name="AMUX">SLICEL0[0].AMUX[0]-&gt;SLICEL0.AMUX_to_BLK-TL-SLICEL.AMUX</port>
+			<port name="AQ">open</port>
+			<port name="B">open</port>
+			<port name="BMUX">open</port>
+			<port name="BQ">open</port>
+			<port name="C">open</port>
+			<port name="CMUX">open</port>
+			<port name="COUT">open</port>
+			<port name="CQ">open</port>
+			<port name="D">open</port>
+			<port name="DMUX">open</port>
+			<port name="DQ">open</port>
+		</outputs>
+		<clocks>
+			<port name="CLK">open</port>
+		</clocks>
+		<block name="$abc$2377$flatten\S1.$0$memwr$\mem$/home/cl4/f4pga-examples/xc7/handshake/slave.v:67$1359_EN[7:0]$1365[7]" instance="SLICEL0[0]" mode="default">
+			<inputs>
+				<port name="A1">BLK-TL-SLICEL.A1[0]-&gt;BLK-TL-SLICEL.A1_to_SLICEL0.A1</port>
+				<port name="A2">BLK-TL-SLICEL.A2[0]-&gt;BLK-TL-SLICEL.A2_to_SLICEL0.A2</port>
+				<port name="A3">BLK-TL-SLICEL.A3[0]-&gt;BLK-TL-SLICEL.A3_to_SLICEL0.A3</port>
+				<port name="A4">BLK-TL-SLICEL.A4[0]-&gt;BLK-TL-SLICEL.A4_to_SLICEL0.A4</port>
+				<port name="A5">BLK-TL-SLICEL.A5[0]-&gt;BLK-TL-SLICEL.A5_to_SLICEL0.A5</port>
+				<port name="A6">open</port>
+				<port name="AX">open</port>
+				<port name="B1">open</port>
+				<port name="B2">open</port>
+				<port name="B3">open</port>
+				<port name="B4">open</port>
+				<port name="B5">open</port>
+				<port name="B6">open</port>
+				<port name="BX">open</port>
+				<port name="C1">open</port>
+				<port name="C2">open</port>
+				<port name="C3">open</port>
+				<port name="C4">open</port>
+				<port name="C5">open</port>
+				<port name="C6">open</port>
+				<port name="CE">open</port>
+				<port name="CIN">open</port>
+				<port name="CX">open</port>
+				<port name="D1">open</port>
+				<port name="D2">open</port>
+				<port name="D3">open</port>
+				<port name="D4">open</port>
+				<port name="D5">open</port>
+				<port name="D6">open</port>
+				<port name="DX">open</port>
+				<port name="SR">open</port>
+			</inputs>
+			<outputs>
+				<port name="A">COMMON_SLICE[0].A[0]-&gt;SLICEL_AOUT</port>
+				<port name="AMUX">COMMON_SLICE[0].AMUX[0]-&gt;SLICEL_AMUX</port>
+				<port name="AQ">open</port>
+				<port name="B">open</port>
+				<port name="BMUX">open</port>
+				<port name="BQ">open</port>
+				<port name="C">open</port>
+				<port name="CMUX">open</port>
+				<port name="COUT">open</port>
+				<port name="CQ">open</port>
+				<port name="D">open</port>
+				<port name="DMUX">open</port>
+				<port name="DQ">open</port>
+			</outputs>
+			<clocks>
+				<port name="CLK">open</port>
+			</clocks>
+			<block name="$abc$2377$flatten\S1.$0$memwr$\mem$/home/cl4/f4pga-examples/xc7/handshake/slave.v:67$1359_EN[7:0]$1365[7]" instance="COMMON_LUT_AND_F78MUX[0]" mode="default">
+				<inputs>
+					<port name="A1">SLICEL0.A1[0]-&gt;A1</port>
+					<port name="A2">SLICEL0.A2[0]-&gt;A2</port>
+					<port name="A3">SLICEL0.A3[0]-&gt;A3</port>
+					<port name="A4">SLICEL0.A4[0]-&gt;A4</port>
+					<port name="A5">SLICEL0.A5[0]-&gt;A5</port>
+					<port name="A6">open</port>
+					<port name="AX">open</port>
+					<port name="B1">open</port>
+					<port name="B2">open</port>
+					<port name="B3">open</port>
+					<port name="B4">open</port>
+					<port name="B5">open</port>
+					<port name="B6">open</port>
+					<port name="BX">open</port>
+					<port name="C1">open</port>
+					<port name="C2">open</port>
+					<port name="C3">open</port>
+					<port name="C4">open</port>
+					<port name="C5">open</port>
+					<port name="C6">open</port>
+					<port name="CX">open</port>
+					<port name="D1">open</port>
+					<port name="D2">open</port>
+					<port name="D3">open</port>
+					<port name="D4">open</port>
+					<port name="D5">open</port>
+					<port name="D6">open</port>
+				</inputs>
+				<outputs>
+					<port name="AO5">ALUT[0].O5[0]-&gt;AO5</port>
+					<port name="AO6">ALUT[0].O6[0]-&gt;AO6</port>
+					<port name="BO5">open</port>
+					<port name="BO6">open</port>
+					<port name="CO5">open</port>
+					<port name="CO6">open</port>
+					<port name="DO5">open</port>
+					<port name="DO6">open</port>
+					<port name="F7AMUX_O">open</port>
+					<port name="F7BMUX_O">open</port>
+					<port name="F8MUX_O">open</port>
+				</outputs>
+				<clocks />
+				<block name="$abc$2377$flatten\S1.$0$memwr$\mem$/home/cl4/f4pga-examples/xc7/handshake/slave.v:67$1359_EN[7:0]$1365[7]" instance="ALUT[0]" mode="ALUT-LUT5_MUX">
+					<inputs>
+						<port name="A1">COMMON_LUT_AND_F78MUX.A1[0]-&gt;A1</port>
+						<port name="A2">COMMON_LUT_AND_F78MUX.A2[0]-&gt;A2</port>
+						<port name="A3">COMMON_LUT_AND_F78MUX.A3[0]-&gt;A3</port>
+						<port name="A4">COMMON_LUT_AND_F78MUX.A4[0]-&gt;A4</port>
+						<port name="A5">COMMON_LUT_AND_F78MUX.A5[0]-&gt;A5</port>
+						<port name="A6">open</port>
+					</inputs>
+					<outputs>
+						<port name="O5">A5LUT[0].out[0]-&gt;O5</port>
+						<port name="O6">A5LUT[1].out[0]-&gt;O6</port>
+					</outputs>
+					<clocks />
+					<block name="$abc$2377$auto$opt_dff.cc:219:make_patterns_logic$1737" instance="A5LUT[0]" mode="A5LUT">
+						<inputs>
+							<port name="in">ALUT.A1[0]-&gt;ALUT_A1_0 ALUT.A2[0]-&gt;ALUT_A2_0 ALUT.A3[0]-&gt;ALUT_A3_0 ALUT.A4[0]-&gt;ALUT_A4_0 ALUT.A5[0]-&gt;ALUT_A5_0</port>
+						</inputs>
+						<outputs>
+							<port name="out">lut[0].out[0]-&gt;direct:A5LUT</port>
+						</outputs>
+						<clocks />
+						<block name="$abc$2377$auto$opt_dff.cc:219:make_patterns_logic$1737" instance="lut[0]">
+							<attributes />
+							<parameters />
+							<inputs>
+								<port name="in">A5LUT.in[0]-&gt;direct:A5LUT A5LUT.in[1]-&gt;direct:A5LUT A5LUT.in[2]-&gt;direct:A5LUT A5LUT.in[3]-&gt;direct:A5LUT A5LUT.in[4]-&gt;direct:A5LUT</port>
+								<port_rotation_map name="in">2 4 0 1 3</port_rotation_map>
+							</inputs>
+							<outputs>
+								<port name="out">$abc$2377$auto$opt_dff.cc:219:make_patterns_logic$1737</port>
+							</outputs>
+							<clocks />
+						</block>
+					</block>
+					<block name="$abc$2377$flatten\S1.$0$memwr$\mem$/home/cl4/f4pga-examples/xc7/handshake/slave.v:67$1359_EN[7:0]$1365[7]" instance="A5LUT[1]" mode="A5LUT">
+						<inputs>
+							<port name="in">ALUT.A1[0]-&gt;ALUT_A1_1 ALUT.A2[0]-&gt;ALUT_A2_1 ALUT.A3[0]-&gt;ALUT_A3_1 ALUT.A4[0]-&gt;ALUT_A4_1 ALUT.A5[0]-&gt;ALUT_A5_1</port>
+						</inputs>
+						<outputs>
+							<port name="out">lut[0].out[0]-&gt;direct:A5LUT</port>
+						</outputs>
+						<clocks />
+						<block name="$abc$2377$flatten\S1.$0$memwr$\mem$/home/cl4/f4pga-examples/xc7/handshake/slave.v:67$1359_EN[7:0]$1365[7]" instance="lut[0]">
+							<attributes />
+							<parameters />
+							<inputs>
+								<port name="in">A5LUT.in[0]-&gt;direct:A5LUT A5LUT.in[1]-&gt;direct:A5LUT A5LUT.in[2]-&gt;direct:A5LUT A5LUT.in[3]-&gt;direct:A5LUT A5LUT.in[4]-&gt;direct:A5LUT</port>
+								<port_rotation_map name="in">3 0 1 4 2</port_rotation_map>
+							</inputs>
+							<outputs>
+								<port name="out">$abc$2377$flatten\S1.$0$memwr$\mem$/home/cl4/f4pga-examples/xc7/handshake/slave.v:67$1359_EN[7:0]$1365[7]</port>
+							</outputs>
+							<clocks />
+						</block>
+					</block>
+					<block name="open" instance="F6MUX[0]" />
+				</block>
+				<block name="open" instance="BLUT[0]" />
+				<block name="open" instance="CLUT[0]" />
+				<block name="open" instance="DLUT[0]" />
+				<block name="open" instance="F7AMUX[0]" />
+				<block name="open" instance="F7BMUX[0]" />
+				<block name="open" instance="F8MUX[0]" />
+			</block>
+			<block name="open" instance="COMMON_SLICE[0]" mode="default" pb_type_num_modes="1">
+				<inputs>
+					<port name="AMC31">open</port>
+					<port name="AO5">COMMON_LUT_AND_F78MUX[0].AO5[0]-&gt;AO5</port>
+					<port name="AO6">COMMON_LUT_AND_F78MUX[0].AO6[0]-&gt;AO6</port>
+					<port name="AX">open</port>
+					<port name="BO5">open</port>
+					<port name="BO6">open</port>
+					<port name="BX">open</port>
+					<port name="CE">open</port>
+					<port name="CIN">open</port>
+					<port name="CO5">open</port>
+					<port name="CO6">open</port>
+					<port name="CX">open</port>
+					<port name="DO5">open</port>
+					<port name="DO6">open</port>
+					<port name="DX">open</port>
+					<port name="F7AMUX_O">open</port>
+					<port name="F7BMUX_O">open</port>
+					<port name="F8MUX_O">open</port>
+					<port name="SR">open</port>
+				</inputs>
+				<outputs>
+					<port name="A">COMMON_SLICE[0].AO6[0]-&gt;COMMON_SLICE_AOUT</port>
+					<port name="AMUX">COMMON_SLICE[0].AO5[0]-&gt;AOUTMUX</port>
+					<port name="AQ">open</port>
+					<port name="B">open</port>
+					<port name="BMUX">open</port>
+					<port name="BQ">open</port>
+					<port name="C">open</port>
+					<port name="CMUX">open</port>
+					<port name="COUT">open</port>
+					<port name="CQ">open</port>
+					<port name="D">open</port>
+					<port name="DMUX">open</port>
+					<port name="DQ">open</port>
+				</outputs>
+				<clocks>
+					<port name="CLK">open</port>
+				</clocks>
+				<block name="open" instance="CARRY4_VPR[0]" />
+				<block name="open" instance="CARRY_COUT_PLUG[0]" />
+				<block name="open" instance="CEUSEDMUX[0]" />
+				<block name="open" instance="SLICE_FF[0]" />
+				<block name="open" instance="SRUSEDMUX[0]" />
+			</block>
+		</block>
+	</block>
+	<block name="rw" instance="BLK-TL-IOPAD[9]" mode="default">
+		<inputs>
+			<port name="IDELAYE2_C">open</port>
+			<port name="IDELAYE2_CE">open</port>
+			<port name="IDELAYE2_CINVCTRL">open</port>
+			<port name="IDELAYE2_CNTVALUEIN0">open</port>
+			<port name="IDELAYE2_CNTVALUEIN1">open</port>
+			<port name="IDELAYE2_CNTVALUEIN2">open</port>
+			<port name="IDELAYE2_CNTVALUEIN3">open</port>
+			<port name="IDELAYE2_CNTVALUEIN4">open</port>
+			<port name="IDELAYE2_DATAIN">open</port>
+			<port name="IDELAYE2_IFDLY0">open</port>
+			<port name="IDELAYE2_IFDLY1">open</port>
+			<port name="IDELAYE2_IFDLY2">open</port>
+			<port name="IDELAYE2_INC">open</port>
+			<port name="IDELAYE2_LD">open</port>
+			<port name="IDELAYE2_LDPIPEEN">open</port>
+			<port name="IDELAYE2_REGRST">open</port>
+			<port name="ILOGICE3_BITSLIP">open</port>
+			<port name="ILOGICE3_CE1">open</port>
+			<port name="ILOGICE3_CE2">open</port>
+			<port name="ILOGICE3_SR">open</port>
+			<port name="IOB33_IBUFDISABLE">open</port>
+			<port name="IOB33_INTERMDISABLE">open</port>
+			<port name="IOB33_KEEPER_INT_EN">open</port>
+			<port name="IOB33_PD_INT_EN">open</port>
+			<port name="IOB33_PU_INT_EN">open</port>
+			<port name="OLOGICE3_D1">open</port>
+			<port name="OLOGICE3_D2">open</port>
+			<port name="OLOGICE3_D3">open</port>
+			<port name="OLOGICE3_D4">open</port>
+			<port name="OLOGICE3_D5">open</port>
+			<port name="OLOGICE3_D6">open</port>
+			<port name="OLOGICE3_D7">open</port>
+			<port name="OLOGICE3_D8">open</port>
+			<port name="OLOGICE3_OCE">open</port>
+			<port name="OLOGICE3_SR">open</port>
+			<port name="OLOGICE3_T1">open</port>
+			<port name="OLOGICE3_T2">open</port>
+			<port name="OLOGICE3_T3">open</port>
+			<port name="OLOGICE3_T4">open</port>
+			<port name="OLOGICE3_TBYTEIN">open</port>
+			<port name="OLOGICE3_TCE">open</port>
+		</inputs>
+		<outputs>
+			<port name="IDELAYE2_CNTVALUEOUT0">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT1">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT2">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT3">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT4">open</port>
+			<port name="ILOGICE3_O">ILOGICE3[0].O[0]-&gt;ILOGICE3.O_to_BLK-TL-IOPAD.ILOGICE3_O</port>
+			<port name="ILOGICE3_Q1">open</port>
+			<port name="ILOGICE3_Q2">open</port>
+			<port name="ILOGICE3_Q3">open</port>
+			<port name="ILOGICE3_Q4">open</port>
+			<port name="ILOGICE3_Q5">open</port>
+			<port name="ILOGICE3_Q6">open</port>
+			<port name="ILOGICE3_Q7">open</port>
+			<port name="ILOGICE3_Q8">open</port>
+			<port name="ILOGICE3_SHIFTOUT1">open</port>
+			<port name="ILOGICE3_SHIFTOUT2">open</port>
+			<port name="IOB33_DIFFO_OUT">open</port>
+			<port name="IOB33_O_OUT">open</port>
+			<port name="IOB33_PADOUT">open</port>
+			<port name="IOB33_T_OUT">open</port>
+			<port name="OLOGICE3_IOCLKGLITCH">open</port>
+			<port name="OLOGICE3_SHIFTOUT1">open</port>
+			<port name="OLOGICE3_SHIFTOUT2">open</port>
+			<port name="OLOGICE3_TBYTEOUT">open</port>
+		</outputs>
+		<clocks>
+			<port name="ILOGICE3_CLK">open</port>
+			<port name="ILOGICE3_CLKB">open</port>
+			<port name="ILOGICE3_CLKDIV">open</port>
+			<port name="ILOGICE3_CLKDIVP">open</port>
+			<port name="ILOGICE3_DYNCLKDIVPSEL">open</port>
+			<port name="ILOGICE3_DYNCLKDIVSEL">open</port>
+			<port name="ILOGICE3_DYNCLKSEL">open</port>
+			<port name="ILOGICE3_OCLK">open</port>
+			<port name="ILOGICE3_OCLKB">open</port>
+			<port name="OLOGICE3_CLK">open</port>
+			<port name="OLOGICE3_CLKB">open</port>
+			<port name="OLOGICE3_CLKDIV">open</port>
+			<port name="OLOGICE3_CLKDIVB">open</port>
+			<port name="OLOGICE3_CLKDIVF">open</port>
+			<port name="OLOGICE3_CLKDIVFB">open</port>
+		</clocks>
+		<block name="open" instance="IDELAYE2[0]" />
+		<block name="open" instance="ILOGICE3[0]" mode="PASS_THROUGH" pb_type_num_modes="4">
+			<inputs>
+				<port name="BITSLIP">open</port>
+				<port name="CE1">open</port>
+				<port name="CE2">open</port>
+				<port name="D">IOB33[0].I[0]-&gt;IOB33.I_to_ILOGICE3.D</port>
+				<port name="DDLY">open</port>
+				<port name="DYNCLKDIVPSEL">open</port>
+				<port name="DYNCLKDIVSEL">open</port>
+				<port name="DYNCLKSEL">open</port>
+				<port name="OFB">open</port>
+				<port name="SHIFTIN1">open</port>
+				<port name="SHIFTIN2">open</port>
+				<port name="SR">open</port>
+				<port name="TFB">open</port>
+			</inputs>
+			<outputs>
+				<port name="O">ILOGICE3[0].D[0]-&gt;D_O</port>
+				<port name="Q1">open</port>
+				<port name="Q2">open</port>
+				<port name="Q3">open</port>
+				<port name="Q4">open</port>
+				<port name="Q5">open</port>
+				<port name="Q6">open</port>
+				<port name="Q7">open</port>
+				<port name="Q8">open</port>
+				<port name="SHIFTOUT1">open</port>
+				<port name="SHIFTOUT2">open</port>
+			</outputs>
+			<clocks>
+				<port name="CLK">open</port>
+				<port name="CLKB">open</port>
+				<port name="CLKDIV">open</port>
+				<port name="CLKDIVP">open</port>
+				<port name="OCLK">open</port>
+				<port name="OCLKB">open</port>
+			</clocks>
+		</block>
+		<block name="rw" instance="IOB33[0]" mode="default">
+			<inputs>
+				<port name="DIFFI_IN">open</port>
+				<port name="DIFFO_IN">open</port>
+				<port name="IBUFDISABLE">open</port>
+				<port name="INTERMDISABLE">open</port>
+				<port name="KEEPER_INT_EN">open</port>
+				<port name="O">open</port>
+				<port name="PD_INT_EN">open</port>
+				<port name="PU_INT_EN">open</port>
+				<port name="T">open</port>
+			</inputs>
+			<outputs>
+				<port name="DIFFO_OUT">open</port>
+				<port name="I">IOB33_MODES[0].I[0]-&gt;I</port>
+				<port name="O_OUT">open</port>
+				<port name="PADOUT">open</port>
+				<port name="T_OUT">open</port>
+			</outputs>
+			<clocks />
+			<block name="rw" instance="IOB33_MODES[0]" mode="IBUF">
+				<inputs>
+					<port name="IBUFDISABLE">open</port>
+					<port name="INTERMDISABLE">open</port>
+					<port name="KEEPER_INT_EN">open</port>
+					<port name="O">open</port>
+					<port name="PD_INT_EN">open</port>
+					<port name="PU_INT_EN">open</port>
+					<port name="T">open</port>
+				</inputs>
+				<outputs>
+					<port name="I">IBUF_VPR[0].O[0]-&gt;IBUF_VPR.O_to_IOB33_MODES.I</port>
+				</outputs>
+				<clocks />
+				<block name="$iopadmap$top.rw" instance="IBUF_VPR[0]">
+					<attributes>
+						<attribute name="src">"/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:1931.5-1934.4"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+						<attribute name="keep">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters>
+						<parameter name="PULLTYPE_PULLUP">0</parameter>
+						<parameter name="PULLTYPE_PULLDOWN">0</parameter>
+						<parameter name="IBUF_LOW_PWR">00000000000000000000000000000000</parameter>
+						<parameter name="IOSTANDARD">"LVCMOS33"</parameter>
+						<parameter name="IN_TERM_UNTUNED_SPLIT_40">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_IN">0</parameter>
+						<parameter name="IN_TERM_UNTUNED_SPLIT_60">0</parameter>
+						<parameter name="PULLTYPE_NONE">1</parameter>
+						<parameter name="IN_TERM_UNTUNED_SPLIT_50">0</parameter>
+						<parameter name="IO_LOC_PAIRS">"rw:T16"</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_LVCMOS25_LVCMOS33_LVDS_25_LVTTL_SSTL135_SSTL15_TMDS_33_IN_ONLY">1</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_LVCMOS25_LVCMOS33_LVTTL_SLEW_FAST">1</parameter>
+						<parameter name="LVCMOS25_LVCMOS33_LVTTL_IN">1</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_SSTL135_SSTL15_STEPDOWN">0</parameter>
+						<parameter name="PULLTYPE">"NONE"</parameter>
+						<parameter name="SSTL135_SSTL15_IN">0</parameter>
+						<parameter name="PULLTYPE_KEEPER">0</parameter>
+					</parameters>
+					<inputs>
+						<port name="I">inpad[0].inpad[0]-&gt;inpat.inpad_to_IBUF_VPR.I</port>
+					</inputs>
+					<outputs>
+						<port name="O">M1.rw_in</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="rw" instance="inpad[0]">
+					<attributes />
+					<parameters />
+					<inputs />
+					<outputs>
+						<port name="inpad">rw</port>
+					</outputs>
+					<clocks />
+				</block>
+			</block>
+		</block>
+		<block name="open" instance="OLOGICE3[0]" />
+	</block>
+	<block name="start" instance="BLK-TL-IOPAD[10]" mode="default">
+		<inputs>
+			<port name="IDELAYE2_C">open</port>
+			<port name="IDELAYE2_CE">open</port>
+			<port name="IDELAYE2_CINVCTRL">open</port>
+			<port name="IDELAYE2_CNTVALUEIN0">open</port>
+			<port name="IDELAYE2_CNTVALUEIN1">open</port>
+			<port name="IDELAYE2_CNTVALUEIN2">open</port>
+			<port name="IDELAYE2_CNTVALUEIN3">open</port>
+			<port name="IDELAYE2_CNTVALUEIN4">open</port>
+			<port name="IDELAYE2_DATAIN">open</port>
+			<port name="IDELAYE2_IFDLY0">open</port>
+			<port name="IDELAYE2_IFDLY1">open</port>
+			<port name="IDELAYE2_IFDLY2">open</port>
+			<port name="IDELAYE2_INC">open</port>
+			<port name="IDELAYE2_LD">open</port>
+			<port name="IDELAYE2_LDPIPEEN">open</port>
+			<port name="IDELAYE2_REGRST">open</port>
+			<port name="ILOGICE3_BITSLIP">open</port>
+			<port name="ILOGICE3_CE1">open</port>
+			<port name="ILOGICE3_CE2">open</port>
+			<port name="ILOGICE3_SR">open</port>
+			<port name="IOB33_IBUFDISABLE">open</port>
+			<port name="IOB33_INTERMDISABLE">open</port>
+			<port name="IOB33_KEEPER_INT_EN">open</port>
+			<port name="IOB33_PD_INT_EN">open</port>
+			<port name="IOB33_PU_INT_EN">open</port>
+			<port name="OLOGICE3_D1">open</port>
+			<port name="OLOGICE3_D2">open</port>
+			<port name="OLOGICE3_D3">open</port>
+			<port name="OLOGICE3_D4">open</port>
+			<port name="OLOGICE3_D5">open</port>
+			<port name="OLOGICE3_D6">open</port>
+			<port name="OLOGICE3_D7">open</port>
+			<port name="OLOGICE3_D8">open</port>
+			<port name="OLOGICE3_OCE">open</port>
+			<port name="OLOGICE3_SR">open</port>
+			<port name="OLOGICE3_T1">open</port>
+			<port name="OLOGICE3_T2">open</port>
+			<port name="OLOGICE3_T3">open</port>
+			<port name="OLOGICE3_T4">open</port>
+			<port name="OLOGICE3_TBYTEIN">open</port>
+			<port name="OLOGICE3_TCE">open</port>
+		</inputs>
+		<outputs>
+			<port name="IDELAYE2_CNTVALUEOUT0">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT1">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT2">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT3">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT4">open</port>
+			<port name="ILOGICE3_O">ILOGICE3[0].O[0]-&gt;ILOGICE3.O_to_BLK-TL-IOPAD.ILOGICE3_O</port>
+			<port name="ILOGICE3_Q1">open</port>
+			<port name="ILOGICE3_Q2">open</port>
+			<port name="ILOGICE3_Q3">open</port>
+			<port name="ILOGICE3_Q4">open</port>
+			<port name="ILOGICE3_Q5">open</port>
+			<port name="ILOGICE3_Q6">open</port>
+			<port name="ILOGICE3_Q7">open</port>
+			<port name="ILOGICE3_Q8">open</port>
+			<port name="ILOGICE3_SHIFTOUT1">open</port>
+			<port name="ILOGICE3_SHIFTOUT2">open</port>
+			<port name="IOB33_DIFFO_OUT">open</port>
+			<port name="IOB33_O_OUT">open</port>
+			<port name="IOB33_PADOUT">open</port>
+			<port name="IOB33_T_OUT">open</port>
+			<port name="OLOGICE3_IOCLKGLITCH">open</port>
+			<port name="OLOGICE3_SHIFTOUT1">open</port>
+			<port name="OLOGICE3_SHIFTOUT2">open</port>
+			<port name="OLOGICE3_TBYTEOUT">open</port>
+		</outputs>
+		<clocks>
+			<port name="ILOGICE3_CLK">open</port>
+			<port name="ILOGICE3_CLKB">open</port>
+			<port name="ILOGICE3_CLKDIV">open</port>
+			<port name="ILOGICE3_CLKDIVP">open</port>
+			<port name="ILOGICE3_DYNCLKDIVPSEL">open</port>
+			<port name="ILOGICE3_DYNCLKDIVSEL">open</port>
+			<port name="ILOGICE3_DYNCLKSEL">open</port>
+			<port name="ILOGICE3_OCLK">open</port>
+			<port name="ILOGICE3_OCLKB">open</port>
+			<port name="OLOGICE3_CLK">open</port>
+			<port name="OLOGICE3_CLKB">open</port>
+			<port name="OLOGICE3_CLKDIV">open</port>
+			<port name="OLOGICE3_CLKDIVB">open</port>
+			<port name="OLOGICE3_CLKDIVF">open</port>
+			<port name="OLOGICE3_CLKDIVFB">open</port>
+		</clocks>
+		<block name="open" instance="IDELAYE2[0]" />
+		<block name="open" instance="ILOGICE3[0]" mode="PASS_THROUGH" pb_type_num_modes="4">
+			<inputs>
+				<port name="BITSLIP">open</port>
+				<port name="CE1">open</port>
+				<port name="CE2">open</port>
+				<port name="D">IOB33[0].I[0]-&gt;IOB33.I_to_ILOGICE3.D</port>
+				<port name="DDLY">open</port>
+				<port name="DYNCLKDIVPSEL">open</port>
+				<port name="DYNCLKDIVSEL">open</port>
+				<port name="DYNCLKSEL">open</port>
+				<port name="OFB">open</port>
+				<port name="SHIFTIN1">open</port>
+				<port name="SHIFTIN2">open</port>
+				<port name="SR">open</port>
+				<port name="TFB">open</port>
+			</inputs>
+			<outputs>
+				<port name="O">ILOGICE3[0].D[0]-&gt;D_O</port>
+				<port name="Q1">open</port>
+				<port name="Q2">open</port>
+				<port name="Q3">open</port>
+				<port name="Q4">open</port>
+				<port name="Q5">open</port>
+				<port name="Q6">open</port>
+				<port name="Q7">open</port>
+				<port name="Q8">open</port>
+				<port name="SHIFTOUT1">open</port>
+				<port name="SHIFTOUT2">open</port>
+			</outputs>
+			<clocks>
+				<port name="CLK">open</port>
+				<port name="CLKB">open</port>
+				<port name="CLKDIV">open</port>
+				<port name="CLKDIVP">open</port>
+				<port name="OCLK">open</port>
+				<port name="OCLKB">open</port>
+			</clocks>
+		</block>
+		<block name="start" instance="IOB33[0]" mode="default">
+			<inputs>
+				<port name="DIFFI_IN">open</port>
+				<port name="DIFFO_IN">open</port>
+				<port name="IBUFDISABLE">open</port>
+				<port name="INTERMDISABLE">open</port>
+				<port name="KEEPER_INT_EN">open</port>
+				<port name="O">open</port>
+				<port name="PD_INT_EN">open</port>
+				<port name="PU_INT_EN">open</port>
+				<port name="T">open</port>
+			</inputs>
+			<outputs>
+				<port name="DIFFO_OUT">open</port>
+				<port name="I">IOB33_MODES[0].I[0]-&gt;I</port>
+				<port name="O_OUT">open</port>
+				<port name="PADOUT">open</port>
+				<port name="T_OUT">open</port>
+			</outputs>
+			<clocks />
+			<block name="start" instance="IOB33_MODES[0]" mode="IBUF">
+				<inputs>
+					<port name="IBUFDISABLE">open</port>
+					<port name="INTERMDISABLE">open</port>
+					<port name="KEEPER_INT_EN">open</port>
+					<port name="O">open</port>
+					<port name="PD_INT_EN">open</port>
+					<port name="PU_INT_EN">open</port>
+					<port name="T">open</port>
+				</inputs>
+				<outputs>
+					<port name="I">IBUF_VPR[0].O[0]-&gt;IBUF_VPR.O_to_IOB33_MODES.I</port>
+				</outputs>
+				<clocks />
+				<block name="$iopadmap$top.start" instance="IBUF_VPR[0]">
+					<attributes>
+						<attribute name="src">"/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:1931.5-1934.4"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+						<attribute name="keep">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters>
+						<parameter name="PULLTYPE_PULLUP">0</parameter>
+						<parameter name="PULLTYPE_PULLDOWN">0</parameter>
+						<parameter name="IBUF_LOW_PWR">00000000000000000000000000000000</parameter>
+						<parameter name="IOSTANDARD">"LVCMOS33"</parameter>
+						<parameter name="IN_TERM_UNTUNED_SPLIT_40">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_IN">0</parameter>
+						<parameter name="IN_TERM_UNTUNED_SPLIT_60">0</parameter>
+						<parameter name="PULLTYPE_NONE">1</parameter>
+						<parameter name="IN_TERM_UNTUNED_SPLIT_50">0</parameter>
+						<parameter name="IO_LOC_PAIRS">"start:W13"</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_LVCMOS25_LVCMOS33_LVDS_25_LVTTL_SSTL135_SSTL15_TMDS_33_IN_ONLY">1</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_LVCMOS25_LVCMOS33_LVTTL_SLEW_FAST">1</parameter>
+						<parameter name="LVCMOS25_LVCMOS33_LVTTL_IN">1</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_SSTL135_SSTL15_STEPDOWN">0</parameter>
+						<parameter name="PULLTYPE">"NONE"</parameter>
+						<parameter name="SSTL135_SSTL15_IN">0</parameter>
+						<parameter name="PULLTYPE_KEEPER">0</parameter>
+					</parameters>
+					<inputs>
+						<port name="I">inpad[0].inpad[0]-&gt;inpat.inpad_to_IBUF_VPR.I</port>
+					</inputs>
+					<outputs>
+						<port name="O">M1.start</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="start" instance="inpad[0]">
+					<attributes />
+					<parameters />
+					<inputs />
+					<outputs>
+						<port name="inpad">start</port>
+					</outputs>
+					<clocks />
+				</block>
+			</block>
+		</block>
+		<block name="open" instance="OLOGICE3[0]" />
+	</block>
+	<block name="rst" instance="BLK-TL-IOPAD[11]" mode="default">
+		<inputs>
+			<port name="IDELAYE2_C">open</port>
+			<port name="IDELAYE2_CE">open</port>
+			<port name="IDELAYE2_CINVCTRL">open</port>
+			<port name="IDELAYE2_CNTVALUEIN0">open</port>
+			<port name="IDELAYE2_CNTVALUEIN1">open</port>
+			<port name="IDELAYE2_CNTVALUEIN2">open</port>
+			<port name="IDELAYE2_CNTVALUEIN3">open</port>
+			<port name="IDELAYE2_CNTVALUEIN4">open</port>
+			<port name="IDELAYE2_DATAIN">open</port>
+			<port name="IDELAYE2_IFDLY0">open</port>
+			<port name="IDELAYE2_IFDLY1">open</port>
+			<port name="IDELAYE2_IFDLY2">open</port>
+			<port name="IDELAYE2_INC">open</port>
+			<port name="IDELAYE2_LD">open</port>
+			<port name="IDELAYE2_LDPIPEEN">open</port>
+			<port name="IDELAYE2_REGRST">open</port>
+			<port name="ILOGICE3_BITSLIP">open</port>
+			<port name="ILOGICE3_CE1">open</port>
+			<port name="ILOGICE3_CE2">open</port>
+			<port name="ILOGICE3_SR">open</port>
+			<port name="IOB33_IBUFDISABLE">open</port>
+			<port name="IOB33_INTERMDISABLE">open</port>
+			<port name="IOB33_KEEPER_INT_EN">open</port>
+			<port name="IOB33_PD_INT_EN">open</port>
+			<port name="IOB33_PU_INT_EN">open</port>
+			<port name="OLOGICE3_D1">open</port>
+			<port name="OLOGICE3_D2">open</port>
+			<port name="OLOGICE3_D3">open</port>
+			<port name="OLOGICE3_D4">open</port>
+			<port name="OLOGICE3_D5">open</port>
+			<port name="OLOGICE3_D6">open</port>
+			<port name="OLOGICE3_D7">open</port>
+			<port name="OLOGICE3_D8">open</port>
+			<port name="OLOGICE3_OCE">open</port>
+			<port name="OLOGICE3_SR">open</port>
+			<port name="OLOGICE3_T1">open</port>
+			<port name="OLOGICE3_T2">open</port>
+			<port name="OLOGICE3_T3">open</port>
+			<port name="OLOGICE3_T4">open</port>
+			<port name="OLOGICE3_TBYTEIN">open</port>
+			<port name="OLOGICE3_TCE">open</port>
+		</inputs>
+		<outputs>
+			<port name="IDELAYE2_CNTVALUEOUT0">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT1">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT2">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT3">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT4">open</port>
+			<port name="ILOGICE3_O">ILOGICE3[0].O[0]-&gt;ILOGICE3.O_to_BLK-TL-IOPAD.ILOGICE3_O</port>
+			<port name="ILOGICE3_Q1">open</port>
+			<port name="ILOGICE3_Q2">open</port>
+			<port name="ILOGICE3_Q3">open</port>
+			<port name="ILOGICE3_Q4">open</port>
+			<port name="ILOGICE3_Q5">open</port>
+			<port name="ILOGICE3_Q6">open</port>
+			<port name="ILOGICE3_Q7">open</port>
+			<port name="ILOGICE3_Q8">open</port>
+			<port name="ILOGICE3_SHIFTOUT1">open</port>
+			<port name="ILOGICE3_SHIFTOUT2">open</port>
+			<port name="IOB33_DIFFO_OUT">open</port>
+			<port name="IOB33_O_OUT">open</port>
+			<port name="IOB33_PADOUT">open</port>
+			<port name="IOB33_T_OUT">open</port>
+			<port name="OLOGICE3_IOCLKGLITCH">open</port>
+			<port name="OLOGICE3_SHIFTOUT1">open</port>
+			<port name="OLOGICE3_SHIFTOUT2">open</port>
+			<port name="OLOGICE3_TBYTEOUT">open</port>
+		</outputs>
+		<clocks>
+			<port name="ILOGICE3_CLK">open</port>
+			<port name="ILOGICE3_CLKB">open</port>
+			<port name="ILOGICE3_CLKDIV">open</port>
+			<port name="ILOGICE3_CLKDIVP">open</port>
+			<port name="ILOGICE3_DYNCLKDIVPSEL">open</port>
+			<port name="ILOGICE3_DYNCLKDIVSEL">open</port>
+			<port name="ILOGICE3_DYNCLKSEL">open</port>
+			<port name="ILOGICE3_OCLK">open</port>
+			<port name="ILOGICE3_OCLKB">open</port>
+			<port name="OLOGICE3_CLK">open</port>
+			<port name="OLOGICE3_CLKB">open</port>
+			<port name="OLOGICE3_CLKDIV">open</port>
+			<port name="OLOGICE3_CLKDIVB">open</port>
+			<port name="OLOGICE3_CLKDIVF">open</port>
+			<port name="OLOGICE3_CLKDIVFB">open</port>
+		</clocks>
+		<block name="open" instance="IDELAYE2[0]" />
+		<block name="open" instance="ILOGICE3[0]" mode="PASS_THROUGH" pb_type_num_modes="4">
+			<inputs>
+				<port name="BITSLIP">open</port>
+				<port name="CE1">open</port>
+				<port name="CE2">open</port>
+				<port name="D">IOB33[0].I[0]-&gt;IOB33.I_to_ILOGICE3.D</port>
+				<port name="DDLY">open</port>
+				<port name="DYNCLKDIVPSEL">open</port>
+				<port name="DYNCLKDIVSEL">open</port>
+				<port name="DYNCLKSEL">open</port>
+				<port name="OFB">open</port>
+				<port name="SHIFTIN1">open</port>
+				<port name="SHIFTIN2">open</port>
+				<port name="SR">open</port>
+				<port name="TFB">open</port>
+			</inputs>
+			<outputs>
+				<port name="O">ILOGICE3[0].D[0]-&gt;D_O</port>
+				<port name="Q1">open</port>
+				<port name="Q2">open</port>
+				<port name="Q3">open</port>
+				<port name="Q4">open</port>
+				<port name="Q5">open</port>
+				<port name="Q6">open</port>
+				<port name="Q7">open</port>
+				<port name="Q8">open</port>
+				<port name="SHIFTOUT1">open</port>
+				<port name="SHIFTOUT2">open</port>
+			</outputs>
+			<clocks>
+				<port name="CLK">open</port>
+				<port name="CLKB">open</port>
+				<port name="CLKDIV">open</port>
+				<port name="CLKDIVP">open</port>
+				<port name="OCLK">open</port>
+				<port name="OCLKB">open</port>
+			</clocks>
+		</block>
+		<block name="rst" instance="IOB33[0]" mode="default">
+			<inputs>
+				<port name="DIFFI_IN">open</port>
+				<port name="DIFFO_IN">open</port>
+				<port name="IBUFDISABLE">open</port>
+				<port name="INTERMDISABLE">open</port>
+				<port name="KEEPER_INT_EN">open</port>
+				<port name="O">open</port>
+				<port name="PD_INT_EN">open</port>
+				<port name="PU_INT_EN">open</port>
+				<port name="T">open</port>
+			</inputs>
+			<outputs>
+				<port name="DIFFO_OUT">open</port>
+				<port name="I">IOB33_MODES[0].I[0]-&gt;I</port>
+				<port name="O_OUT">open</port>
+				<port name="PADOUT">open</port>
+				<port name="T_OUT">open</port>
+			</outputs>
+			<clocks />
+			<block name="rst" instance="IOB33_MODES[0]" mode="IBUF">
+				<inputs>
+					<port name="IBUFDISABLE">open</port>
+					<port name="INTERMDISABLE">open</port>
+					<port name="KEEPER_INT_EN">open</port>
+					<port name="O">open</port>
+					<port name="PD_INT_EN">open</port>
+					<port name="PU_INT_EN">open</port>
+					<port name="T">open</port>
+				</inputs>
+				<outputs>
+					<port name="I">IBUF_VPR[0].O[0]-&gt;IBUF_VPR.O_to_IOB33_MODES.I</port>
+				</outputs>
+				<clocks />
+				<block name="$iopadmap$top.rst" instance="IBUF_VPR[0]">
+					<attributes>
+						<attribute name="src">"/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:1931.5-1934.4"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+						<attribute name="keep">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters>
+						<parameter name="PULLTYPE_PULLUP">0</parameter>
+						<parameter name="PULLTYPE_PULLDOWN">0</parameter>
+						<parameter name="IBUF_LOW_PWR">00000000000000000000000000000000</parameter>
+						<parameter name="IOSTANDARD">"LVCMOS33"</parameter>
+						<parameter name="IN_TERM_UNTUNED_SPLIT_40">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_IN">0</parameter>
+						<parameter name="IN_TERM_UNTUNED_SPLIT_60">0</parameter>
+						<parameter name="PULLTYPE_NONE">1</parameter>
+						<parameter name="IN_TERM_UNTUNED_SPLIT_50">0</parameter>
+						<parameter name="IO_LOC_PAIRS">"rst:P15"</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_LVCMOS25_LVCMOS33_LVDS_25_LVTTL_SSTL135_SSTL15_TMDS_33_IN_ONLY">1</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_LVCMOS25_LVCMOS33_LVTTL_SLEW_FAST">1</parameter>
+						<parameter name="LVCMOS25_LVCMOS33_LVTTL_IN">1</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_SSTL135_SSTL15_STEPDOWN">0</parameter>
+						<parameter name="PULLTYPE">"NONE"</parameter>
+						<parameter name="SSTL135_SSTL15_IN">0</parameter>
+						<parameter name="PULLTYPE_KEEPER">0</parameter>
+					</parameters>
+					<inputs>
+						<port name="I">inpad[0].inpad[0]-&gt;inpat.inpad_to_IBUF_VPR.I</port>
+					</inputs>
+					<outputs>
+						<port name="O">S1.rst</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="rst" instance="inpad[0]">
+					<attributes />
+					<parameters />
+					<inputs />
+					<outputs>
+						<port name="inpad">rst</port>
+					</outputs>
+					<clocks />
+				</block>
+			</block>
+		</block>
+		<block name="open" instance="OLOGICE3[0]" />
+	</block>
+	<block name="clk" instance="BLK-TL-IOPAD[12]" mode="default">
+		<inputs>
+			<port name="IDELAYE2_C">open</port>
+			<port name="IDELAYE2_CE">open</port>
+			<port name="IDELAYE2_CINVCTRL">open</port>
+			<port name="IDELAYE2_CNTVALUEIN0">open</port>
+			<port name="IDELAYE2_CNTVALUEIN1">open</port>
+			<port name="IDELAYE2_CNTVALUEIN2">open</port>
+			<port name="IDELAYE2_CNTVALUEIN3">open</port>
+			<port name="IDELAYE2_CNTVALUEIN4">open</port>
+			<port name="IDELAYE2_DATAIN">open</port>
+			<port name="IDELAYE2_IFDLY0">open</port>
+			<port name="IDELAYE2_IFDLY1">open</port>
+			<port name="IDELAYE2_IFDLY2">open</port>
+			<port name="IDELAYE2_INC">open</port>
+			<port name="IDELAYE2_LD">open</port>
+			<port name="IDELAYE2_LDPIPEEN">open</port>
+			<port name="IDELAYE2_REGRST">open</port>
+			<port name="ILOGICE3_BITSLIP">open</port>
+			<port name="ILOGICE3_CE1">open</port>
+			<port name="ILOGICE3_CE2">open</port>
+			<port name="ILOGICE3_SR">open</port>
+			<port name="IOB33_IBUFDISABLE">open</port>
+			<port name="IOB33_INTERMDISABLE">open</port>
+			<port name="IOB33_KEEPER_INT_EN">open</port>
+			<port name="IOB33_PD_INT_EN">open</port>
+			<port name="IOB33_PU_INT_EN">open</port>
+			<port name="OLOGICE3_D1">open</port>
+			<port name="OLOGICE3_D2">open</port>
+			<port name="OLOGICE3_D3">open</port>
+			<port name="OLOGICE3_D4">open</port>
+			<port name="OLOGICE3_D5">open</port>
+			<port name="OLOGICE3_D6">open</port>
+			<port name="OLOGICE3_D7">open</port>
+			<port name="OLOGICE3_D8">open</port>
+			<port name="OLOGICE3_OCE">open</port>
+			<port name="OLOGICE3_SR">open</port>
+			<port name="OLOGICE3_T1">open</port>
+			<port name="OLOGICE3_T2">open</port>
+			<port name="OLOGICE3_T3">open</port>
+			<port name="OLOGICE3_T4">open</port>
+			<port name="OLOGICE3_TBYTEIN">open</port>
+			<port name="OLOGICE3_TCE">open</port>
+		</inputs>
+		<outputs>
+			<port name="IDELAYE2_CNTVALUEOUT0">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT1">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT2">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT3">open</port>
+			<port name="IDELAYE2_CNTVALUEOUT4">open</port>
+			<port name="ILOGICE3_O">ILOGICE3[0].O[0]-&gt;ILOGICE3.O_to_BLK-TL-IOPAD.ILOGICE3_O</port>
+			<port name="ILOGICE3_Q1">open</port>
+			<port name="ILOGICE3_Q2">open</port>
+			<port name="ILOGICE3_Q3">open</port>
+			<port name="ILOGICE3_Q4">open</port>
+			<port name="ILOGICE3_Q5">open</port>
+			<port name="ILOGICE3_Q6">open</port>
+			<port name="ILOGICE3_Q7">open</port>
+			<port name="ILOGICE3_Q8">open</port>
+			<port name="ILOGICE3_SHIFTOUT1">open</port>
+			<port name="ILOGICE3_SHIFTOUT2">open</port>
+			<port name="IOB33_DIFFO_OUT">open</port>
+			<port name="IOB33_O_OUT">open</port>
+			<port name="IOB33_PADOUT">open</port>
+			<port name="IOB33_T_OUT">open</port>
+			<port name="OLOGICE3_IOCLKGLITCH">open</port>
+			<port name="OLOGICE3_SHIFTOUT1">open</port>
+			<port name="OLOGICE3_SHIFTOUT2">open</port>
+			<port name="OLOGICE3_TBYTEOUT">open</port>
+		</outputs>
+		<clocks>
+			<port name="ILOGICE3_CLK">open</port>
+			<port name="ILOGICE3_CLKB">open</port>
+			<port name="ILOGICE3_CLKDIV">open</port>
+			<port name="ILOGICE3_CLKDIVP">open</port>
+			<port name="ILOGICE3_DYNCLKDIVPSEL">open</port>
+			<port name="ILOGICE3_DYNCLKDIVSEL">open</port>
+			<port name="ILOGICE3_DYNCLKSEL">open</port>
+			<port name="ILOGICE3_OCLK">open</port>
+			<port name="ILOGICE3_OCLKB">open</port>
+			<port name="OLOGICE3_CLK">open</port>
+			<port name="OLOGICE3_CLKB">open</port>
+			<port name="OLOGICE3_CLKDIV">open</port>
+			<port name="OLOGICE3_CLKDIVB">open</port>
+			<port name="OLOGICE3_CLKDIVF">open</port>
+			<port name="OLOGICE3_CLKDIVFB">open</port>
+		</clocks>
+		<block name="open" instance="IDELAYE2[0]" />
+		<block name="open" instance="ILOGICE3[0]" mode="PASS_THROUGH" pb_type_num_modes="4">
+			<inputs>
+				<port name="BITSLIP">open</port>
+				<port name="CE1">open</port>
+				<port name="CE2">open</port>
+				<port name="D">IOB33[0].I[0]-&gt;IOB33.I_to_ILOGICE3.D</port>
+				<port name="DDLY">open</port>
+				<port name="DYNCLKDIVPSEL">open</port>
+				<port name="DYNCLKDIVSEL">open</port>
+				<port name="DYNCLKSEL">open</port>
+				<port name="OFB">open</port>
+				<port name="SHIFTIN1">open</port>
+				<port name="SHIFTIN2">open</port>
+				<port name="SR">open</port>
+				<port name="TFB">open</port>
+			</inputs>
+			<outputs>
+				<port name="O">ILOGICE3[0].D[0]-&gt;D_O</port>
+				<port name="Q1">open</port>
+				<port name="Q2">open</port>
+				<port name="Q3">open</port>
+				<port name="Q4">open</port>
+				<port name="Q5">open</port>
+				<port name="Q6">open</port>
+				<port name="Q7">open</port>
+				<port name="Q8">open</port>
+				<port name="SHIFTOUT1">open</port>
+				<port name="SHIFTOUT2">open</port>
+			</outputs>
+			<clocks>
+				<port name="CLK">open</port>
+				<port name="CLKB">open</port>
+				<port name="CLKDIV">open</port>
+				<port name="CLKDIVP">open</port>
+				<port name="OCLK">open</port>
+				<port name="OCLKB">open</port>
+			</clocks>
+		</block>
+		<block name="clk" instance="IOB33[0]" mode="default">
+			<inputs>
+				<port name="DIFFI_IN">open</port>
+				<port name="DIFFO_IN">open</port>
+				<port name="IBUFDISABLE">open</port>
+				<port name="INTERMDISABLE">open</port>
+				<port name="KEEPER_INT_EN">open</port>
+				<port name="O">open</port>
+				<port name="PD_INT_EN">open</port>
+				<port name="PU_INT_EN">open</port>
+				<port name="T">open</port>
+			</inputs>
+			<outputs>
+				<port name="DIFFO_OUT">open</port>
+				<port name="I">IOB33_MODES[0].I[0]-&gt;I</port>
+				<port name="O_OUT">open</port>
+				<port name="PADOUT">open</port>
+				<port name="T_OUT">open</port>
+			</outputs>
+			<clocks />
+			<block name="clk" instance="IOB33_MODES[0]" mode="IBUF">
+				<inputs>
+					<port name="IBUFDISABLE">open</port>
+					<port name="INTERMDISABLE">open</port>
+					<port name="KEEPER_INT_EN">open</port>
+					<port name="O">open</port>
+					<port name="PD_INT_EN">open</port>
+					<port name="PU_INT_EN">open</port>
+					<port name="T">open</port>
+				</inputs>
+				<outputs>
+					<port name="I">IBUF_VPR[0].O[0]-&gt;IBUF_VPR.O_to_IOB33_MODES.I</port>
+				</outputs>
+				<clocks />
+				<block name="$iopadmap$top.clk" instance="IBUF_VPR[0]">
+					<attributes>
+						<attribute name="src">"/home/cl4/opt/f4pga/xc7/share/f4pga/techmaps/xc7_vpr/techmap/cells_map.v:1931.5-1934.4"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+						<attribute name="keep">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters>
+						<parameter name="PULLTYPE_PULLUP">0</parameter>
+						<parameter name="PULLTYPE_PULLDOWN">0</parameter>
+						<parameter name="IBUF_LOW_PWR">00000000000000000000000000000000</parameter>
+						<parameter name="IOSTANDARD">"LVCMOS33"</parameter>
+						<parameter name="IN_TERM_UNTUNED_SPLIT_40">0</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_IN">0</parameter>
+						<parameter name="IN_TERM_UNTUNED_SPLIT_60">0</parameter>
+						<parameter name="PULLTYPE_NONE">1</parameter>
+						<parameter name="IN_TERM_UNTUNED_SPLIT_50">0</parameter>
+						<parameter name="IO_LOC_PAIRS">"clk:G15"</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_LVCMOS25_LVCMOS33_LVDS_25_LVTTL_SSTL135_SSTL15_TMDS_33_IN_ONLY">1</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_LVCMOS25_LVCMOS33_LVTTL_SLEW_FAST">1</parameter>
+						<parameter name="LVCMOS25_LVCMOS33_LVTTL_IN">1</parameter>
+						<parameter name="LVCMOS12_LVCMOS15_LVCMOS18_SSTL135_SSTL15_STEPDOWN">0</parameter>
+						<parameter name="PULLTYPE">"NONE"</parameter>
+						<parameter name="SSTL135_SSTL15_IN">0</parameter>
+						<parameter name="PULLTYPE_KEEPER">0</parameter>
+					</parameters>
+					<inputs>
+						<port name="I">inpad[0].inpad[0]-&gt;inpat.inpad_to_IBUF_VPR.I</port>
+					</inputs>
+					<outputs>
+						<port name="O">S1.clk</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="clk" instance="inpad[0]">
+					<attributes />
+					<parameters />
+					<inputs />
+					<outputs>
+						<port name="inpad">clk</port>
+					</outputs>
+					<clocks />
+				</block>
+			</block>
+		</block>
+		<block name="open" instance="OLOGICE3[0]" />
+	</block>
+	<block name="$false" instance="SYN-GND[13]" mode="default">
+		<inputs />
+		<outputs>
+			<port name="GND">GND[0].GND[0]-&gt;GND.GND_to_SYN-GND.GND</port>
+		</outputs>
+		<clocks />
+		<block name="$false" instance="GND[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="GND">$false</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+	<block name="$true" instance="SYN-VCC[14]" mode="default">
+		<inputs />
+		<outputs>
+			<port name="VCC">VCC[0].VCC[0]-&gt;VCC.VCC_to_SYN-VCC.VCC</port>
+		</outputs>
+		<clocks />
+		<block name="$true" instance="VCC[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="VCC">$true</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+</block>

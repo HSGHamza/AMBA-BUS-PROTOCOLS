@@ -1,0 +1,20 @@
+Netlist_File: top.net Netlist_ID: SHA256:7a59b51d64088681d11aaa148f07979c6af6af20095f2312338f14e06ed7233e
+Array size: 130 x 109 logic blocks
+
+#block name	x	y	subblk	block number
+#----------	--	--	------	------------
+S1.mem.0.0.ram_d0	118	53	1	#0
+$iopadmap$top.ready.genblk1.t_inv	127	14	0	#1
+$iopadmap$top.valid.genblk1.t_inv	127	91	0	#2
+$iopadmap$top.dataFpga.genblk1.t_inv	127	26	0	#3
+$iopadmap$top.dataFpga_1.genblk1.t_inv	127	104	0	#4
+$iopadmap$top.dataFpga_2.genblk1.t_inv	127	21	0	#5
+$iopadmap$top.dataFpga_3.genblk1.t_inv	127	68	0	#6
+valid_wire	118	62	0	#7
+$abc$2377$flatten\S1.$0$memwr$\mem$/home/cl4/f4pga-examples/xc7/handshake/slave.v:67$1359_EN[7:0]$1365[7]	118	63	1	#8
+rw		127	72	0	#9
+start		127	63	0	#10
+rst		127	103	0	#11
+clk		127	41	0	#12
+$false		9	1	0	#13
+$true		1	1	0	#14

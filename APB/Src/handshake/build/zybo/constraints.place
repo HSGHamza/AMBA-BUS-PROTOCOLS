@@ -1,0 +1,12 @@
+#Block Name      x   y   z    pcf_line
+#--------------- --  --  -    ----
+$iopadmap$top.valid.genblk1.t_inv  127  91  0  # set_property LOC V16 [get_ports {valid}]
+$iopadmap$top.dataFpga_3.genblk1.t_inv  127  68  0  # set_property LOC Y16 [get_ports {dataFpga[3]}]
+$iopadmap$top.dataFpga_2.genblk1.t_inv  127  21  0  # set_property LOC K19 [get_ports {dataFpga[2]}]
+$iopadmap$top.dataFpga_1.genblk1.t_inv  127  104  0  # set_property LOC P16 [get_ports {dataFpga[1]}]
+rw               127  72  0  # set_property LOC T16 [get_ports {rw}]
+rst              127  103  0  # set_property LOC P15 [get_ports {rst}]
+clk              127  41  0  # set_property LOC G15 [get_ports {clk}]
+$iopadmap$top.dataFpga.genblk1.t_inv  127  26  0  # set_property LOC K18 [get_ports {dataFpga[0]}]
+start            127  63  0  # set_property LOC W13 [get_ports {start}]
+$iopadmap$top.ready.genblk1.t_inv  127  14  0  # set_property LOC F17 [get_ports {ready}]

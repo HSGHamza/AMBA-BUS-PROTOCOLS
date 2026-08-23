@@ -1,0 +1,1249 @@
+#Timing report of worst 40 path(s)
+# Unit scale: 1e-09 seconds
+# Output precision: 3
+
+#Path 1
+Startpoint: $auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : $auto$ff.cc:266:slice$2216.D[0] (FDRE_ZINI clocked by S1.clk)
+Path Type : setup
+
+Point                                                                   Incr      Path
+--------------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                               0.000     0.000
+clock source latency                                                   0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                      0.000     0.000
+$auto$ff.cc:266:slice$2179.C[0] (FDCE_ZINI)                            2.180     2.180
+$auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI) [clock-to-output]          0.303     2.483
+valid_wire.in[0] (.names)                                              2.180     4.663
+valid_wire.out[0] (.names)                                             0.152     4.815
+S1.mem.0.0.ram_d1.A[0] (DPRAM32)                                       2.180     6.995
+S1.mem.0.0.ram_d1.O[0] (DPRAM32)                                       0.156     7.151
+S1.mem.0.0.stub.DOD1[0] (DRAM_8_OUTPUT_STUB)                           2.180     9.331
+S1.mem.0.0.stub.DOD1_OUT[0] (DRAM_8_OUTPUT_STUB)                       0.000     9.331
+$auto$ff.cc:266:slice$2216.D[0] (FDRE_ZINI)                            2.180    11.511
+data arrival time                                                               11.511
+
+clock S1.clk (rise edge)                                               0.000     0.000
+clock source latency                                                   0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                      0.000     0.000
+$auto$ff.cc:266:slice$2216.C[0] (FDRE_ZINI)                            2.180     2.180
+clock uncertainty                                                      0.000     2.180
+cell setup time                                                        0.046     2.226
+data required time                                                               2.226
+--------------------------------------------------------------------------------------
+data required time                                                               2.226
+data arrival time                                                              -11.511
+--------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                -9.285
+
+
+#Path 2
+Startpoint: $auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : $auto$ff.cc:266:slice$2215.D[0] (FDRE_ZINI clocked by S1.clk)
+Path Type : setup
+
+Point                                                                   Incr      Path
+--------------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                               0.000     0.000
+clock source latency                                                   0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                      0.000     0.000
+$auto$ff.cc:266:slice$2179.C[0] (FDCE_ZINI)                            2.180     2.180
+$auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI) [clock-to-output]          0.303     2.483
+valid_wire.in[0] (.names)                                              2.180     4.663
+valid_wire.out[0] (.names)                                             0.152     4.815
+S1.mem.0.0.ram_d0.A[0] (DPRAM32)                                       2.180     6.995
+S1.mem.0.0.ram_d0.O[0] (DPRAM32)                                       0.156     7.151
+S1.mem.0.0.stub.DOD0[0] (DRAM_8_OUTPUT_STUB)                           2.180     9.331
+S1.mem.0.0.stub.DOD0_OUT[0] (DRAM_8_OUTPUT_STUB)                       0.000     9.331
+$auto$ff.cc:266:slice$2215.D[0] (FDRE_ZINI)                            2.180    11.511
+data arrival time                                                               11.511
+
+clock S1.clk (rise edge)                                               0.000     0.000
+clock source latency                                                   0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                      0.000     0.000
+$auto$ff.cc:266:slice$2215.C[0] (FDRE_ZINI)                            2.180     2.180
+clock uncertainty                                                      0.000     2.180
+cell setup time                                                        0.046     2.226
+data required time                                                               2.226
+--------------------------------------------------------------------------------------
+data required time                                                               2.226
+data arrival time                                                              -11.511
+--------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                -9.285
+
+
+#Path 3
+Startpoint: $auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : $auto$ff.cc:266:slice$2218.D[0] (FDRE_ZINI clocked by S1.clk)
+Path Type : setup
+
+Point                                                                   Incr      Path
+--------------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                               0.000     0.000
+clock source latency                                                   0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                      0.000     0.000
+$auto$ff.cc:266:slice$2179.C[0] (FDCE_ZINI)                            2.180     2.180
+$auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI) [clock-to-output]          0.303     2.483
+valid_wire.in[0] (.names)                                              2.180     4.663
+valid_wire.out[0] (.names)                                             0.152     4.815
+S1.mem.0.0.ram_c1.A[0] (DPRAM32)                                       2.180     6.995
+S1.mem.0.0.ram_c1.O[0] (DPRAM32)                                       0.156     7.151
+S1.mem.0.0.stub.DOC1[0] (DRAM_8_OUTPUT_STUB)                           2.180     9.331
+S1.mem.0.0.stub.DOC1_OUT[0] (DRAM_8_OUTPUT_STUB)                       0.000     9.331
+$auto$ff.cc:266:slice$2218.D[0] (FDRE_ZINI)                            2.180    11.511
+data arrival time                                                               11.511
+
+clock S1.clk (rise edge)                                               0.000     0.000
+clock source latency                                                   0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                      0.000     0.000
+$auto$ff.cc:266:slice$2218.C[0] (FDRE_ZINI)                            2.180     2.180
+clock uncertainty                                                      0.000     2.180
+cell setup time                                                        0.046     2.226
+data required time                                                               2.226
+--------------------------------------------------------------------------------------
+data required time                                                               2.226
+data arrival time                                                              -11.511
+--------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                -9.285
+
+
+#Path 4
+Startpoint: $auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : $auto$ff.cc:266:slice$2217.D[0] (FDRE_ZINI clocked by S1.clk)
+Path Type : setup
+
+Point                                                                   Incr      Path
+--------------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                               0.000     0.000
+clock source latency                                                   0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                      0.000     0.000
+$auto$ff.cc:266:slice$2179.C[0] (FDCE_ZINI)                            2.180     2.180
+$auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI) [clock-to-output]          0.303     2.483
+valid_wire.in[0] (.names)                                              2.180     4.663
+valid_wire.out[0] (.names)                                             0.152     4.815
+S1.mem.0.0.ram_c0.A[0] (DPRAM32)                                       2.180     6.995
+S1.mem.0.0.ram_c0.O[0] (DPRAM32)                                       0.156     7.151
+S1.mem.0.0.stub.DOC0[0] (DRAM_8_OUTPUT_STUB)                           2.180     9.331
+S1.mem.0.0.stub.DOC0_OUT[0] (DRAM_8_OUTPUT_STUB)                       0.000     9.331
+$auto$ff.cc:266:slice$2217.D[0] (FDRE_ZINI)                            2.180    11.511
+data arrival time                                                               11.511
+
+clock S1.clk (rise edge)                                               0.000     0.000
+clock source latency                                                   0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                      0.000     0.000
+$auto$ff.cc:266:slice$2217.C[0] (FDRE_ZINI)                            2.180     2.180
+clock uncertainty                                                      0.000     2.180
+cell setup time                                                        0.046     2.226
+data required time                                                               2.226
+--------------------------------------------------------------------------------------
+data required time                                                               2.226
+data arrival time                                                              -11.511
+--------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                -9.285
+
+
+#Path 5
+Startpoint: $auto$ff.cc:266:slice$2224.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : out:ready.outpad[0] (.output clocked by S1.clk)
+Path Type : setup
+
+Point                                                              Incr      Path
+---------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+$auto$ff.cc:266:slice$2224.C[0] (FDCE_ZINI)                       2.180     2.180
+$auto$ff.cc:266:slice$2224.Q[0] (FDCE_ZINI) [clock-to-output]     0.303     2.483
+ready_wire.in[0] (.names)                                         2.180     4.663
+ready_wire.out[0] (.names)                                        0.152     4.815
+$iopadmap$top.ready.obuft.I[0] (OBUFT_VPR)                        2.180     6.995
+$iopadmap$top.ready.obuft.O[0] (OBUFT_VPR)                        0.010     7.005
+out:ready.outpad[0] (.output)                                     2.180     9.185
+data arrival time                                                           9.185
+
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+clock uncertainty                                                 0.000     0.000
+output external delay                                             0.000     0.000
+data required time                                                          0.000
+---------------------------------------------------------------------------------
+data required time                                                          0.000
+data arrival time                                                          -9.185
+---------------------------------------------------------------------------------
+slack (VIOLATED)                                                           -9.185
+
+
+#Path 6
+Startpoint: $auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : out:valid.outpad[0] (.output clocked by S1.clk)
+Path Type : setup
+
+Point                                                              Incr      Path
+---------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+$auto$ff.cc:266:slice$2179.C[0] (FDCE_ZINI)                       2.180     2.180
+$auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI) [clock-to-output]     0.303     2.483
+valid_wire.in[0] (.names)                                         2.180     4.663
+valid_wire.out[0] (.names)                                        0.152     4.815
+$iopadmap$top.valid.obuft.I[0] (OBUFT_VPR)                        2.180     6.995
+$iopadmap$top.valid.obuft.O[0] (OBUFT_VPR)                        0.010     7.005
+out:valid.outpad[0] (.output)                                     2.180     9.185
+data arrival time                                                           9.185
+
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+clock uncertainty                                                 0.000     0.000
+output external delay                                             0.000     0.000
+data required time                                                          0.000
+---------------------------------------------------------------------------------
+data required time                                                          0.000
+data arrival time                                                          -9.185
+---------------------------------------------------------------------------------
+slack (VIOLATED)                                                           -9.185
+
+
+#Path 7
+Startpoint: $auto$ff.cc:266:slice$2218.Q[0] (FDRE_ZINI clocked by S1.clk)
+Endpoint  : out:dataFpga[3].outpad[0] (.output clocked by S1.clk)
+Path Type : setup
+
+Point                                                                  Incr      Path
+-------------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                              0.000     0.000
+clock source latency                                                  0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                     0.000     0.000
+$auto$ff.cc:266:slice$2218.C[0] (FDRE_ZINI)                           2.180     2.180
+$auto$ff.cc:266:slice$2218.Q[0] (FDRE_ZINI) [clock-to-output]         0.303     2.483
+$iopadmap$top.dataFpga_3.obuft.I[0] (OBUFT_VPR)                       2.180     4.663
+$iopadmap$top.dataFpga_3.obuft.O[0] (OBUFT_VPR)                       0.010     4.673
+out:dataFpga[3].outpad[0] (.output)                                   2.180     6.853
+data arrival time                                                               6.853
+
+clock S1.clk (rise edge)                                              0.000     0.000
+clock source latency                                                  0.000     0.000
+clock uncertainty                                                     0.000     0.000
+output external delay                                                 0.000     0.000
+data required time                                                              0.000
+-------------------------------------------------------------------------------------
+data required time                                                              0.000
+data arrival time                                                              -6.853
+-------------------------------------------------------------------------------------
+slack (VIOLATED)                                                               -6.853
+
+
+#Path 8
+Startpoint: $auto$ff.cc:266:slice$2217.Q[0] (FDRE_ZINI clocked by S1.clk)
+Endpoint  : out:dataFpga[2].outpad[0] (.output clocked by S1.clk)
+Path Type : setup
+
+Point                                                                  Incr      Path
+-------------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                              0.000     0.000
+clock source latency                                                  0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                     0.000     0.000
+$auto$ff.cc:266:slice$2217.C[0] (FDRE_ZINI)                           2.180     2.180
+$auto$ff.cc:266:slice$2217.Q[0] (FDRE_ZINI) [clock-to-output]         0.303     2.483
+$iopadmap$top.dataFpga_2.obuft.I[0] (OBUFT_VPR)                       2.180     4.663
+$iopadmap$top.dataFpga_2.obuft.O[0] (OBUFT_VPR)                       0.010     4.673
+out:dataFpga[2].outpad[0] (.output)                                   2.180     6.853
+data arrival time                                                               6.853
+
+clock S1.clk (rise edge)                                              0.000     0.000
+clock source latency                                                  0.000     0.000
+clock uncertainty                                                     0.000     0.000
+output external delay                                                 0.000     0.000
+data required time                                                              0.000
+-------------------------------------------------------------------------------------
+data required time                                                              0.000
+data arrival time                                                              -6.853
+-------------------------------------------------------------------------------------
+slack (VIOLATED)                                                               -6.853
+
+
+#Path 9
+Startpoint: $auto$ff.cc:266:slice$2216.Q[0] (FDRE_ZINI clocked by S1.clk)
+Endpoint  : out:dataFpga[1].outpad[0] (.output clocked by S1.clk)
+Path Type : setup
+
+Point                                                                  Incr      Path
+-------------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                              0.000     0.000
+clock source latency                                                  0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                     0.000     0.000
+$auto$ff.cc:266:slice$2216.C[0] (FDRE_ZINI)                           2.180     2.180
+$auto$ff.cc:266:slice$2216.Q[0] (FDRE_ZINI) [clock-to-output]         0.303     2.483
+$iopadmap$top.dataFpga_1.obuft.I[0] (OBUFT_VPR)                       2.180     4.663
+$iopadmap$top.dataFpga_1.obuft.O[0] (OBUFT_VPR)                       0.010     4.673
+out:dataFpga[1].outpad[0] (.output)                                   2.180     6.853
+data arrival time                                                               6.853
+
+clock S1.clk (rise edge)                                              0.000     0.000
+clock source latency                                                  0.000     0.000
+clock uncertainty                                                     0.000     0.000
+output external delay                                                 0.000     0.000
+data required time                                                              0.000
+-------------------------------------------------------------------------------------
+data required time                                                              0.000
+data arrival time                                                              -6.853
+-------------------------------------------------------------------------------------
+slack (VIOLATED)                                                               -6.853
+
+
+#Path 10
+Startpoint: $auto$ff.cc:266:slice$2215.Q[0] (FDRE_ZINI clocked by S1.clk)
+Endpoint  : out:dataFpga[0].outpad[0] (.output clocked by S1.clk)
+Path Type : setup
+
+Point                                                                Incr      Path
+-----------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                            0.000     0.000
+clock source latency                                                0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                   0.000     0.000
+$auto$ff.cc:266:slice$2215.C[0] (FDRE_ZINI)                         2.180     2.180
+$auto$ff.cc:266:slice$2215.Q[0] (FDRE_ZINI) [clock-to-output]       0.303     2.483
+$iopadmap$top.dataFpga.obuft.I[0] (OBUFT_VPR)                       2.180     4.663
+$iopadmap$top.dataFpga.obuft.O[0] (OBUFT_VPR)                       0.010     4.673
+out:dataFpga[0].outpad[0] (.output)                                 2.180     6.853
+data arrival time                                                             6.853
+
+clock S1.clk (rise edge)                                            0.000     0.000
+clock source latency                                                0.000     0.000
+clock uncertainty                                                   0.000     0.000
+output external delay                                               0.000     0.000
+data required time                                                            0.000
+-----------------------------------------------------------------------------------
+data required time                                                            0.000
+data arrival time                                                            -6.853
+-----------------------------------------------------------------------------------
+slack (VIOLATED)                                                             -6.853
+
+
+#Path 11
+Startpoint: $auto$ff.cc:266:slice$2223.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : S1.mem.0.0.ram_c0.WE[0] (DPRAM32 clocked by S1.clk)
+Path Type : setup
+
+Point                                                                                                                                            Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                                                                                                        0.000     0.000
+clock source latency                                                                                                                            0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                                                                                               0.000     0.000
+$auto$ff.cc:266:slice$2223.C[0] (FDCE_ZINI)                                                                                                     2.180     2.180
+$auto$ff.cc:266:slice$2223.Q[0] (FDCE_ZINI) [clock-to-output]                                                                                   0.303     2.483
+$abc$2377$flatten\S1.$0$memwr$\mem$/home/cl4/f4pga-examples/xc7/handshake/slave.v:67$1359_EN[7:0]$1365[7].in[1] (.names)                        2.180     4.663
+$abc$2377$flatten\S1.$0$memwr$\mem$/home/cl4/f4pga-examples/xc7/handshake/slave.v:67$1359_EN[7:0]$1365[7].out[0] (.names)                       0.152     4.815
+S1.mem.0.0.ram_c0.WE[0] (DPRAM32)                                                                                                               2.180     6.995
+data arrival time                                                                                                                                         6.995
+
+clock S1.clk (rise edge)                                                                                                                        0.000     0.000
+clock source latency                                                                                                                            0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                                                                                               0.000     0.000
+S1.mem.0.0.ram_c0.CLK[0] (DPRAM32)                                                                                                              2.180     2.180
+clock uncertainty                                                                                                                               0.000     2.180
+cell setup time                                                                                                                                -0.654     1.526
+data required time                                                                                                                                        1.526
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                                                        1.526
+data arrival time                                                                                                                                        -6.995
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                                                         -5.469
+
+
+#Path 12
+Startpoint: $auto$ff.cc:266:slice$2223.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : S1.mem.0.0.ram_a0.WE[0] (DPRAM32 clocked by S1.clk)
+Path Type : setup
+
+Point                                                                                                                                            Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                                                                                                        0.000     0.000
+clock source latency                                                                                                                            0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                                                                                               0.000     0.000
+$auto$ff.cc:266:slice$2223.C[0] (FDCE_ZINI)                                                                                                     2.180     2.180
+$auto$ff.cc:266:slice$2223.Q[0] (FDCE_ZINI) [clock-to-output]                                                                                   0.303     2.483
+$abc$2377$flatten\S1.$0$memwr$\mem$/home/cl4/f4pga-examples/xc7/handshake/slave.v:67$1359_EN[7:0]$1365[7].in[1] (.names)                        2.180     4.663
+$abc$2377$flatten\S1.$0$memwr$\mem$/home/cl4/f4pga-examples/xc7/handshake/slave.v:67$1359_EN[7:0]$1365[7].out[0] (.names)                       0.152     4.815
+S1.mem.0.0.ram_a0.WE[0] (DPRAM32)                                                                                                               2.180     6.995
+data arrival time                                                                                                                                         6.995
+
+clock S1.clk (rise edge)                                                                                                                        0.000     0.000
+clock source latency                                                                                                                            0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                                                                                               0.000     0.000
+S1.mem.0.0.ram_a0.CLK[0] (DPRAM32)                                                                                                              2.180     2.180
+clock uncertainty                                                                                                                               0.000     2.180
+cell setup time                                                                                                                                -0.654     1.526
+data required time                                                                                                                                        1.526
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                                                        1.526
+data arrival time                                                                                                                                        -6.995
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                                                         -5.469
+
+
+#Path 13
+Startpoint: $auto$ff.cc:266:slice$2223.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : S1.mem.0.0.ram_a1.WE[0] (DPRAM32 clocked by S1.clk)
+Path Type : setup
+
+Point                                                                                                                                            Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                                                                                                        0.000     0.000
+clock source latency                                                                                                                            0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                                                                                               0.000     0.000
+$auto$ff.cc:266:slice$2223.C[0] (FDCE_ZINI)                                                                                                     2.180     2.180
+$auto$ff.cc:266:slice$2223.Q[0] (FDCE_ZINI) [clock-to-output]                                                                                   0.303     2.483
+$abc$2377$flatten\S1.$0$memwr$\mem$/home/cl4/f4pga-examples/xc7/handshake/slave.v:67$1359_EN[7:0]$1365[7].in[1] (.names)                        2.180     4.663
+$abc$2377$flatten\S1.$0$memwr$\mem$/home/cl4/f4pga-examples/xc7/handshake/slave.v:67$1359_EN[7:0]$1365[7].out[0] (.names)                       0.152     4.815
+S1.mem.0.0.ram_a1.WE[0] (DPRAM32)                                                                                                               2.180     6.995
+data arrival time                                                                                                                                         6.995
+
+clock S1.clk (rise edge)                                                                                                                        0.000     0.000
+clock source latency                                                                                                                            0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                                                                                               0.000     0.000
+S1.mem.0.0.ram_a1.CLK[0] (DPRAM32)                                                                                                              2.180     2.180
+clock uncertainty                                                                                                                               0.000     2.180
+cell setup time                                                                                                                                -0.654     1.526
+data required time                                                                                                                                        1.526
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                                                        1.526
+data arrival time                                                                                                                                        -6.995
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                                                         -5.469
+
+
+#Path 14
+Startpoint: $auto$ff.cc:266:slice$2223.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : S1.mem.0.0.ram_b0.WE[0] (DPRAM32 clocked by S1.clk)
+Path Type : setup
+
+Point                                                                                                                                            Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                                                                                                        0.000     0.000
+clock source latency                                                                                                                            0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                                                                                               0.000     0.000
+$auto$ff.cc:266:slice$2223.C[0] (FDCE_ZINI)                                                                                                     2.180     2.180
+$auto$ff.cc:266:slice$2223.Q[0] (FDCE_ZINI) [clock-to-output]                                                                                   0.303     2.483
+$abc$2377$flatten\S1.$0$memwr$\mem$/home/cl4/f4pga-examples/xc7/handshake/slave.v:67$1359_EN[7:0]$1365[7].in[1] (.names)                        2.180     4.663
+$abc$2377$flatten\S1.$0$memwr$\mem$/home/cl4/f4pga-examples/xc7/handshake/slave.v:67$1359_EN[7:0]$1365[7].out[0] (.names)                       0.152     4.815
+S1.mem.0.0.ram_b0.WE[0] (DPRAM32)                                                                                                               2.180     6.995
+data arrival time                                                                                                                                         6.995
+
+clock S1.clk (rise edge)                                                                                                                        0.000     0.000
+clock source latency                                                                                                                            0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                                                                                               0.000     0.000
+S1.mem.0.0.ram_b0.CLK[0] (DPRAM32)                                                                                                              2.180     2.180
+clock uncertainty                                                                                                                               0.000     2.180
+cell setup time                                                                                                                                -0.654     1.526
+data required time                                                                                                                                        1.526
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                                                        1.526
+data arrival time                                                                                                                                        -6.995
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                                                         -5.469
+
+
+#Path 15
+Startpoint: $auto$ff.cc:266:slice$2223.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : S1.mem.0.0.ram_b1.WE[0] (DPRAM32 clocked by S1.clk)
+Path Type : setup
+
+Point                                                                                                                                            Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                                                                                                        0.000     0.000
+clock source latency                                                                                                                            0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                                                                                               0.000     0.000
+$auto$ff.cc:266:slice$2223.C[0] (FDCE_ZINI)                                                                                                     2.180     2.180
+$auto$ff.cc:266:slice$2223.Q[0] (FDCE_ZINI) [clock-to-output]                                                                                   0.303     2.483
+$abc$2377$flatten\S1.$0$memwr$\mem$/home/cl4/f4pga-examples/xc7/handshake/slave.v:67$1359_EN[7:0]$1365[7].in[1] (.names)                        2.180     4.663
+$abc$2377$flatten\S1.$0$memwr$\mem$/home/cl4/f4pga-examples/xc7/handshake/slave.v:67$1359_EN[7:0]$1365[7].out[0] (.names)                       0.152     4.815
+S1.mem.0.0.ram_b1.WE[0] (DPRAM32)                                                                                                               2.180     6.995
+data arrival time                                                                                                                                         6.995
+
+clock S1.clk (rise edge)                                                                                                                        0.000     0.000
+clock source latency                                                                                                                            0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                                                                                               0.000     0.000
+S1.mem.0.0.ram_b1.CLK[0] (DPRAM32)                                                                                                              2.180     2.180
+clock uncertainty                                                                                                                               0.000     2.180
+cell setup time                                                                                                                                -0.654     1.526
+data required time                                                                                                                                        1.526
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                                                        1.526
+data arrival time                                                                                                                                        -6.995
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                                                         -5.469
+
+
+#Path 16
+Startpoint: $auto$ff.cc:266:slice$2223.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : S1.mem.0.0.ram_c1.WE[0] (DPRAM32 clocked by S1.clk)
+Path Type : setup
+
+Point                                                                                                                                            Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                                                                                                        0.000     0.000
+clock source latency                                                                                                                            0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                                                                                               0.000     0.000
+$auto$ff.cc:266:slice$2223.C[0] (FDCE_ZINI)                                                                                                     2.180     2.180
+$auto$ff.cc:266:slice$2223.Q[0] (FDCE_ZINI) [clock-to-output]                                                                                   0.303     2.483
+$abc$2377$flatten\S1.$0$memwr$\mem$/home/cl4/f4pga-examples/xc7/handshake/slave.v:67$1359_EN[7:0]$1365[7].in[1] (.names)                        2.180     4.663
+$abc$2377$flatten\S1.$0$memwr$\mem$/home/cl4/f4pga-examples/xc7/handshake/slave.v:67$1359_EN[7:0]$1365[7].out[0] (.names)                       0.152     4.815
+S1.mem.0.0.ram_c1.WE[0] (DPRAM32)                                                                                                               2.180     6.995
+data arrival time                                                                                                                                         6.995
+
+clock S1.clk (rise edge)                                                                                                                        0.000     0.000
+clock source latency                                                                                                                            0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                                                                                               0.000     0.000
+S1.mem.0.0.ram_c1.CLK[0] (DPRAM32)                                                                                                              2.180     2.180
+clock uncertainty                                                                                                                               0.000     2.180
+cell setup time                                                                                                                                -0.654     1.526
+data required time                                                                                                                                        1.526
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                                                        1.526
+data arrival time                                                                                                                                        -6.995
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                                                         -5.469
+
+
+#Path 17
+Startpoint: $auto$ff.cc:266:slice$2223.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : S1.mem.0.0.ram_d0.WE[0] (DPRAM32 clocked by S1.clk)
+Path Type : setup
+
+Point                                                                                                                                            Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                                                                                                        0.000     0.000
+clock source latency                                                                                                                            0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                                                                                               0.000     0.000
+$auto$ff.cc:266:slice$2223.C[0] (FDCE_ZINI)                                                                                                     2.180     2.180
+$auto$ff.cc:266:slice$2223.Q[0] (FDCE_ZINI) [clock-to-output]                                                                                   0.303     2.483
+$abc$2377$flatten\S1.$0$memwr$\mem$/home/cl4/f4pga-examples/xc7/handshake/slave.v:67$1359_EN[7:0]$1365[7].in[1] (.names)                        2.180     4.663
+$abc$2377$flatten\S1.$0$memwr$\mem$/home/cl4/f4pga-examples/xc7/handshake/slave.v:67$1359_EN[7:0]$1365[7].out[0] (.names)                       0.152     4.815
+S1.mem.0.0.ram_d0.WE[0] (DPRAM32)                                                                                                               2.180     6.995
+data arrival time                                                                                                                                         6.995
+
+clock S1.clk (rise edge)                                                                                                                        0.000     0.000
+clock source latency                                                                                                                            0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                                                                                               0.000     0.000
+S1.mem.0.0.ram_d0.CLK[0] (DPRAM32)                                                                                                              2.180     2.180
+clock uncertainty                                                                                                                               0.000     2.180
+cell setup time                                                                                                                                -0.654     1.526
+data required time                                                                                                                                        1.526
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                                                        1.526
+data arrival time                                                                                                                                        -6.995
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                                                         -5.469
+
+
+#Path 18
+Startpoint: $auto$ff.cc:266:slice$2223.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : S1.mem.0.0.ram_d1.WE[0] (DPRAM32 clocked by S1.clk)
+Path Type : setup
+
+Point                                                                                                                                            Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                                                                                                        0.000     0.000
+clock source latency                                                                                                                            0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                                                                                               0.000     0.000
+$auto$ff.cc:266:slice$2223.C[0] (FDCE_ZINI)                                                                                                     2.180     2.180
+$auto$ff.cc:266:slice$2223.Q[0] (FDCE_ZINI) [clock-to-output]                                                                                   0.303     2.483
+$abc$2377$flatten\S1.$0$memwr$\mem$/home/cl4/f4pga-examples/xc7/handshake/slave.v:67$1359_EN[7:0]$1365[7].in[1] (.names)                        2.180     4.663
+$abc$2377$flatten\S1.$0$memwr$\mem$/home/cl4/f4pga-examples/xc7/handshake/slave.v:67$1359_EN[7:0]$1365[7].out[0] (.names)                       0.152     4.815
+S1.mem.0.0.ram_d1.WE[0] (DPRAM32)                                                                                                               2.180     6.995
+data arrival time                                                                                                                                         6.995
+
+clock S1.clk (rise edge)                                                                                                                        0.000     0.000
+clock source latency                                                                                                                            0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                                                                                               0.000     0.000
+S1.mem.0.0.ram_d1.CLK[0] (DPRAM32)                                                                                                              2.180     2.180
+clock uncertainty                                                                                                                               0.000     2.180
+cell setup time                                                                                                                                -0.654     1.526
+data required time                                                                                                                                        1.526
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                                                        1.526
+data arrival time                                                                                                                                        -6.995
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                                                         -5.469
+
+
+#Path 19
+Startpoint: $auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : S1.mem.0.0.ram_d1.DI[0] (DPRAM32 clocked by S1.clk)
+Path Type : setup
+
+Point                                                              Incr      Path
+---------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+$auto$ff.cc:266:slice$2179.C[0] (FDCE_ZINI)                       2.180     2.180
+$auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI) [clock-to-output]     0.303     2.483
+valid_wire.in[0] (.names)                                         2.180     4.663
+valid_wire.out[0] (.names)                                        0.152     4.815
+S1.mem.0.0.ram_d1.DI[0] (DPRAM32)                                 2.180     6.995
+data arrival time                                                           6.995
+
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+S1.mem.0.0.ram_d1.CLK[0] (DPRAM32)                                2.180     2.180
+clock uncertainty                                                 0.000     2.180
+cell setup time                                                  -0.137     2.043
+data required time                                                          2.043
+---------------------------------------------------------------------------------
+data required time                                                          2.043
+data arrival time                                                          -6.995
+---------------------------------------------------------------------------------
+slack (VIOLATED)                                                           -4.952
+
+
+#Path 20
+Startpoint: $auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : S1.mem.0.0.ram_c1.DI[0] (DPRAM32 clocked by S1.clk)
+Path Type : setup
+
+Point                                                              Incr      Path
+---------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+$auto$ff.cc:266:slice$2179.C[0] (FDCE_ZINI)                       2.180     2.180
+$auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI) [clock-to-output]     0.303     2.483
+valid_wire.in[0] (.names)                                         2.180     4.663
+valid_wire.out[0] (.names)                                        0.152     4.815
+S1.mem.0.0.ram_c1.DI[0] (DPRAM32)                                 2.180     6.995
+data arrival time                                                           6.995
+
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+S1.mem.0.0.ram_c1.CLK[0] (DPRAM32)                                2.180     2.180
+clock uncertainty                                                 0.000     2.180
+cell setup time                                                  -0.137     2.043
+data required time                                                          2.043
+---------------------------------------------------------------------------------
+data required time                                                          2.043
+data arrival time                                                          -6.995
+---------------------------------------------------------------------------------
+slack (VIOLATED)                                                           -4.952
+
+
+#Path 21
+Startpoint: $auto$ff.cc:266:slice$2223.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : $auto$ff.cc:266:slice$2216.CE[0] (FDRE_ZINI clocked by S1.clk)
+Path Type : setup
+
+Point                                                                                         Incr      Path
+------------------------------------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                                                     0.000     0.000
+clock source latency                                                                         0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                                            0.000     0.000
+$auto$ff.cc:266:slice$2223.C[0] (FDCE_ZINI)                                                  2.180     2.180
+$auto$ff.cc:266:slice$2223.Q[0] (FDCE_ZINI) [clock-to-output]                                0.303     2.483
+$abc$2377$auto$opt_dff.cc:219:make_patterns_logic$1737.in[0] (.names)                        2.180     4.663
+$abc$2377$auto$opt_dff.cc:219:make_patterns_logic$1737.out[0] (.names)                       0.152     4.815
+$auto$ff.cc:266:slice$2216.CE[0] (FDRE_ZINI)                                                 2.180     6.995
+data arrival time                                                                                      6.995
+
+clock S1.clk (rise edge)                                                                     0.000     0.000
+clock source latency                                                                         0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                                            0.000     0.000
+$auto$ff.cc:266:slice$2216.C[0] (FDRE_ZINI)                                                  2.180     2.180
+clock uncertainty                                                                            0.000     2.180
+cell setup time                                                                             -0.109     2.071
+data required time                                                                                     2.071
+------------------------------------------------------------------------------------------------------------
+data required time                                                                                     2.071
+data arrival time                                                                                     -6.995
+------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                      -4.924
+
+
+#Path 22
+Startpoint: $auto$ff.cc:266:slice$2223.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : $auto$ff.cc:266:slice$2218.CE[0] (FDRE_ZINI clocked by S1.clk)
+Path Type : setup
+
+Point                                                                                         Incr      Path
+------------------------------------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                                                     0.000     0.000
+clock source latency                                                                         0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                                            0.000     0.000
+$auto$ff.cc:266:slice$2223.C[0] (FDCE_ZINI)                                                  2.180     2.180
+$auto$ff.cc:266:slice$2223.Q[0] (FDCE_ZINI) [clock-to-output]                                0.303     2.483
+$abc$2377$auto$opt_dff.cc:219:make_patterns_logic$1737.in[0] (.names)                        2.180     4.663
+$abc$2377$auto$opt_dff.cc:219:make_patterns_logic$1737.out[0] (.names)                       0.152     4.815
+$auto$ff.cc:266:slice$2218.CE[0] (FDRE_ZINI)                                                 2.180     6.995
+data arrival time                                                                                      6.995
+
+clock S1.clk (rise edge)                                                                     0.000     0.000
+clock source latency                                                                         0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                                            0.000     0.000
+$auto$ff.cc:266:slice$2218.C[0] (FDRE_ZINI)                                                  2.180     2.180
+clock uncertainty                                                                            0.000     2.180
+cell setup time                                                                             -0.109     2.071
+data required time                                                                                     2.071
+------------------------------------------------------------------------------------------------------------
+data required time                                                                                     2.071
+data arrival time                                                                                     -6.995
+------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                      -4.924
+
+
+#Path 23
+Startpoint: $auto$ff.cc:266:slice$2223.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : $auto$ff.cc:266:slice$2217.CE[0] (FDRE_ZINI clocked by S1.clk)
+Path Type : setup
+
+Point                                                                                         Incr      Path
+------------------------------------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                                                     0.000     0.000
+clock source latency                                                                         0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                                            0.000     0.000
+$auto$ff.cc:266:slice$2223.C[0] (FDCE_ZINI)                                                  2.180     2.180
+$auto$ff.cc:266:slice$2223.Q[0] (FDCE_ZINI) [clock-to-output]                                0.303     2.483
+$abc$2377$auto$opt_dff.cc:219:make_patterns_logic$1737.in[0] (.names)                        2.180     4.663
+$abc$2377$auto$opt_dff.cc:219:make_patterns_logic$1737.out[0] (.names)                       0.152     4.815
+$auto$ff.cc:266:slice$2217.CE[0] (FDRE_ZINI)                                                 2.180     6.995
+data arrival time                                                                                      6.995
+
+clock S1.clk (rise edge)                                                                     0.000     0.000
+clock source latency                                                                         0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                                            0.000     0.000
+$auto$ff.cc:266:slice$2217.C[0] (FDRE_ZINI)                                                  2.180     2.180
+clock uncertainty                                                                            0.000     2.180
+cell setup time                                                                             -0.109     2.071
+data required time                                                                                     2.071
+------------------------------------------------------------------------------------------------------------
+data required time                                                                                     2.071
+data arrival time                                                                                     -6.995
+------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                      -4.924
+
+
+#Path 24
+Startpoint: $auto$ff.cc:266:slice$2223.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : $auto$ff.cc:266:slice$2215.CE[0] (FDRE_ZINI clocked by S1.clk)
+Path Type : setup
+
+Point                                                                                         Incr      Path
+------------------------------------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                                                     0.000     0.000
+clock source latency                                                                         0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                                            0.000     0.000
+$auto$ff.cc:266:slice$2223.C[0] (FDCE_ZINI)                                                  2.180     2.180
+$auto$ff.cc:266:slice$2223.Q[0] (FDCE_ZINI) [clock-to-output]                                0.303     2.483
+$abc$2377$auto$opt_dff.cc:219:make_patterns_logic$1737.in[0] (.names)                        2.180     4.663
+$abc$2377$auto$opt_dff.cc:219:make_patterns_logic$1737.out[0] (.names)                       0.152     4.815
+$auto$ff.cc:266:slice$2215.CE[0] (FDRE_ZINI)                                                 2.180     6.995
+data arrival time                                                                                      6.995
+
+clock S1.clk (rise edge)                                                                     0.000     0.000
+clock source latency                                                                         0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                                            0.000     0.000
+$auto$ff.cc:266:slice$2215.C[0] (FDRE_ZINI)                                                  2.180     2.180
+clock uncertainty                                                                            0.000     2.180
+cell setup time                                                                             -0.109     2.071
+data required time                                                                                     2.071
+------------------------------------------------------------------------------------------------------------
+data required time                                                                                     2.071
+data arrival time                                                                                     -6.995
+------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                      -4.924
+
+
+#Path 25
+Startpoint: $auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : S1.mem.0.0.ram_a0.WA[0] (DPRAM32 clocked by S1.clk)
+Path Type : setup
+
+Point                                                              Incr      Path
+---------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+$auto$ff.cc:266:slice$2179.C[0] (FDCE_ZINI)                       2.180     2.180
+$auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI) [clock-to-output]     0.303     2.483
+valid_wire.in[0] (.names)                                         2.180     4.663
+valid_wire.out[0] (.names)                                        0.152     4.815
+S1.mem.0.0.ram_a0.WA[0] (DPRAM32)                                 2.180     6.995
+data arrival time                                                           6.995
+
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+S1.mem.0.0.ram_a0.CLK[0] (DPRAM32)                                2.180     2.180
+clock uncertainty                                                 0.000     2.180
+cell setup time                                                  -0.066     2.114
+data required time                                                          2.114
+---------------------------------------------------------------------------------
+data required time                                                          2.114
+data arrival time                                                          -6.995
+---------------------------------------------------------------------------------
+slack (VIOLATED)                                                           -4.881
+
+
+#Path 26
+Startpoint: $auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : S1.mem.0.0.ram_a1.WA[0] (DPRAM32 clocked by S1.clk)
+Path Type : setup
+
+Point                                                              Incr      Path
+---------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+$auto$ff.cc:266:slice$2179.C[0] (FDCE_ZINI)                       2.180     2.180
+$auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI) [clock-to-output]     0.303     2.483
+valid_wire.in[0] (.names)                                         2.180     4.663
+valid_wire.out[0] (.names)                                        0.152     4.815
+S1.mem.0.0.ram_a1.WA[0] (DPRAM32)                                 2.180     6.995
+data arrival time                                                           6.995
+
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+S1.mem.0.0.ram_a1.CLK[0] (DPRAM32)                                2.180     2.180
+clock uncertainty                                                 0.000     2.180
+cell setup time                                                  -0.066     2.114
+data required time                                                          2.114
+---------------------------------------------------------------------------------
+data required time                                                          2.114
+data arrival time                                                          -6.995
+---------------------------------------------------------------------------------
+slack (VIOLATED)                                                           -4.881
+
+
+#Path 27
+Startpoint: $auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : S1.mem.0.0.ram_b0.WA[0] (DPRAM32 clocked by S1.clk)
+Path Type : setup
+
+Point                                                              Incr      Path
+---------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+$auto$ff.cc:266:slice$2179.C[0] (FDCE_ZINI)                       2.180     2.180
+$auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI) [clock-to-output]     0.303     2.483
+valid_wire.in[0] (.names)                                         2.180     4.663
+valid_wire.out[0] (.names)                                        0.152     4.815
+S1.mem.0.0.ram_b0.WA[0] (DPRAM32)                                 2.180     6.995
+data arrival time                                                           6.995
+
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+S1.mem.0.0.ram_b0.CLK[0] (DPRAM32)                                2.180     2.180
+clock uncertainty                                                 0.000     2.180
+cell setup time                                                  -0.066     2.114
+data required time                                                          2.114
+---------------------------------------------------------------------------------
+data required time                                                          2.114
+data arrival time                                                          -6.995
+---------------------------------------------------------------------------------
+slack (VIOLATED)                                                           -4.881
+
+
+#Path 28
+Startpoint: $auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : S1.mem.0.0.ram_b1.WA[0] (DPRAM32 clocked by S1.clk)
+Path Type : setup
+
+Point                                                              Incr      Path
+---------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+$auto$ff.cc:266:slice$2179.C[0] (FDCE_ZINI)                       2.180     2.180
+$auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI) [clock-to-output]     0.303     2.483
+valid_wire.in[0] (.names)                                         2.180     4.663
+valid_wire.out[0] (.names)                                        0.152     4.815
+S1.mem.0.0.ram_b1.WA[0] (DPRAM32)                                 2.180     6.995
+data arrival time                                                           6.995
+
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+S1.mem.0.0.ram_b1.CLK[0] (DPRAM32)                                2.180     2.180
+clock uncertainty                                                 0.000     2.180
+cell setup time                                                  -0.066     2.114
+data required time                                                          2.114
+---------------------------------------------------------------------------------
+data required time                                                          2.114
+data arrival time                                                          -6.995
+---------------------------------------------------------------------------------
+slack (VIOLATED)                                                           -4.881
+
+
+#Path 29
+Startpoint: $auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : S1.mem.0.0.ram_d1.WA[0] (DPRAM32 clocked by S1.clk)
+Path Type : setup
+
+Point                                                              Incr      Path
+---------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+$auto$ff.cc:266:slice$2179.C[0] (FDCE_ZINI)                       2.180     2.180
+$auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI) [clock-to-output]     0.303     2.483
+valid_wire.in[0] (.names)                                         2.180     4.663
+valid_wire.out[0] (.names)                                        0.152     4.815
+S1.mem.0.0.ram_d1.WA[0] (DPRAM32)                                 2.180     6.995
+data arrival time                                                           6.995
+
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+S1.mem.0.0.ram_d1.CLK[0] (DPRAM32)                                2.180     2.180
+clock uncertainty                                                 0.000     2.180
+cell setup time                                                  -0.066     2.114
+data required time                                                          2.114
+---------------------------------------------------------------------------------
+data required time                                                          2.114
+data arrival time                                                          -6.995
+---------------------------------------------------------------------------------
+slack (VIOLATED)                                                           -4.881
+
+
+#Path 30
+Startpoint: $auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : S1.mem.0.0.ram_d0.WA[0] (DPRAM32 clocked by S1.clk)
+Path Type : setup
+
+Point                                                              Incr      Path
+---------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+$auto$ff.cc:266:slice$2179.C[0] (FDCE_ZINI)                       2.180     2.180
+$auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI) [clock-to-output]     0.303     2.483
+valid_wire.in[0] (.names)                                         2.180     4.663
+valid_wire.out[0] (.names)                                        0.152     4.815
+S1.mem.0.0.ram_d0.WA[0] (DPRAM32)                                 2.180     6.995
+data arrival time                                                           6.995
+
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+S1.mem.0.0.ram_d0.CLK[0] (DPRAM32)                                2.180     2.180
+clock uncertainty                                                 0.000     2.180
+cell setup time                                                  -0.066     2.114
+data required time                                                          2.114
+---------------------------------------------------------------------------------
+data required time                                                          2.114
+data arrival time                                                          -6.995
+---------------------------------------------------------------------------------
+slack (VIOLATED)                                                           -4.881
+
+
+#Path 31
+Startpoint: $auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : S1.mem.0.0.ram_c1.WA[0] (DPRAM32 clocked by S1.clk)
+Path Type : setup
+
+Point                                                              Incr      Path
+---------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+$auto$ff.cc:266:slice$2179.C[0] (FDCE_ZINI)                       2.180     2.180
+$auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI) [clock-to-output]     0.303     2.483
+valid_wire.in[0] (.names)                                         2.180     4.663
+valid_wire.out[0] (.names)                                        0.152     4.815
+S1.mem.0.0.ram_c1.WA[0] (DPRAM32)                                 2.180     6.995
+data arrival time                                                           6.995
+
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+S1.mem.0.0.ram_c1.CLK[0] (DPRAM32)                                2.180     2.180
+clock uncertainty                                                 0.000     2.180
+cell setup time                                                  -0.066     2.114
+data required time                                                          2.114
+---------------------------------------------------------------------------------
+data required time                                                          2.114
+data arrival time                                                          -6.995
+---------------------------------------------------------------------------------
+slack (VIOLATED)                                                           -4.881
+
+
+#Path 32
+Startpoint: $auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : S1.mem.0.0.ram_c0.WA[0] (DPRAM32 clocked by S1.clk)
+Path Type : setup
+
+Point                                                              Incr      Path
+---------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+$auto$ff.cc:266:slice$2179.C[0] (FDCE_ZINI)                       2.180     2.180
+$auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI) [clock-to-output]     0.303     2.483
+valid_wire.in[0] (.names)                                         2.180     4.663
+valid_wire.out[0] (.names)                                        0.152     4.815
+S1.mem.0.0.ram_c0.WA[0] (DPRAM32)                                 2.180     6.995
+data arrival time                                                           6.995
+
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+S1.mem.0.0.ram_c0.CLK[0] (DPRAM32)                                2.180     2.180
+clock uncertainty                                                 0.000     2.180
+cell setup time                                                  -0.066     2.114
+data required time                                                          2.114
+---------------------------------------------------------------------------------
+data required time                                                          2.114
+data arrival time                                                          -6.995
+---------------------------------------------------------------------------------
+slack (VIOLATED)                                                           -4.881
+
+
+#Path 33
+Startpoint: $auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : $auto$ff.cc:266:slice$2179.D[0] (FDCE_ZINI clocked by S1.clk)
+Path Type : setup
+
+Point                                                              Incr      Path
+---------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+$auto$ff.cc:266:slice$2179.C[0] (FDCE_ZINI)                       2.180     2.180
+$auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI) [clock-to-output]     0.303     2.483
+M1.next_state[1].in[0] (.names)                                   2.180     4.663
+M1.next_state[1].out[0] (.names)                                  0.152     4.815
+$auto$ff.cc:266:slice$2179.D[0] (FDCE_ZINI)                       2.180     6.995
+data arrival time                                                           6.995
+
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+$auto$ff.cc:266:slice$2179.C[0] (FDCE_ZINI)                       2.180     2.180
+clock uncertainty                                                 0.000     2.180
+cell setup time                                                   0.046     2.226
+data required time                                                          2.226
+---------------------------------------------------------------------------------
+data required time                                                          2.226
+data arrival time                                                          -6.995
+---------------------------------------------------------------------------------
+slack (VIOLATED)                                                           -4.769
+
+
+#Path 34
+Startpoint: $auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : $auto$ff.cc:266:slice$2178.D[0] (FDCE_ZINI clocked by S1.clk)
+Path Type : setup
+
+Point                                                              Incr      Path
+---------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+$auto$ff.cc:266:slice$2179.C[0] (FDCE_ZINI)                       2.180     2.180
+$auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI) [clock-to-output]     0.303     2.483
+M1.next_state[0].in[1] (.names)                                   2.180     4.663
+M1.next_state[0].out[0] (.names)                                  0.152     4.815
+$auto$ff.cc:266:slice$2178.D[0] (FDCE_ZINI)                       2.180     6.995
+data arrival time                                                           6.995
+
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+$auto$ff.cc:266:slice$2178.C[0] (FDCE_ZINI)                       2.180     2.180
+clock uncertainty                                                 0.000     2.180
+cell setup time                                                   0.046     2.226
+data required time                                                          2.226
+---------------------------------------------------------------------------------
+data required time                                                          2.226
+data arrival time                                                          -6.995
+---------------------------------------------------------------------------------
+slack (VIOLATED)                                                           -4.769
+
+
+#Path 35
+Startpoint: $auto$ff.cc:266:slice$2224.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : $auto$ff.cc:266:slice$2224.D[0] (FDCE_ZINI clocked by S1.clk)
+Path Type : setup
+
+Point                                                              Incr      Path
+---------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+$auto$ff.cc:266:slice$2224.C[0] (FDCE_ZINI)                       2.180     2.180
+$auto$ff.cc:266:slice$2224.Q[0] (FDCE_ZINI) [clock-to-output]     0.303     2.483
+S1.next_state[1].in[0] (.names)                                   2.180     4.663
+S1.next_state[1].out[0] (.names)                                  0.152     4.815
+$auto$ff.cc:266:slice$2224.D[0] (FDCE_ZINI)                       2.180     6.995
+data arrival time                                                           6.995
+
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+$auto$ff.cc:266:slice$2224.C[0] (FDCE_ZINI)                       2.180     2.180
+clock uncertainty                                                 0.000     2.180
+cell setup time                                                   0.046     2.226
+data required time                                                          2.226
+---------------------------------------------------------------------------------
+data required time                                                          2.226
+data arrival time                                                          -6.995
+---------------------------------------------------------------------------------
+slack (VIOLATED)                                                           -4.769
+
+
+#Path 36
+Startpoint: $auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI clocked by S1.clk)
+Endpoint  : $auto$ff.cc:266:slice$2223.D[0] (FDCE_ZINI clocked by S1.clk)
+Path Type : setup
+
+Point                                                              Incr      Path
+---------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+$auto$ff.cc:266:slice$2179.C[0] (FDCE_ZINI)                       2.180     2.180
+$auto$ff.cc:266:slice$2179.Q[0] (FDCE_ZINI) [clock-to-output]     0.303     2.483
+S1.next_state[0].in[0] (.names)                                   2.180     4.663
+S1.next_state[0].out[0] (.names)                                  0.152     4.815
+$auto$ff.cc:266:slice$2223.D[0] (FDCE_ZINI)                       2.180     6.995
+data arrival time                                                           6.995
+
+clock S1.clk (rise edge)                                          0.000     0.000
+clock source latency                                              0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                 0.000     0.000
+$auto$ff.cc:266:slice$2223.C[0] (FDCE_ZINI)                       2.180     2.180
+clock uncertainty                                                 0.000     2.180
+cell setup time                                                   0.046     2.226
+data required time                                                          2.226
+---------------------------------------------------------------------------------
+data required time                                                          2.226
+data arrival time                                                          -6.995
+---------------------------------------------------------------------------------
+slack (VIOLATED)                                                           -4.769
+
+
+#Path 37
+Startpoint: rst.inpad[0] (.input clocked by S1.clk)
+Endpoint  : $auto$ff.cc:266:slice$2178.CLR[0] (FDCE_ZINI clocked by S1.clk)
+Path Type : setup
+
+Point                                                                Incr      Path
+-----------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                            0.000     0.000
+clock source latency                                                0.000     0.000
+input external delay                                                0.000     0.000
+rst.inpad[0] (.input)                                               0.000     0.000
+$iopadmap$top.rst.I[0] (IBUF_VPR)                                   2.180     2.180
+$iopadmap$top.rst.O[0] (IBUF_VPR)                                   0.010     2.190
+$auto$ff.cc:266:slice$2178.CLR[0] (FDCE_ZINI)                       2.180     4.370
+data arrival time                                                             4.370
+
+clock S1.clk (rise edge)                                            0.000     0.000
+clock source latency                                                0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                   0.000     0.000
+$auto$ff.cc:266:slice$2178.C[0] (FDCE_ZINI)                         2.180     2.180
+clock uncertainty                                                   0.000     2.180
+cell setup time                                                    -0.404     1.776
+data required time                                                            1.776
+-----------------------------------------------------------------------------------
+data required time                                                            1.776
+data arrival time                                                            -4.370
+-----------------------------------------------------------------------------------
+slack (VIOLATED)                                                             -2.594
+
+
+#Path 38
+Startpoint: rst.inpad[0] (.input clocked by S1.clk)
+Endpoint  : $auto$ff.cc:266:slice$2224.CLR[0] (FDCE_ZINI clocked by S1.clk)
+Path Type : setup
+
+Point                                                                Incr      Path
+-----------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                            0.000     0.000
+clock source latency                                                0.000     0.000
+input external delay                                                0.000     0.000
+rst.inpad[0] (.input)                                               0.000     0.000
+$iopadmap$top.rst.I[0] (IBUF_VPR)                                   2.180     2.180
+$iopadmap$top.rst.O[0] (IBUF_VPR)                                   0.010     2.190
+$auto$ff.cc:266:slice$2224.CLR[0] (FDCE_ZINI)                       2.180     4.370
+data arrival time                                                             4.370
+
+clock S1.clk (rise edge)                                            0.000     0.000
+clock source latency                                                0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                   0.000     0.000
+$auto$ff.cc:266:slice$2224.C[0] (FDCE_ZINI)                         2.180     2.180
+clock uncertainty                                                   0.000     2.180
+cell setup time                                                    -0.404     1.776
+data required time                                                            1.776
+-----------------------------------------------------------------------------------
+data required time                                                            1.776
+data arrival time                                                            -4.370
+-----------------------------------------------------------------------------------
+slack (VIOLATED)                                                             -2.594
+
+
+#Path 39
+Startpoint: rst.inpad[0] (.input clocked by S1.clk)
+Endpoint  : $auto$ff.cc:266:slice$2223.CLR[0] (FDCE_ZINI clocked by S1.clk)
+Path Type : setup
+
+Point                                                                Incr      Path
+-----------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                            0.000     0.000
+clock source latency                                                0.000     0.000
+input external delay                                                0.000     0.000
+rst.inpad[0] (.input)                                               0.000     0.000
+$iopadmap$top.rst.I[0] (IBUF_VPR)                                   2.180     2.180
+$iopadmap$top.rst.O[0] (IBUF_VPR)                                   0.010     2.190
+$auto$ff.cc:266:slice$2223.CLR[0] (FDCE_ZINI)                       2.180     4.370
+data arrival time                                                             4.370
+
+clock S1.clk (rise edge)                                            0.000     0.000
+clock source latency                                                0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                   0.000     0.000
+$auto$ff.cc:266:slice$2223.C[0] (FDCE_ZINI)                         2.180     2.180
+clock uncertainty                                                   0.000     2.180
+cell setup time                                                    -0.404     1.776
+data required time                                                            1.776
+-----------------------------------------------------------------------------------
+data required time                                                            1.776
+data arrival time                                                            -4.370
+-----------------------------------------------------------------------------------
+slack (VIOLATED)                                                             -2.594
+
+
+#Path 40
+Startpoint: rst.inpad[0] (.input clocked by S1.clk)
+Endpoint  : $auto$ff.cc:266:slice$2179.CLR[0] (FDCE_ZINI clocked by S1.clk)
+Path Type : setup
+
+Point                                                                Incr      Path
+-----------------------------------------------------------------------------------
+clock S1.clk (rise edge)                                            0.000     0.000
+clock source latency                                                0.000     0.000
+input external delay                                                0.000     0.000
+rst.inpad[0] (.input)                                               0.000     0.000
+$iopadmap$top.rst.I[0] (IBUF_VPR)                                   2.180     2.180
+$iopadmap$top.rst.O[0] (IBUF_VPR)                                   0.010     2.190
+$auto$ff.cc:266:slice$2179.CLR[0] (FDCE_ZINI)                       2.180     4.370
+data arrival time                                                             4.370
+
+clock S1.clk (rise edge)                                            0.000     0.000
+clock source latency                                                0.000     0.000
+$iopadmap$top.clk.O[0] (IBUF_VPR)                                   0.000     0.000
+$auto$ff.cc:266:slice$2179.C[0] (FDCE_ZINI)                         2.180     2.180
+clock uncertainty                                                   0.000     2.180
+cell setup time                                                    -0.404     1.776
+data required time                                                            1.776
+-----------------------------------------------------------------------------------
+data required time                                                            1.776
+data arrival time                                                            -4.370
+-----------------------------------------------------------------------------------
+slack (VIOLATED)                                                             -2.594
+
+
+#End of timing report
